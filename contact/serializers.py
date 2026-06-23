@@ -83,10 +83,11 @@ class ContactMessageSerializer(serializers.ModelSerializer):
 
         # 3. Spam pattern check (Cross-field validation)
         combined_text = f"{attrs['subject']} {attrs['message']}".lower()
-        if any(pattern in combined_text for pattern in SPAM_PATTERNS):
-            raise serializers.ValidationError(
-                {"message": "Your message appears to contain spam or promotional content."}
-            )
+        for word in SPAM_PATTERNS:
+            if word in combined_text:
+                raise serializers.ValidationError(
+                    {"message": "Your message appears to contain spam or promotional content."}
+                )
 
         # 4. Duplicate submission protection
         cooldown_time = timezone.now() - timedelta(minutes=5)
