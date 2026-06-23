@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+from decouple import config
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,6 +28,29 @@ SECRET_KEY = "django-insecure-z4+*m$us5+7bug@1%ii(6p!1hb5*g=e1o4xi%0&dokrzx1r*8x
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+
+EMAIL_HOST = "smtp-relay.brevo.com"
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = config("BREVO_LOGIN")
+
+EMAIL_HOST_PASSWORD = config("BREVO_SMTP_KEY")
+
+DEFAULT_FROM_EMAIL = config(
+    "DEFAULT_FROM_EMAIL",
+    default="Awoii Bob Willy <awoiibobwilly@gmail.com>"
+)
+
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+
+CONTACT_RECEIVER_EMAIL = config(
+    "CONTACT_RECEIVER_EMAIL"
+)
+
 
 
 # Application definition
