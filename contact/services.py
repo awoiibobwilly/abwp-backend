@@ -1,77 +1,113 @@
 from django.conf import settings
-from django.core.mail import send_mail
+
+from django.core.mail import EmailMultiAlternatives
+
+from django.template.loader import render_to_string
 
 
-def send_contact_notification(contact):
+def send_contact_notification(
 
-    subject = (
-        f"New Contact Message: "
-        f"{contact.subject}"
-    )
+    contact
 
-    message = f"""
-You have received a new message.
+):
 
-Name:
-{contact.full_name}
+    context = {
 
-Email:
-{contact.email}
+        "full_name": contact.full_name,
 
-Subject:
-{contact.subject}
+        "email": contact.email,
 
-Message:
-{contact.message}
-"""
+        "subject": contact.subject,
 
-    send_mail(
+        "message": contact.message,
 
-        subject,
+    }
 
-        message,
+    html_content = render_to_string(
 
-        settings.DEFAULT_FROM_EMAIL,
+        "contact/emails/admin_notification.html",
 
-        [settings.CONTACT_RECEIVER_EMAIL],
-
-        fail_silently=False,
+        context,
 
     )
 
+    text_content = render_to_string(
 
-def send_contact_confirmation(contact):
+        "contact/emails/admin_notification.txt",
 
-    subject = (
-        "Thank you for contacting "
-        "Awoii Bob Willy"
-    )
-
-    message = f"""
-Dear {contact.full_name},
-
-Thank you for reaching out.
-
-Your message has been received
-successfully and I will respond
-as soon as possible.
-
-Regards,
-
-Awoii Bob Willy
-"""
-
-    send_mail(
-
-        subject,
-
-        message,
-
-        settings.DEFAULT_FROM_EMAIL,
-
-        [contact.email],
-
-        fail_silently=True,
+        context,
 
     )
 
+    email = EmailMultiAlternatives(
+
+        subject=f"New Contact Message: {contact.subject}",
+
+        body=text_content,
+
+        from_email=settings.DEFAULT_FROM_EMAIL,
+
+        to=[settings.CONTACT_RECEIVER_EMAIL],
+
+    )
+
+    email.attach_alternative(
+
+        html_content,
+
+        "text/html"
+
+    )
+
+    email.send()
+
+
+def send_contact_confirmation(
+
+    contact
+
+):
+
+    context = {
+
+        "full_name": contact.full_name,
+
+    }
+
+    html_content = render_to_string(
+
+        "contact/emails/visitor_confirmation.html",
+
+        context,
+
+    )
+
+    text_content = render_to_string(
+
+        "contact/emails/visitor_confirmation.txt",
+
+        context,
+
+    )
+
+    email = EmailMultiAlternatives(
+
+        subject="Thank You for Contacting Awoii Bob Willy",
+
+        body=text_content,
+
+        from_email=settings.DEFAULT_FROM_EMAIL,
+
+        to=[contact.email],
+
+    )
+
+    email.attach_alternative(
+
+        html_content,
+
+        "text/html"
+
+    )
+
+    email.send()

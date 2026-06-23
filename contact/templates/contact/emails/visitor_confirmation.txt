@@ -1,0 +1,23 @@
+Dear {{ full_name }},
+
+Thank you for contacting me through the ABW Portfolio website.
+
+Your message has been received successfully and I appreciate you taking the time to get in touch.
+
+I will review your message and respond as soon as possible.
+
+Whether your inquiry concerns software engineering, healthcare, public health, research, leadership, collaboration, or any other professional matter, I look forward to connecting with you.
+
+Kind regards,
+
+Awoii Bob Willy
+
+Software Engineer
+Healthcare Professional
+Researcher
+
+---
+
+Designed, Developed, and Maintained by
+
+Awoii Bob Willy

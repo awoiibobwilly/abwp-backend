@@ -1,0 +1,20 @@
+New Contact Message
+
+Full Name:
+{{ full_name }}
+
+Email:
+{{ email }}
+
+Subject:
+{{ subject }}
+
+Message:
+
+{{ message }}
+
+---
+
+Designed, Developed, and Maintained by
+
+Awoii Bob Willy
