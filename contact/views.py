@@ -1,3 +1,5 @@
+import logging
+
 from rest_framework import generics
 
 from .models import ContactMessage
@@ -6,15 +8,13 @@ from .serializers import ContactMessageSerializer
 
 from .throttles import ContactRateThrottle
 
-
 from .services import (
     send_contact_notification,
     send_contact_confirmation,
 )
 
-import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("contact")
 
 
 class ContactMessageListCreateView(
@@ -35,9 +35,29 @@ class ContactMessageListCreateView(
 
     throttle_scope = "contact"
 
-    def perform_create(self, serializer):
+
+    def perform_create(
+
+        self,
+
+        serializer
+
+    ):
 
         contact = serializer.save()
+
+
+        # Log successful database save
+        logger.info(
+
+            f"New contact message from "
+
+            f"{contact.full_name} "
+
+            f"<{contact.email}>"
+
+        )
+
 
         try:
 
@@ -45,12 +65,24 @@ class ContactMessageListCreateView(
 
             send_contact_confirmation(contact)
 
-        except Exception as e:
 
-            logger.exception(
+            # Log successful email delivery
+            logger.info(
 
-                f"Email sending failed: {e}"
+                f"Notification emails sent successfully "
+
+                f"for {contact.email}"
 
             )
 
 
+        except Exception as e:
+
+            # Log email failures
+            logger.exception(
+
+                f"Email sending failed for "
+
+                f"{contact.email}: {e}"
+
+            )
