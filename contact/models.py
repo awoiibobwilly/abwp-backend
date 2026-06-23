@@ -15,6 +15,10 @@ class ContactMessage(models.Model):
 
     message = models.TextField()
 
+    honeypot = models.CharField( 
+        max_length=100,
+        blank=True, default="")
+
     is_read = models.BooleanField(
         default=False
     )

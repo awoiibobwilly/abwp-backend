@@ -65,6 +65,24 @@ class ContactMessageSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Please provide a more descriptive message (at least 20 characters).")
         return cleaned_value
 
+    def validate_honeypot(
+
+        self,
+
+        value
+
+    ):
+
+        if value.strip():
+
+            raise serializers.ValidationError(
+
+                "Spam detected."
+
+            )
+
+        return value
+
     def validate(self, attrs):
         # Safely normalize values using .get() to prevent server-crashing KeyErrors
         if "full_name" in attrs:
@@ -78,5 +96,8 @@ class ContactMessageSerializer(serializers.ModelSerializer):
             
         if "message" in attrs:
             attrs["message"] = attrs["message"].strip()
+
+        if "validate_honeypot" in attrs:
+            attrs["validate_honeypot"] = attrs["validate_honeypot"].strip()
 
         return attrs
