@@ -1,7 +1,11 @@
 from rest_framework import generics
 
 from .models import ContactMessage
+
 from .serializers import ContactMessageSerializer
+
+from .throttles import ContactRateThrottle
+
 
 from .services import (
     send_contact_notification,
@@ -23,6 +27,13 @@ class ContactMessageListCreateView(
 
     serializer_class = ContactMessageSerializer
 
+    throttle_classes = [
+
+        ContactRateThrottle
+
+    ]
+
+    throttle_scope = "contact"
 
     def perform_create(self, serializer):
 
@@ -41,3 +52,5 @@ class ContactMessageListCreateView(
                 f"Email sending failed: {e}"
 
             )
+
+

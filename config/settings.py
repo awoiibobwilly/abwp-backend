@@ -80,6 +80,30 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "config.urls"
 
+
+REST_FRAMEWORK = {
+
+    "DEFAULT_THROTTLE_CLASSES": [
+
+        "rest_framework.throttling.ScopedRateThrottle",
+
+    ],
+
+    "DEFAULT_THROTTLE_RATES": {
+
+        "contact": "5/minute",
+
+        # "contact": "3/minute",
+
+        # "contact_hourly": "20/hour",
+
+        # "contact_daily": "50/day",
+
+    },
+
+}
+
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
