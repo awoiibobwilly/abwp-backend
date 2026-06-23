@@ -1,8 +1,6 @@
-
 from rest_framework import generics
 
 from .models import ContactMessage
-
 from .serializers import ContactMessageSerializer
 
 from .services import (
@@ -25,6 +23,7 @@ class ContactMessageListCreateView(
 
     serializer_class = ContactMessageSerializer
 
+
     def perform_create(self, serializer):
 
         contact = serializer.save()
@@ -35,27 +34,10 @@ class ContactMessageListCreateView(
 
             send_contact_confirmation(contact)
 
-        except Exception:
+        except Exception as e:
 
-            pass
+            logger.exception(
 
+                f"Email sending failed: {e}"
 
-def perform_create(self, serializer):
-
-    contact = serializer.save()
-
-    try:
-
-        send_contact_notification(contact)
-
-        send_contact_confirmation(contact)
-
-    except Exception as e:
-
-        logger.exception(
-
-            f"Email sending failed: {e}"
-
-        )
-
-
+            )
