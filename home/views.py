@@ -1,8 +1,14 @@
 from rest_framework import generics
 
+
+from .models import Expertise
+
+
 from .models import Statistic
 
 from .serializers import StatisticSerializer
+
+from .serializers import ExpertiseSerializer
 
 
 class StatisticListView(
@@ -12,7 +18,6 @@ class StatisticListView(
 ):
 
     serializer_class = StatisticSerializer
-
 
     def get_queryset(
 
@@ -25,3 +30,22 @@ class StatisticListView(
             is_active=True
 
         )
+
+
+class ExpertiseListView(
+
+    generics.ListAPIView
+
+):
+
+    serializer_class = ExpertiseSerializer
+
+    queryset = Expertise.objects.filter(
+
+        is_active=True
+
+    ).order_by(
+
+        "display_order"
+
+    )
