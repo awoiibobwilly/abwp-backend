@@ -32,4 +32,17 @@ urlpatterns = [
         include("contact.urls")
     ),
 
+
+    path(
+
+        "api/home/",
+
+        include(
+
+            "home.urls"
+
+        )
+
+    ),
+
 ]
