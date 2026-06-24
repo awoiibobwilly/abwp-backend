@@ -8,9 +8,9 @@ from .serializers import ContactMessageSerializer
 
 from .throttles import ContactRateThrottle
 
-from .services import (
-    send_contact_notification,
-    send_contact_confirmation,
+from .tasks import (
+    send_admin_email_task,
+    send_confirmation_email_task,
 )
 
 
@@ -35,7 +35,6 @@ class ContactMessageListCreateView(
 
     throttle_scope = "contact"
 
-
     def perform_create(
 
         self,
@@ -46,8 +45,6 @@ class ContactMessageListCreateView(
 
         contact = serializer.save()
 
-
-        # Log successful database save
         logger.info(
 
             f"New contact message from "
@@ -58,15 +55,16 @@ class ContactMessageListCreateView(
 
         )
 
-
         try:
 
-            send_contact_notification(contact)
+            send_admin_email_task.delay(
+                contact.id
+            )
 
-            send_contact_confirmation(contact)
+            send_confirmation_email_task.delay(
+                contact.id
+            )
 
-
-            # Log successful email delivery
             logger.info(
 
                 f"Notification emails sent successfully "
@@ -75,10 +73,8 @@ class ContactMessageListCreateView(
 
             )
 
-
         except Exception as e:
 
-            # Log email failures
             logger.exception(
 
                 f"Email sending failed for "
