@@ -101,7 +101,7 @@ urlpatterns = [
 
         "journey/",
 
-        ProjectListAPIView.as_view(),
+        JourneyListAPIView.as_view(),
 
         name="journey",
 

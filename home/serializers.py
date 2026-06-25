@@ -432,39 +432,103 @@ class FeaturedProjectSerializer(serializers.ModelSerializer):
 
 class JourneySerializer(serializers.ModelSerializer):
 
-    image = serializers.SerializerMethodField()
+    journey_type_display = serializers.CharField(
+        source="get_journey_type_display",
+        read_only=True,
+    )
+
+    duration = serializers.SerializerMethodField()
+
+    year = serializers.SerializerMethodField()
+
+    accent_color = serializers.SerializerMethodField()
 
     class Meta:
 
         model = Journey
 
         fields = (
+
             "id",
+
             "title",
-            "organization",
-            "location",
-            "journey_type",
-            "summary",
-            "image",
-            "started_at",
-            "ended_at",
-            "is_current",
-            "featured",
+
             "slug",
+
+            "organization",
+
+            "location",
+
+            "journey_type",
+
+            "journey_type_display",
+
+            "summary",
+
+            "image",
+
+            "started_at",
+
+            "ended_at",
+
+            "duration",
+
+            "year",
+
+            "is_current",
+
+            "featured",
+
+            "accent_color",
+
         )
 
-    def get_image(self, obj):
+    def get_duration(self, obj):
 
-        request = self.context.get("request")
+        start = obj.started_at.strftime("%b %Y")
 
-        if obj.image:
+        if obj.is_current:
 
-            if request:
+            end = "Present"
 
-                return request.build_absolute_uri(
-                    obj.image.url
-                )
+        elif obj.ended_at:
 
-            return obj.image.url
+            end = obj.ended_at.strftime("%b %Y")
 
-        return None
+        else:
+
+            end = "Present"
+
+        return f"{start} – {end}"
+
+    def get_year(self, obj):
+
+        return obj.started_at.year if obj.started_at else None
+
+    def get_accent_color(self, obj):
+
+        colors = {
+
+            "employment": "#2563EB",
+
+            "education": "#7C3AED",
+
+            "leadership": "#F59E0B",
+
+            "healthcare": "#0F766E",
+
+            "ministry": "#059669",
+
+            "volunteer": "#DC2626",
+
+            "research": "#9333EA",
+
+        }
+
+        return colors.get(
+
+            obj.journey_type,
+
+            "#6B7280",
+
+        )

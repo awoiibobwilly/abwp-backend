@@ -131,6 +131,8 @@ REST_FRAMEWORK = {
 
         "contact": "5/minute",
 
+        'home': '100/day',
+
         # "contact": "3/minute",
 
         # "contact_hourly": "20/hour",
