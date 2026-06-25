@@ -8,6 +8,7 @@ from .models import (
     ProjectCategory,
     Project,
     ProjectMedia,
+    Journey,
 )
 
 
@@ -423,3 +424,47 @@ class FeaturedProjectSerializer(serializers.ModelSerializer):
             "title": media.title,
             "caption": media.caption,
         }
+
+# ==============================
+    # JOURNEY
+# ==============================
+
+
+class JourneySerializer(serializers.ModelSerializer):
+
+    image = serializers.SerializerMethodField()
+
+    class Meta:
+
+        model = Journey
+
+        fields = (
+            "id",
+            "title",
+            "organization",
+            "location",
+            "journey_type",
+            "summary",
+            "image",
+            "started_at",
+            "ended_at",
+            "is_current",
+            "featured",
+            "slug",
+        )
+
+    def get_image(self, obj):
+
+        request = self.context.get("request")
+
+        if obj.image:
+
+            if request:
+
+                return request.build_absolute_uri(
+                    obj.image.url
+                )
+
+            return obj.image.url
+
+        return None

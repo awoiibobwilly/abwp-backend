@@ -759,3 +759,92 @@ class ProjectMedia(models.Model):
     def __str__(self):
 
         return f"{self.project.title} - {self.title or self.media_type}"
+
+# ========================================
+    # JOURNEY MODEL
+# ========================================
+
+
+class Journey(models.Model):
+
+    JOURNEY_TYPES = (
+        ("education", "Education"),
+        ("employment", "Employment"),
+        ("leadership", "Leadership"),
+        ("research", "Research"),
+        ("volunteer", "Volunteer"),
+        ("award", "Award"),
+        ("project", "Major Project"),
+        ("milestone", "Career Milestone"),
+    )
+
+    title = models.CharField(
+        max_length=255,
+    )
+
+    organization = models.CharField(
+        max_length=255,
+    )
+
+    location = models.CharField(
+        max_length=255,
+        blank=True,
+    )
+
+    journey_type = models.CharField(
+        max_length=20,
+        choices=JOURNEY_TYPES,
+    )
+
+    summary = models.TextField()
+
+    image = models.ImageField(
+        upload_to="journey/",
+        blank=True,
+        null=True,
+    )
+
+    started_at = models.DateField()
+
+    ended_at = models.DateField(
+        blank=True,
+        null=True,
+    )
+
+    is_current = models.BooleanField(
+        default=False,
+    )
+
+    featured = models.BooleanField(
+        default=False,
+    )
+
+    display_order = models.PositiveIntegerField(
+        default=0,
+    )
+
+    is_active = models.BooleanField(
+        default=True,
+    )
+
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+    )
+
+    updated_at = models.DateTimeField(
+        auto_now=True,
+    )
+    slug = models.SlugField(
+        unique=True,
+    )
+
+    class Meta:
+
+        ordering = (
+            "-started_at",
+            "display_order",
+        )
+
+    def __str__(self):
+
+        return self.title

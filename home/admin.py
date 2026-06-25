@@ -14,6 +14,7 @@ from .models import (
     ProjectCategory,
     Project,
     ProjectMedia,
+    Journey,
 
 )
 
@@ -624,4 +625,39 @@ class ProjectMediaInline(admin.StackedInline):
             },
         ),
 
+    )
+
+# ========================================
+    # JOURNEY
+# ========================================
+
+
+@admin.register(Journey)
+class JourneyAdmin(admin.ModelAdmin):
+
+    list_display = (
+        "title",
+        "organization",
+        "journey_type",
+        "started_at",
+        "is_current",
+        "featured",
+        "is_active",
+    )
+
+    list_filter = (
+        "journey_type",
+        "featured",
+        "is_current",
+        "is_active",
+    )
+
+    search_fields = (
+        "title",
+        "organization",
+        "summary",
+    )
+
+    ordering = (
+        "-started_at",
     )

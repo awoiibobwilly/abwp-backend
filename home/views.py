@@ -22,6 +22,7 @@ from .models import (
     ProjectCategory,
     Project,
     ProjectMedia,
+    Journey,
 )
 
 from .serializers import (
@@ -33,6 +34,7 @@ from .serializers import (
     ProjectCategorySerializer,
     FeaturedProjectSerializer,
     ProjectSerializer,
+    JourneySerializer,
 
 )
 
@@ -301,4 +303,21 @@ class ProjectListAPIView(generics.ListAPIView):
                 ),
             )
             .distinct()
+        )
+
+# =================================
+    # JOURNEY
+# =================================
+
+
+class JourneyListAPIView(generics.ListAPIView):
+
+    serializer_class = JourneySerializer
+
+    throttle_scope = "home"
+
+    def get_queryset(self):
+
+        return Journey.objects.filter(
+            is_active=True,
         )
