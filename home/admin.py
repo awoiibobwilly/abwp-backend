@@ -6,6 +6,8 @@ from .models import Expertise
 
 from .models import Highlight
 
+from .models import Technology
+
 
 @admin.register(
 
@@ -117,3 +119,47 @@ class HighlightAdmin(admin.ModelAdmin):
         "display_order",
 
     )
+
+
+@admin.register(Technology)
+class TechnologyAdmin(admin.ModelAdmin):
+
+    list_display = (
+
+        "name",
+
+        "proficiency",
+
+        "display_order",
+
+        "is_active",
+
+    )
+
+    list_filter = (
+
+        "is_active",
+
+    )
+
+    search_fields = (
+
+        "name",
+
+        "description",
+
+    )
+
+    ordering = (
+
+        "display_order",
+
+        "name",
+
+    )
+
+    prepopulated_fields = {
+
+        "slug": ("name",),
+
+    }

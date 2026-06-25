@@ -1,16 +1,18 @@
 from rest_framework import generics
 
-from .models import Expertise
+from .models import (
+    Expertise,
+    Statistic,
+    Highlight,
+    Technology,
+)
 
-from .models import Statistic
-
-from .models import Highlight
-
-from .serializers import StatisticSerializer
-
-from .serializers import ExpertiseSerializer
-
-from .serializers import HighlightSerializer
+from .serializers import (
+    StatisticSerializer,
+    ExpertiseSerializer,
+    HighlightSerializer,
+    TechnologySerializer,
+)
 
 
 class StatisticListView(
@@ -68,5 +70,29 @@ class HighlightListView(
     ).order_by(
 
         "display_order"
+
+    )
+
+# ================================
+    # TECHNOLOGY VIEWS
+# ================================
+
+class TechnologyListView(
+
+    generics.ListAPIView
+
+):
+
+    serializer_class = TechnologySerializer
+
+    queryset = Technology.objects.filter(
+
+        is_active=True
+
+    ).order_by(
+
+        "display_order",
+
+        "name",
 
     )

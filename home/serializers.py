@@ -6,6 +6,8 @@ from .models import Expertise
 
 from .models import Highlight
 
+from .models import Technology
+
 
 class StatisticSerializer(
 
@@ -42,5 +44,18 @@ class HighlightSerializer(
     class Meta:
 
         model = Highlight
+
+        fields = "__all__"
+
+
+class TechnologySerializer(
+
+    serializers.ModelSerializer
+
+):
+
+    class Meta:
+
+        model = Technology
 
         fields = "__all__"
