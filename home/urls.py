@@ -4,6 +4,8 @@ from .views import StatisticListView
 
 from .views import ExpertiseListView
 
+from .views import HighlightListView
+
 
 urlpatterns = [
 
@@ -24,6 +26,16 @@ urlpatterns = [
         ExpertiseListView.as_view(),
 
         name="expertise-list",
+
+    ),
+
+    path(
+
+        "highlights/",
+
+        HighlightListView.as_view(),
+
+        name="highlight-list",
 
     ),
 

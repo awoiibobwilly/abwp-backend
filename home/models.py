@@ -133,3 +133,47 @@ class Expertise(models.Model):
     def __str__(self):
 
         return self.title
+
+
+class Highlight(models.Model):
+
+    title = models.CharField(
+        max_length=100
+    )
+
+    value = models.PositiveIntegerField()
+
+    suffix = models.CharField(
+        max_length=10,
+        default="+"
+    )
+
+    icon = models.CharField(
+        max_length=100
+    )
+
+    display_order = models.PositiveIntegerField(
+        default=0
+    )
+
+    is_active = models.BooleanField(
+        default=True
+    )
+
+    created_at = models.DateTimeField(
+        auto_now_add=True
+    )
+
+    updated_at = models.DateTimeField(
+        auto_now=True
+    )
+
+    class Meta:
+
+        ordering = [
+            "display_order"
+        ]
+
+    def __str__(self):
+
+        return self.title
