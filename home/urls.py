@@ -15,8 +15,8 @@ from .views import (
     ProjectDetailAPIView,
 
     ProjectListAPIView,
-
-    JourneyListAPIView,
+    
+    FeaturedProjectListAPIView,
 
 )
 
@@ -93,11 +93,7 @@ urlpatterns = [
 
     ),
 
-    path(
-        "journey/",
-        JourneyListAPIView.as_view(),
-        name="journey",
-    ),
+    path('featured-projects/', FeaturedProjectListAPIView.as_view(), name='featured-project-list'),
 
 
 ]

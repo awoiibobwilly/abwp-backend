@@ -158,42 +158,22 @@ class FeaturedProjectListAPIView(generics.ListAPIView):
 
     serializer_class = FeaturedProjectSerializer
 
-    def get_queryset(self):
-
-        home_media = ProjectMedia.objects.filter(
-            featured_on_home=True
-        ).order_by(
+    queryset = (
+        Project.objects
+        .filter(
+            featured=True,
+            is_active=True,
+        )
+        .select_related("category")
+        .prefetch_related(
+            "technologies",
+            "media",
+        )
+        .order_by(
             "display_order",
         )
-
-        return (
-
-            Project.objects
-
-            .filter(
-                featured=True,
-                is_active=True,
-            )
-
-            .select_related(
-                "category",
-            )
-
-            .prefetch_related(
-                "technologies",
-                Prefetch(
-                    "media",
-                    queryset=home_media,
-                    to_attr="home_media",
-                ),
-            )
-
-            .order_by(
-                "display_order",
-            )
-
-        )
-
+    )
+    
 #=============================================
     #PROJECT DETAIL
 #=============================================
