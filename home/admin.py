@@ -1,12 +1,18 @@
 from django.contrib import admin
 
-from .models import Statistic
+from .models import (
+    
+    Statistic,
+    
+    Expertise,
+    
+    Highlight,
+    
+    Technology,
+    
+    ProjectCategory,
 
-from .models import Expertise
-
-from .models import Highlight
-
-from .models import Technology
+)
 
 
 @admin.register(
@@ -129,6 +135,51 @@ class TechnologyAdmin(admin.ModelAdmin):
         "name",
 
         "proficiency",
+
+        "display_order",
+
+        "is_active",
+
+    )
+
+    list_filter = (
+
+        "is_active",
+
+    )
+
+    search_fields = (
+
+        "name",
+
+        "description",
+
+    )
+
+    ordering = (
+
+        "display_order",
+
+        "name",
+
+    )
+
+    prepopulated_fields = {
+
+        "slug": ("name",),
+
+    }
+
+# =================================
+    # PROJECT CATEGORY
+# =================================
+
+@admin.register(ProjectCategory)
+class ProjectCategoryAdmin(admin.ModelAdmin):
+
+    list_display = (
+
+        "name",
 
         "display_order",
 

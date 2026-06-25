@@ -282,3 +282,94 @@ class Technology(models.Model):
     def __str__(self):
 
         return self.name
+    
+# ==================================
+    # PROJECT CATEGORY MODEL
+# ==================================
+
+
+class ProjectCategory(models.Model):
+
+    name = models.CharField(
+
+        max_length=100,
+
+        unique=True,
+
+        help_text="Category name (e.g. Healthcare, Web Development)"
+
+    )
+
+    slug = models.SlugField(
+
+        unique=True
+
+    )
+
+    icon = models.CharField(
+
+        max_length=100,
+
+        blank=True,
+
+        help_text="React icon name (e.g. FaHospital)"
+
+    )
+
+    color = models.CharField(
+
+        max_length=20,
+
+        default="#2563eb",
+
+        help_text="Hex color used for badges"
+
+    )
+
+    description = models.TextField(
+
+        blank=True
+
+    )
+
+    display_order = models.PositiveIntegerField(
+
+        default=0
+
+    )
+
+    is_active = models.BooleanField(
+
+        default=True
+
+    )
+
+    created_at = models.DateTimeField(
+
+        auto_now_add=True
+
+    )
+
+    updated_at = models.DateTimeField(
+
+        auto_now=True
+
+    )
+
+    class Meta:
+
+        ordering = [
+
+            "display_order",
+
+            "name",
+
+        ]
+
+        verbose_name = "Project Category"
+
+        verbose_name_plural = "Project Categories"
+
+    def __str__(self):
+
+        return self.name

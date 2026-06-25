@@ -1,12 +1,18 @@
 from rest_framework import serializers
 
-from .models import Statistic
+from .models import (
+    
+    Statistic,
+    
+    Expertise,
+    
+    Highlight,
+    
+    Technology,
 
-from .models import Expertise
+    ProjectCategory,
 
-from .models import Highlight
-
-from .models import Technology
+)
 
 
 class StatisticSerializer(
@@ -57,5 +63,22 @@ class TechnologySerializer(
     class Meta:
 
         model = Technology
+
+        fields = "__all__"
+
+# ================================
+    # PROJECT CATEGORY
+# ================================
+
+
+class ProjectCategorySerializer(
+
+    serializers.ModelSerializer
+
+):
+
+    class Meta:
+
+        model = ProjectCategory
 
         fields = "__all__"

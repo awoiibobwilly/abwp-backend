@@ -10,6 +10,8 @@ from .views import (
 
     TechnologyListView,
 
+    ProjectCategoryListView,
+
 )
 
 
@@ -52,6 +54,16 @@ urlpatterns = [
         TechnologyListView.as_view(),
 
         name="technology-list",
+
+    ),
+
+    path(
+
+        "project-categories/",
+
+        ProjectCategoryListView.as_view(),
+
+        name="project-category-list",
 
     ),
 

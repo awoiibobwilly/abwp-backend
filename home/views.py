@@ -5,6 +5,7 @@ from .models import (
     Statistic,
     Highlight,
     Technology,
+    ProjectCategory,
 )
 
 from .serializers import (
@@ -12,6 +13,7 @@ from .serializers import (
     ExpertiseSerializer,
     HighlightSerializer,
     TechnologySerializer,
+    ProjectCategorySerializer,
 )
 
 
@@ -77,6 +79,7 @@ class HighlightListView(
     # TECHNOLOGY VIEWS
 # ================================
 
+
 class TechnologyListView(
 
     generics.ListAPIView
@@ -86,6 +89,31 @@ class TechnologyListView(
     serializer_class = TechnologySerializer
 
     queryset = Technology.objects.filter(
+
+        is_active=True
+
+    ).order_by(
+
+        "display_order",
+
+        "name",
+
+    )
+
+# ====================================
+    # PROJECT CATEGORY
+# ====================================
+
+
+class ProjectCategoryListView(
+
+    generics.ListAPIView
+
+):
+
+    serializer_class = ProjectCategorySerializer
+
+    queryset = ProjectCategory.objects.filter(
 
         is_active=True
 
