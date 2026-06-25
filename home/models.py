@@ -628,3 +628,134 @@ class Project(models.Model):
     def __str__(self):
 
         return self.title
+    
+# ======================================
+    # PROJECT MEDIA
+# ======================================
+
+
+class ProjectMedia(models.Model):
+
+    MEDIA_TYPE_CHOICES = [
+
+        ("image", "Image"),
+
+        ("video", "Video"),
+
+        ("document", "Document"),
+
+    ]
+
+    project = models.ForeignKey(
+
+        Project,
+
+        on_delete=models.CASCADE,
+
+        related_name="media"
+
+    )
+
+    media_type = models.CharField(
+
+        max_length=20,
+
+        choices=MEDIA_TYPE_CHOICES,
+
+        default="image"
+
+    )
+
+    file = models.FileField(
+
+        upload_to="projects/media/"
+
+    )
+
+    thumbnail = models.ImageField(
+
+        upload_to="projects/media/thumbnails/",
+
+        blank=True,
+
+        null=True,
+
+        help_text="Thumbnail used for videos or documents."
+
+    )
+
+    title = models.CharField(
+
+        max_length=200,
+
+        blank=True
+
+    )
+
+    caption = models.TextField(
+
+        blank=True
+
+    )
+
+    alt_text = models.CharField(
+
+        max_length=200,
+
+        blank=True,
+
+        help_text="Accessibility text."
+
+    )
+
+    display_order = models.PositiveIntegerField(
+
+        default=0
+
+    )
+
+    featured_on_home = models.BooleanField(
+
+        default=False,
+
+        help_text="Use this media as the preview on the Home page."
+
+    )
+
+    is_featured = models.BooleanField(
+
+        default=False,
+
+        help_text="Primary media for the Project Detail page."
+
+    )
+
+    created_at = models.DateTimeField(
+
+        auto_now_add=True
+
+    )
+
+    updated_at = models.DateTimeField(
+
+        auto_now=True
+
+    )
+
+    class Meta:
+
+        ordering = [
+
+            "display_order",
+
+            "created_at",
+
+        ]
+
+        verbose_name = "Project Media"
+
+        verbose_name_plural = "Project Media"
+
+    def __str__(self):
+
+        return f"{self.project.title} - {self.title or self.media_type}"
