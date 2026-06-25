@@ -373,3 +373,258 @@ class ProjectCategory(models.Model):
     def __str__(self):
 
         return self.name
+    
+# =======================================
+    # PROJECT MODEL
+# =======================================
+
+
+class Project(models.Model):
+
+    STATUS_CHOICES = [
+
+        ("planning", "Planning"),
+
+        ("in_progress", "In Progress"),
+
+        ("completed", "Completed"),
+
+        ("maintenance", "Maintenance"),
+
+        ("archived", "Archived"),
+
+    ]
+
+    title = models.CharField(
+
+        max_length=200
+
+    )
+
+    slug = models.SlugField(
+
+        unique=True
+
+    )
+
+    category = models.ForeignKey(
+
+        ProjectCategory,
+
+        on_delete=models.PROTECT,
+
+        related_name="projects"
+
+    )
+
+    technologies = models.ManyToManyField(
+
+        Technology,
+
+        blank=True,
+
+        related_name="projects"
+
+    )
+
+    short_description = models.CharField(
+
+        max_length=300,
+
+        help_text="Displayed on project cards."
+
+    )
+
+    description = models.TextField(
+
+        help_text="Full project description."
+
+    )
+
+    thumbnail = models.ImageField(
+
+        upload_to="projects/thumbnails/",
+
+        blank=True,
+
+        null=True,
+
+    )
+
+    client = models.CharField(
+
+        max_length=200,
+
+        blank=True
+
+    )
+
+    organization = models.CharField(
+
+        max_length=200,
+
+        blank=True
+
+    )
+
+    role = models.CharField(
+
+        max_length=200,
+
+        blank=True,
+
+        help_text="Your role in this project."
+
+    )
+
+    github_url = models.URLField(
+
+        blank=True
+
+    )
+
+    live_url = models.URLField(
+
+        blank=True
+
+    )
+
+        # ==========================
+    # SEO & Social Sharing
+    # ==========================
+
+    meta_title = models.CharField(
+
+        max_length=70,
+
+        blank=True,
+
+        help_text="SEO title (recommended: 50–60 characters)."
+
+    )
+
+    meta_description = models.CharField(
+
+        max_length=160,
+
+        blank=True,
+
+        help_text="SEO description (recommended: 150–160 characters)."
+
+    )
+
+    keywords = models.CharField(
+
+        max_length=300,
+
+        blank=True,
+
+        help_text="Comma-separated SEO keywords."
+
+    )
+
+    canonical_url = models.URLField(
+
+        blank=True,
+
+        help_text="Optional canonical URL."
+
+    )
+
+    og_image = models.ImageField(
+
+        upload_to="projects/og/",
+
+        blank=True,
+
+        null=True,
+
+        help_text="Open Graph image used for LinkedIn, Facebook, WhatsApp, etc."
+
+    )
+
+    documentation_url = models.URLField(
+
+        blank=True
+
+    )
+
+    featured = models.BooleanField(
+
+        default=False
+
+    )
+
+    is_open_source = models.BooleanField(
+
+        default=False
+
+    )
+
+    is_active = models.BooleanField(
+
+        default=True
+
+    )
+
+    status = models.CharField(
+
+        max_length=20,
+
+        choices=STATUS_CHOICES,
+
+        default="completed",
+
+    )
+
+    started_at = models.DateField(
+
+        blank=True,
+
+        null=True
+
+    )
+
+    completed_at = models.DateField(
+
+        blank=True,
+
+        null=True
+
+    )
+
+    display_order = models.PositiveIntegerField(
+
+        default=0
+
+    )
+
+    created_at = models.DateTimeField(
+
+        auto_now_add=True
+
+    )
+
+    updated_at = models.DateTimeField(
+
+        auto_now=True
+
+    )
+
+    class Meta:
+
+        ordering = [
+
+            "display_order",
+
+            "-created_at",
+
+        ]
+
+        verbose_name = "Project"
+
+        verbose_name_plural = "Projects"
+
+    def __str__(self):
+
+        return self.title
