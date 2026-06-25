@@ -12,6 +12,10 @@ from .views import (
 
     ProjectCategoryListView,
 
+    ProjectDetailAPIView,
+
+    ProjectListAPIView,
+
 )
 
 
@@ -64,6 +68,26 @@ urlpatterns = [
         ProjectCategoryListView.as_view(),
 
         name="project-category-list",
+
+    ),
+
+    path(
+
+        "projects/<slug:slug>/",
+
+        ProjectDetailAPIView.as_view(),
+
+        name="project-detail",
+
+    ),
+
+    path(
+
+        "projects/",
+
+        ProjectListAPIView.as_view(),
+
+        name="project-list",
 
     ),
 

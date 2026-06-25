@@ -66,6 +66,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "contact",
     "home",
+    "django_filters",
+    
 ]
 
 MIDDLEWARE = [
@@ -77,6 +79,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -84,11 +87,45 @@ ROOT_URLCONF = "config.urls"
 
 REST_FRAMEWORK = {
 
-    "DEFAULT_THROTTLE_CLASSES": [
+    # =====================================================
+    # Authentication
+    # =====================================================
+
+    # "DEFAULT_AUTHENTICATION_CLASSES": (
+    #     ...
+    # ),
+
+    # =====================================================
+    # Permissions
+    # =====================================================
+
+    # "DEFAULT_PERMISSION_CLASSES": (
+    #     ...
+    # ),
+
+    # =====================================================
+    # Filtering
+    # =====================================================
+
+    "DEFAULT_FILTER_BACKENDS": (
+
+        "django_filters.rest_framework.DjangoFilterBackend",
+
+        "rest_framework.filters.SearchFilter",
+
+        "rest_framework.filters.OrderingFilter",
+
+    ),
+
+    # =====================================================
+    # Throttling
+    # =====================================================
+
+    "DEFAULT_THROTTLE_CLASSES": (
 
         "rest_framework.throttling.ScopedRateThrottle",
 
-    ],
+    ),
 
     "DEFAULT_THROTTLE_RATES": {
 
@@ -99,6 +136,12 @@ REST_FRAMEWORK = {
         # "contact_hourly": "20/hour",
 
         # "contact_daily": "50/day",
+
+        # "contact": "5/hour",
+
+        # "projects": "60/hour",
+
+        # "anonymous": "100/hour",
 
     },
 

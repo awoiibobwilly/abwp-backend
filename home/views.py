@@ -1,4 +1,18 @@
 from rest_framework import generics
+from django.db.models import Prefetch
+from .pagination import ProjectPagination
+from django_filters.rest_framework import DjangoFilterBackend
+
+from rest_framework.filters import (
+
+    OrderingFilter,
+
+    SearchFilter,
+
+)
+
+
+from .filters import ProjectFilter
 
 from .models import (
     Expertise,
@@ -6,15 +20,23 @@ from .models import (
     Highlight,
     Technology,
     ProjectCategory,
+    Project,
+    ProjectMedia,
 )
 
 from .serializers import (
+
     StatisticSerializer,
     ExpertiseSerializer,
     HighlightSerializer,
     TechnologySerializer,
     ProjectCategorySerializer,
+    FeaturedProjectSerializer,
+    ProjectSerializer,
+
 )
+
+pagination_class = ProjectPagination
 
 
 class StatisticListView(
@@ -124,3 +146,159 @@ class ProjectCategoryListView(
         "name",
 
     )
+
+# ================================
+    #FEATURED PROJECT
+# ================================
+
+
+class FeaturedProjectListAPIView(generics.ListAPIView):
+
+    serializer_class = FeaturedProjectSerializer
+
+    def get_queryset(self):
+
+        home_media = ProjectMedia.objects.filter(
+            featured_on_home=True
+        ).order_by(
+            "display_order",
+        )
+
+        return (
+
+            Project.objects
+
+            .filter(
+                featured=True,
+                is_active=True,
+            )
+
+            .select_related(
+                "category",
+            )
+
+            .prefetch_related(
+                "technologies",
+                Prefetch(
+                    "media",
+                    queryset=home_media,
+                    to_attr="home_media",
+                ),
+            )
+
+            .order_by(
+                "display_order",
+            )
+
+        )
+
+#=============================================
+    #PROJECT DETAIL
+#=============================================
+
+
+class ProjectDetailAPIView(
+
+    generics.RetrieveAPIView
+
+):
+
+    serializer_class = ProjectSerializer
+
+    lookup_field = "slug"
+
+    def get_queryset(self):
+
+        return (
+
+            Project.objects
+
+            .filter(
+
+                is_active=True,
+
+            )
+
+            .select_related(
+
+                "category",
+
+            )
+
+            .prefetch_related(
+
+                "technologies",
+
+                Prefetch(
+
+                    "media",
+
+                    queryset=ProjectMedia.objects.order_by(
+
+                        "display_order",
+
+                    ),
+
+                ),
+
+            )
+
+        )
+
+
+class ProjectListAPIView(generics.ListAPIView):
+
+    serializer_class = ProjectSerializer
+
+    pagination_class = ProjectPagination
+
+    # throttle_scope = "projects"
+
+    filter_backends = (
+        DjangoFilterBackend,
+        SearchFilter,
+        OrderingFilter,
+    )
+
+    filterset_class = ProjectFilter
+
+    search_fields = (
+        "title",
+        "short_description",
+        "description",
+        "client",
+        "organization",
+    )
+
+    ordering_fields = (
+        "created_at",
+        "completed_at",
+        "title",
+        "display_order",
+    )
+
+    ordering = (
+        "display_order",
+    )
+
+    def get_queryset(self):
+
+        return (
+            Project.objects
+            .filter(
+                is_active=True,
+            )
+            .select_related(
+                "category",
+            )
+            .prefetch_related(
+                "technologies",
+                Prefetch(
+                    "media",
+                    queryset=ProjectMedia.objects.order_by(
+                        "display_order",
+                    ),
+                ),
+            )
+            .distinct()
+        )
