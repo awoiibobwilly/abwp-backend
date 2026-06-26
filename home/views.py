@@ -1,30 +1,24 @@
-from .api.mixins import (
-    FeaturedQuerysetMixin,
-    # ActiveQuerysetMixin,
-    OrderedQuerysetMixin,
-    # PortfolioFilterMixin,
-    # PortfolioOrderingMixin,
+from django_filters.rest_framework import DjangoFilterBackend
+
+from rest_framework import generics
+from rest_framework.filters import (
+    OrderingFilter,
+    SearchFilter,
 )
 
 from .api.base import (
     PublicListAPIView,
-    # PublicRetrieveAPIView,
+    PublicRetrieveAPIView,
 )
 
-
-from rest_framework import generics
-from django.db.models import Prefetch
-# from .pagination import ProjectPagination
-from django_filters.rest_framework import DjangoFilterBackend
-
-from rest_framework.filters import (
-
-    OrderingFilter,
-
-    SearchFilter,
-
-)
-
+# Future Architecture
+# from .api.mixins import (
+#     FeaturedQuerysetMixin,
+#     ActiveQuerysetMixin,
+#     OrderedQuerysetMixin,
+#     PortfolioFilterMixin,
+#     PortfolioOrderingMixin,
+# )
 
 from .filters import ProjectFilter
 
@@ -35,12 +29,10 @@ from .models import (
     Technology,
     ProjectCategory,
     Project,
-    ProjectMedia,
     Journey,
 )
 
 from .serializers import (
-
     StatisticSerializer,
     ExpertiseSerializer,
     HighlightSerializer,
@@ -49,199 +41,126 @@ from .serializers import (
     FeaturedProjectSerializer,
     ProjectSerializer,
     JourneySerializer,
-
 )
 
-# pagination_class = ProjectPagination
+# ==========================================================
+# Future Pagination
+# ==========================================================
+
+# from .pagination import ProjectPagination
 
 
-class StatisticListView(
+# ==========================================================
+# STATISTICS
+# ==========================================================
 
-    generics.ListAPIView
-
-):
+class StatisticListView(PublicListAPIView):
 
     serializer_class = StatisticSerializer
 
-    def get_queryset(
-
-        self
-
-    ):
-
-        return Statistic.objects.filter(
-
-            is_active=True
-
-        )
+    queryset = (
+        Statistic.objects
+        .active()
+        .optimized()
+    )
 
 
-class ExpertiseListView(
+# ==========================================================
+# EXPERTISE
+# ==========================================================
 
-    generics.ListAPIView
-
-):
+class ExpertiseListView(PublicListAPIView):
 
     serializer_class = ExpertiseSerializer
 
-    queryset = Expertise.objects.filter(
-
-        is_active=True
-
-    ).order_by(
-
-        "display_order"
-
+    queryset = (
+        Expertise.objects
+        .active()
+        .optimized()
     )
 
 
-class HighlightListView(
+# ==========================================================
+# HIGHLIGHTS
+# ==========================================================
 
-    generics.ListAPIView
-
-):
+class HighlightListView(PublicListAPIView):
 
     serializer_class = HighlightSerializer
 
-    queryset = Highlight.objects.filter(
-
-        is_active=True
-
-    ).order_by(
-
-        "display_order"
-
+    queryset = (
+        Highlight.objects
+        .active()
+        .optimized()
     )
 
-# ================================
-    # TECHNOLOGY VIEWS
-# ================================
 
+# ==========================================================
+# TECHNOLOGIES
+# ==========================================================
 
-class TechnologyListView(
-
-    generics.ListAPIView
-
-):
+class TechnologyListView(PublicListAPIView):
 
     serializer_class = TechnologySerializer
 
-    queryset = Technology.objects.filter(
-
-        is_active=True
-
-    ).order_by(
-
-        "display_order",
-
-        "name",
-
+    queryset = (
+        Technology.objects
+        .active()
+        .optimized()
     )
 
-# ====================================
-    # PROJECT CATEGORY
-# ====================================
 
+# ==========================================================
+# PROJECT CATEGORIES
+# ==========================================================
 
-class ProjectCategoryListView(
-
-    generics.ListAPIView
-
-):
+class ProjectCategoryListView(PublicListAPIView):
 
     serializer_class = ProjectCategorySerializer
 
-    queryset = ProjectCategory.objects.filter(
-
-        is_active=True
-
-    ).order_by(
-
-        "display_order",
-
-        "name",
-
+    queryset = (
+        ProjectCategory.objects
+        .active()
+        .optimized()
     )
 
-# ================================
-    #FEATURED PROJECT
-# ================================
 
+# ==========================================================
+# FEATURED PROJECTS
+# ==========================================================
 
-class FeaturedProjectListAPIView(
-
-    FeaturedQuerysetMixin,
-
-    OrderedQuerysetMixin,
-
-    PublicListAPIView,
-
-):
+class FeaturedProjectListAPIView(PublicListAPIView):
 
     serializer_class = FeaturedProjectSerializer
 
-    queryset = Project.objects.select_related(
-        "category",
-    ).prefetch_related(
-        "technologies",
-        "media",
+    queryset = (
+        Project.objects
+        .active()
+        .featured()
+        .optimized()
     )
-    
-#=============================================
-    #PROJECT DETAIL
-#=============================================
 
 
-class ProjectDetailAPIView(
+# ==========================================================
+# PROJECT DETAIL
+# ==========================================================
 
-    generics.RetrieveAPIView
-
-):
+class ProjectDetailAPIView(PublicRetrieveAPIView):
 
     serializer_class = ProjectSerializer
 
-    lookup_field = "slug"
-
-    def get_queryset(self):
-
-        return (
-
-            Project.objects
-
-            .filter(
-
-                is_active=True,
-
-            )
-
-            .select_related(
-
-                "category",
-
-            )
-
-            .prefetch_related(
-
-                "technologies",
-
-                Prefetch(
-
-                    "media",
-
-                    queryset=ProjectMedia.objects.order_by(
-
-                        "display_order",
-
-                    ),
-
-                ),
-
-            )
-
-        )
+    queryset = (
+        Project.objects
+        .active()
+        .optimized()
+    )
 
 
-class ProjectListAPIView(generics.ListAPIView):
+# ==========================================================
+# PROJECTS
+# ==========================================================
+
+class ProjectListAPIView(PublicListAPIView):
 
     serializer_class = ProjectSerializer
 
@@ -276,41 +195,57 @@ class ProjectListAPIView(generics.ListAPIView):
         "display_order",
     )
 
-    def get_queryset(self):
-
-        return (
-            Project.objects
-            .filter(
-                is_active=True,
-            )
-            .select_related(
-                "category",
-            )
-            .prefetch_related(
-                "technologies",
-                Prefetch(
-                    "media",
-                    queryset=ProjectMedia.objects.order_by(
-                        "display_order",
-                    ),
-                ),
-            )
-            .distinct()
-        )
-
-# =================================
-    # JOURNEY
-# =================================
+    queryset = (
+        Project.objects
+        .active()
+        .optimized()
+        .distinct()
+    )
 
 
-class JourneyListAPIView(generics.ListAPIView):
+# ==========================================================
+# JOURNEY
+# ==========================================================
+
+class JourneyListAPIView(PublicListAPIView):
 
     serializer_class = JourneySerializer
 
-    throttle_scope = "home"
+    # throttle_scope = "home"
 
-    def get_queryset(self):
+    queryset = (
+        Journey.objects
+        .active()
+        .optimized()
+    )
 
-        return Journey.objects.filter(
-            is_active=True,
-        )
+
+# ==========================================================
+# FEATURED JOURNEY
+# ==========================================================
+
+class FeaturedJourneyListAPIView(PublicListAPIView):
+
+    serializer_class = JourneySerializer
+
+    queryset = (
+        Journey.objects
+        .active()
+        .featured()
+        .optimized()
+    )
+
+
+# ==========================================================
+# JOURNEY DETAIL
+# ==========================================================
+
+class JourneyDetailAPIView(PublicRetrieveAPIView):
+
+    serializer_class = JourneySerializer
+
+    queryset = (
+        Journey.objects
+        .active()
+        .optimized()
+    )

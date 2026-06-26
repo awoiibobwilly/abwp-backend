@@ -1,11 +1,36 @@
 from django.db import models
 
+# objects = ResearchManager()
+
+# objects = TestimonialManager()
+
+from .managers import (
+
+    ProjectManager,
+
+    JourneyManager,
+
+    TechnologyManager,
+
+    ProjectCategoryManager,
+
+    StatisticManager,
+
+    HighlightManager,
+
+    ExpertiseManager,
+
+)
+
 
 class Statistic(
+
 
     models.Model
 
 ):
+
+    objects = StatisticManager()
 
     title = models.CharField(
 
@@ -80,6 +105,8 @@ class Statistic(
 
 class Expertise(models.Model):
 
+    objects = ExpertiseManager()
+
     title = models.CharField(
 
         max_length=150
@@ -137,6 +164,8 @@ class Expertise(models.Model):
 
 class Highlight(models.Model):
 
+    objects = HighlightManager()
+
     title = models.CharField(
         max_length=100
     )
@@ -184,6 +213,8 @@ class Highlight(models.Model):
 
 
 class Technology(models.Model):
+
+    objects = TechnologyManager()
 
     name = models.CharField(
 
@@ -290,6 +321,8 @@ class Technology(models.Model):
 
 class ProjectCategory(models.Model):
 
+    objects = ProjectCategoryManager()
+
     name = models.CharField(
 
         max_length=100,
@@ -380,6 +413,8 @@ class ProjectCategory(models.Model):
 
 
 class Project(models.Model):
+
+    objects = ProjectManager()
 
     STATUS_CHOICES = [
 
@@ -766,6 +801,8 @@ class ProjectMedia(models.Model):
 
 
 class Journey(models.Model):
+
+    objects = JourneyManager()
 
     JOURNEY_TYPES = (
         ("education", "Education"),
