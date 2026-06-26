@@ -1,6 +1,20 @@
+from .api.mixins import (
+    FeaturedQuerysetMixin,
+    # ActiveQuerysetMixin,
+    OrderedQuerysetMixin,
+    # PortfolioFilterMixin,
+    # PortfolioOrderingMixin,
+)
+
+from .api.base import (
+    PublicListAPIView,
+    # PublicRetrieveAPIView,
+)
+
+
 from rest_framework import generics
 from django.db.models import Prefetch
-from .pagination import ProjectPagination
+# from .pagination import ProjectPagination
 from django_filters.rest_framework import DjangoFilterBackend
 
 from rest_framework.filters import (
@@ -38,7 +52,7 @@ from .serializers import (
 
 )
 
-pagination_class = ProjectPagination
+# pagination_class = ProjectPagination
 
 
 class StatisticListView(
@@ -154,24 +168,23 @@ class ProjectCategoryListView(
 # ================================
 
 
-class FeaturedProjectListAPIView(generics.ListAPIView):
+class FeaturedProjectListAPIView(
+
+    FeaturedQuerysetMixin,
+
+    OrderedQuerysetMixin,
+
+    PublicListAPIView,
+
+):
 
     serializer_class = FeaturedProjectSerializer
 
-    queryset = (
-        Project.objects
-        .filter(
-            featured=True,
-            is_active=True,
-        )
-        .select_related("category")
-        .prefetch_related(
-            "technologies",
-            "media",
-        )
-        .order_by(
-            "display_order",
-        )
+    queryset = Project.objects.select_related(
+        "category",
+    ).prefetch_related(
+        "technologies",
+        "media",
     )
     
 #=============================================
@@ -232,7 +245,7 @@ class ProjectListAPIView(generics.ListAPIView):
 
     serializer_class = ProjectSerializer
 
-    pagination_class = ProjectPagination
+    # pagination_class = ProjectPagination
 
     # throttle_scope = "projects"
 
