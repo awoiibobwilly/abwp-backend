@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.utils.text import slugify
+
 # objects = ResearchManager()
 
 # objects = TestimonialManager()
@@ -19,6 +21,8 @@ from .managers import (
     HighlightManager,
 
     ExpertiseManager,
+
+    TestimonialManager,
 
 )
 
@@ -885,3 +889,155 @@ class Journey(models.Model):
     def __str__(self):
 
         return self.title
+    
+
+class Testimonial(
+
+    models.Model
+
+):
+    objects = TestimonialManager()
+
+    RATING_CHOICES = [
+
+        (1, "★☆☆☆☆"),
+
+        (2, "★★☆☆☆"),
+
+        (3, "★★★☆☆"),
+
+        (4, "★★★★☆"),
+
+        (5, "★★★★★"),
+
+    ]
+
+    name = models.CharField(
+
+        max_length=150
+
+    )
+
+    slug = models.SlugField(
+
+        unique=True,
+
+        blank=True
+
+    )
+
+    position = models.CharField(
+
+        max_length=150
+
+    )
+
+    organisation = models.CharField(
+
+        max_length=200
+
+    )
+
+    quote = models.TextField()
+
+    photo = models.ImageField(
+
+        upload_to="testimonials/",
+
+        blank=True,
+
+        null=True
+
+    )
+
+    linkedin_url = models.URLField(
+
+        blank=True
+
+    )
+
+    rating = models.PositiveSmallIntegerField(
+
+        choices=RATING_CHOICES,
+
+        default=5
+
+    )
+
+    featured = models.BooleanField(
+
+        default=True
+
+    )
+
+    published = models.BooleanField(
+
+        default=True
+
+    )
+
+    display_order = models.PositiveIntegerField(
+
+        default=1
+
+    )
+
+    created_at = models.DateTimeField(
+
+        auto_now_add=True
+
+    )
+
+    updated_at = models.DateTimeField(
+
+        auto_now=True
+
+    )
+
+    class Meta:
+
+        ordering = [
+
+            "display_order",
+
+            "name",
+
+        ]
+
+        verbose_name = "Testimonial"
+
+        verbose_name_plural = "Testimonials"
+
+    def save(
+
+        self,
+
+        *args,
+
+        **kwargs
+
+    ):
+
+        if not self.slug:
+
+            self.slug = slugify(
+
+                self.name
+
+            )
+
+        super().save(
+
+            *args,
+
+            **kwargs
+
+        )
+
+    def __str__(
+
+        self
+
+    ):
+
+        return self.name

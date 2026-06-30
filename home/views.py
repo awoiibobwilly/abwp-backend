@@ -20,6 +20,7 @@ from .api.base import (
 #     PortfolioOrderingMixin,
 # )
 
+
 from .filters import ProjectFilter
 
 from .models import (
@@ -30,6 +31,7 @@ from .models import (
     ProjectCategory,
     Project,
     Journey,
+    Testimonial,
 )
 
 from .serializers import (
@@ -41,6 +43,7 @@ from .serializers import (
     FeaturedProjectSerializer,
     ProjectSerializer,
     JourneySerializer,
+    TestimonialSerializer,
 )
 
 # ==========================================================
@@ -247,5 +250,70 @@ class JourneyDetailAPIView(PublicRetrieveAPIView):
     queryset = (
         Journey.objects
         .active()
+        .optimized()
+    )
+
+
+# ==========================================================
+# TESTIMONIALS
+# ==========================================================
+
+
+class TestimonialListView(
+
+    PublicListAPIView
+
+):
+
+    serializer_class = TestimonialSerializer
+
+    queryset = (
+
+        Testimonial.objects
+
+        .active()
+
+        .optimized()
+
+    )
+
+
+# ==========================================================
+# TESTIMONIAL PREVIEW
+# ==========================================================
+
+class TestimonialPreviewView(
+
+    PublicListAPIView
+
+):
+
+    serializer_class = TestimonialSerializer
+
+    queryset = (
+
+        Testimonial.objects
+
+        .active()
+
+        .featured()
+
+        .optimized()
+
+    )
+
+
+# ==========================================================
+# FEATURED TESTIMONIALS
+# ==========================================================
+
+class FeaturedTestimonialListAPIView(PublicListAPIView):
+
+    serializer_class = TestimonialSerializer
+
+    queryset = (
+        Testimonial.objects
+        .active()
+        .featured()
         .optimized()
     )

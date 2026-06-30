@@ -9,6 +9,7 @@ from .models import (
     Project,
     ProjectMedia,
     Journey,
+    Testimonial,
 )
 
 
@@ -530,5 +531,42 @@ class JourneySerializer(serializers.ModelSerializer):
             obj.journey_type,
 
             "#6B7280",
+
+        )
+
+# ==============================
+    # TESTIMONIAL
+# ==============================
+
+
+class TestimonialSerializer(
+
+    serializers.ModelSerializer
+
+):
+
+    class Meta:
+
+        model = Testimonial
+
+        fields = (
+
+            "id",
+
+            "name",
+
+            "slug",
+
+            "position",
+
+            "organisation",
+
+            "quote",
+
+            "photo",
+
+            "linkedin_url",
+
+            "rating",
 
         )

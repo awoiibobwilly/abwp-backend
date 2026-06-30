@@ -20,6 +20,10 @@ from .views import (
 
     JourneyListAPIView,
 
+    FeaturedTestimonialListAPIView,
+
+    TestimonialListView,
+
 )
 
 
@@ -228,6 +232,34 @@ urlpatterns = [
         "technologies/",
         TechnologyListView.as_view(),
         name="technology-list",
+
+    ),
+
+    # ==========================================================
+# FEATURED TESTIMONIALS
+# ==========================================================
+
+    path(
+
+        "home/testimonials/",
+
+        FeaturedTestimonialListAPIView.as_view(),
+
+        name="featured-testimonials",
+
+    ),
+
+    # ==========================================================
+    # TESTIMONIALS
+    # ==========================================================
+
+    path(
+
+        "testimonials/",
+
+        TestimonialListView.as_view(),
+
+        name="testimonials",
 
     ),
 

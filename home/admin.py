@@ -12,6 +12,7 @@ from .models import (
     Project,
     ProjectMedia,
     Journey,
+    Testimonial,
 )
 
 # ==========================================================
@@ -547,3 +548,85 @@ class ProjectAdmin(admin.ModelAdmin):
             )
         }),
     )
+
+
+# ==========================================================
+# TESTIMONIALS
+# ==========================================================
+
+@admin.register(Testimonial)
+class TestimonialAdmin(admin.ModelAdmin):
+
+    list_display = (
+
+        "name",
+
+        "organisation",
+
+        "position",
+
+        "rating",
+
+        "featured",
+
+        "published",
+
+        "display_order",
+
+    )
+
+    list_display_links = (
+
+        "name",
+
+    )
+
+    list_editable = (
+
+        "featured",
+
+        "published",
+
+        "display_order",
+
+    )
+
+    list_filter = (
+
+        "featured",
+
+        "published",
+
+        "rating",
+
+    )
+
+    search_fields = (
+
+        "name",
+
+        "organisation",
+
+        "position",
+
+        "quote",
+
+    )
+
+    ordering = (
+
+        "display_order",
+
+        "name",
+
+    )
+
+    prepopulated_fields = {
+
+        "slug": ("name",),
+
+    }
+
+    list_per_page = 25
+
+    date_hierarchy = "created_at"
