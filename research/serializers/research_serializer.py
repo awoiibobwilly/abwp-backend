@@ -30,7 +30,11 @@ class ResearchSerializer(serializers.ModelSerializer):
 
     )
 
-    featured_image = serializers.SerializerMethodField()
+    # ==========================================
+    # Media
+    # ==========================================
+
+    image = serializers.SerializerMethodField()
 
     pdf = serializers.SerializerMethodField()
 
@@ -50,6 +54,8 @@ class ResearchSerializer(serializers.ModelSerializer):
 
             "publication_type",
 
+            "publication_type_display",
+
             "authors",
 
             "institution",
@@ -66,7 +72,7 @@ class ResearchSerializer(serializers.ModelSerializer):
 
             "keywords",
 
-            "featured_image",
+            "image",
 
             "pdf",
 
@@ -77,14 +83,14 @@ class ResearchSerializer(serializers.ModelSerializer):
             "status",
 
             "featured",
-            
-            "publication_type",
-
-            "publication_type_display",
 
         )
 
-    def get_featured_image(self, obj):
+    # ==========================================
+    # Image
+    # ==========================================
+
+    def get_image(self, obj):
 
         request = self.context.get("request")
 
@@ -99,6 +105,10 @@ class ResearchSerializer(serializers.ModelSerializer):
             return obj.featured_image.url
 
         return None
+
+    # ==========================================
+    # PDF
+    # ==========================================
 
     def get_pdf(self, obj):
 
