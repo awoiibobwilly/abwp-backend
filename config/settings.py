@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     "home",
     "django_filters",
     "research",
+    "about",
     
 ]
 

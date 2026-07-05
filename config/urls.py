@@ -34,6 +34,8 @@ urlpatterns = [
         include("research.urls.research_urls"),
     ),
 
+    path("api/about/", include("about.urls.about_urls")),
+
 ]
 
 
