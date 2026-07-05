@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 
 from about.models import (
     AboutHero,
+    AboutSectionIntro,
     WhoIAm,
     ProfessionalDNA,
     CoreValues,
@@ -22,6 +23,36 @@ class AboutPageAPIView(APIView):
             .order_by("-updated_at")
             .first()
         )
+
+        who_i_am_intro = AboutSectionIntro.objects.filter(
+            section_key=AboutSectionIntro.WHO_I_AM,
+            is_active=True,
+        ).first()
+
+        professional_dna_intro = AboutSectionIntro.objects.filter(
+            section_key=AboutSectionIntro.PROFESSIONAL_DNA,
+            is_active=True,
+        ).first()
+
+        core_values_intro = AboutSectionIntro.objects.filter(
+            section_key=AboutSectionIntro.CORE_VALUES,
+            is_active=True,
+        ).first()
+
+        selected_achievements_intro = AboutSectionIntro.objects.filter(
+            section_key=AboutSectionIntro.SELECTED_ACHIEVEMENTS,
+            is_active=True,
+        ).first()
+
+        credentials_intro = AboutSectionIntro.objects.filter(
+            section_key=AboutSectionIntro.CREDENTIALS,
+            is_active=True,
+        ).first()
+
+        skills_intro = AboutSectionIntro.objects.filter(
+            section_key=AboutSectionIntro.SKILLS,
+            is_active=True,
+        ).first()
 
         who_i_am = WhoIAm.objects.filter(
             is_active=True
@@ -59,12 +90,24 @@ class AboutPageAPIView(APIView):
 
         payload = {
             "hero": hero,
+
+            "who_i_am_intro": who_i_am_intro,
             "who_i_am": who_i_am,
+
+            "professional_dna_intro": professional_dna_intro,
             "professional_dna": professional_dna,
+
+            "core_values_intro": core_values_intro,
             "core_values": core_values,
+
+            "selected_achievements_intro": selected_achievements_intro,
             "selected_achievements": selected_achievements,
+
+            "credentials_intro": credentials_intro,
             "education_credentials": education_credentials,
             "certification_credentials": certification_credentials,
+
+            "skills_intro": skills_intro,
             "skills": skills,
         }
 

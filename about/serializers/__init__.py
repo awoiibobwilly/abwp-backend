@@ -6,6 +6,7 @@ from .selected_achievement_serializer import SelectedAchievementSerializer
 from .credential_serializer import CredentialSerializer
 from .skill_category_serializer import SkillCategorySerializer
 from .about_page_serializer import AboutPageSerializer
+from .about_section_intro_serializer import AboutSectionIntroSerializer
 
 __all__ = [
     "AboutHeroSerializer",
@@ -16,4 +17,5 @@ __all__ = [
     "CredentialSerializer",
     "SkillCategorySerializer",
     "AboutPageSerializer",
+    "AboutSectionIntroSerializer",
 ]
