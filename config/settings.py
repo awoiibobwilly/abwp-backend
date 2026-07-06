@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     "django_filters",
     "research",
     "about",
+    "journey",
     
 ]
 
