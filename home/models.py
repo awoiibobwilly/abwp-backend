@@ -212,7 +212,7 @@ class Highlight(models.Model):
         return self.title
 
 # ========================================
-    # TECHNOLOGY MODEL
+# TECHNOLOGY MODEL
 # ========================================
 
 
@@ -221,103 +221,126 @@ class Technology(models.Model):
     objects = TechnologyManager()
 
     name = models.CharField(
-
         max_length=100,
-
         unique=True,
-
         help_text="Technology name (e.g., React, Django, PostgreSQL)"
-
     )
 
     slug = models.SlugField(
-
         unique=True
-
     )
 
     icon = models.CharField(
-
         max_length=100,
-
         help_text="React icon name (e.g., FaReact)",
-
         blank=True,
-
     )
 
     color = models.CharField(
-
         max_length=20,
-
         default="#2563eb",
-
         help_text="Primary brand color (Hex code)"
-
     )
 
     website = models.URLField(
-
         blank=True
-
     )
 
     description = models.TextField(
-
         blank=True
+    )
 
+    group = models.ForeignKey(
+        "TechnologyGroup",
+        on_delete=models.SET_NULL,
+        related_name="technologies",
+        blank=True,
+        null=True,
+        help_text="Optional technology group for portfolio display (e.g. Frontend, Backend, Data Science)."
     )
 
     proficiency = models.PositiveSmallIntegerField(
-
         default=80,
-
         help_text="Proficiency percentage (0–100)"
-
     )
 
     display_order = models.PositiveIntegerField(
-
         default=0
-
     )
 
     is_active = models.BooleanField(
-
         default=True
-
     )
 
     created_at = models.DateTimeField(
-
         auto_now_add=True
-
     )
 
     updated_at = models.DateTimeField(
-
         auto_now=True
-
     )
 
     class Meta:
-
         ordering = [
-
             "display_order",
-
             "name",
-
         ]
-
         verbose_name = "Technology"
-
         verbose_name_plural = "Technologies"
 
     def __str__(self):
-
         return self.name
-    
+
+
+# ==========================================================
+# TECHNOLOGY GROUP MODEL
+# HOME APP
+# ABW PORTFOLIO
+# ==========================================================
+
+class TechnologyGroup(models.Model):
+    name = models.CharField(
+        max_length=100,
+        unique=True,
+        help_text="Group name (e.g. Frontend, Backend, Mobile)"
+    )
+
+    slug = models.SlugField(
+        unique=True
+    )
+
+    description = models.TextField(
+        blank=True
+    )
+
+    display_order = models.PositiveIntegerField(
+        default=0
+    )
+
+    is_active = models.BooleanField(
+        default=True
+    )
+
+    created_at = models.DateTimeField(
+        auto_now_add=True
+    )
+
+    updated_at = models.DateTimeField(
+        auto_now=True
+    )
+
+    class Meta:
+        ordering = [
+            "display_order",
+            "name",
+        ]
+        verbose_name = "Technology Group"
+        verbose_name_plural = "Technology Groups"
+
+    def __str__(self):
+        return self.name
+
+
 # ==================================
     # PROJECT CATEGORY MODEL
 # ==================================
