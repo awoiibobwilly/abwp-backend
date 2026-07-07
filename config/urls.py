@@ -39,6 +39,8 @@ urlpatterns = [
 
     path("api/journey/", include("journey.urls.journey_urls")),
 
+    path("api/projects/", include("projects.urls")),
+
 ]
 
 
