@@ -13,6 +13,7 @@ from .models import (
     ProjectMedia,
     Journey,
     Testimonial,
+    TechnologyGroup,
 )
 
 # ==========================================================
@@ -106,6 +107,7 @@ class TechnologyAdmin(admin.ModelAdmin):
 
     list_display = (
         "name",
+        "group",
         "proficiency",
         "display_order",
         "is_active",
@@ -116,7 +118,52 @@ class TechnologyAdmin(admin.ModelAdmin):
     )
 
     list_filter = (
+        "group",
         "proficiency",
+        "is_active",
+    )
+
+    search_fields = (
+        "name",
+        "description",
+    )
+
+    ordering = (
+        "display_order",
+        "name",
+    )
+
+    list_per_page = 25
+
+    prepopulated_fields = {
+        "slug": ("name",),
+    }
+
+
+# ==========================================================
+# TECHNOLOGY GROUPS
+# ==========================================================
+
+
+@admin.register(TechnologyGroup)
+class TechnologyGroupAdmin(admin.ModelAdmin):
+    list_display = (
+        "name",
+        "display_order",
+        "is_active",
+        "updated_at",
+    )
+
+    list_display_links = (
+        "name",
+    )
+
+    list_editable = (
+        "display_order",
+        "is_active",
+    )
+
+    list_filter = (
         "is_active",
     )
 
