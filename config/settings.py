@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     "research",
     "about",
     "journey",
+    "projects",
     
 ]
 
