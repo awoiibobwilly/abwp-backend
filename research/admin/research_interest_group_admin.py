@@ -14,6 +14,10 @@ class ResearchInterestInline(admin.TabularInline):
         "display_order",
         "is_active",
     )
+    ordering = (
+        "display_order",
+        "name",
+    )
 
 
 @admin.register(ResearchInterestGroup)
@@ -33,6 +37,7 @@ class ResearchInterestGroupAdmin(admin.ModelAdmin):
     search_fields = (
         "title",
         "description",
+        "slug",
     )
 
     ordering = (

@@ -17,10 +17,7 @@ class ResearchMethodologyItemSerializer(serializers.ModelSerializer):
 
 
 class ResearchMethodologyGroupSerializer(serializers.ModelSerializer):
-    items = ResearchMethodologyItemSerializer(
-        many=True,
-        read_only=True,
-    )
+    items = serializers.SerializerMethodField()
 
     class Meta:
         model = ResearchMethodologyGroup
@@ -33,3 +30,15 @@ class ResearchMethodologyGroupSerializer(serializers.ModelSerializer):
             "display_order",
             "items",
         )
+
+    def get_items(self, obj):
+        queryset = obj.items.filter(
+            is_active=True,
+        ).order_by(
+            "display_order",
+            "name",
+        )
+        return ResearchMethodologyItemSerializer(
+            queryset,
+            many=True,
+        ).data

@@ -22,18 +22,64 @@ from ..serializers import (
 )
 
 
+# ==========================================================
+# HELPERS
+# ==========================================================
+
+def serialize_section_intro(section_intros, section_key):
+    """
+    Safely serialize a section intro by its section key.
+
+    Returns:
+        - serialized section intro object if found
+        - None if no intro exists for that section
+    """
+    intro = section_intros.get(section_key)
+
+    if not intro:
+        return None
+
+    return ResearchSectionIntroSerializer(intro).data
+
+
+def serialize_optional_instance(serializer_class, instance, **kwargs):
+    """
+    Safely serialize a single optional model instance.
+
+    Returns:
+        - serialized object if instance exists
+        - None if instance is missing
+    """
+    if not instance:
+        return None
+
+    return serializer_class(instance, **kwargs).data
+
+
+# ==========================================================
+# RESEARCH PAGE API VIEW
+# ==========================================================
+
 class ResearchPageAPIView(APIView):
     """
     Returns the full Research page payload.
     """
 
     def get(self, request, *args, **kwargs):
+        # ==================================================
+        # HERO
+        # ==================================================
+
         hero = (
             ResearchPageHero.objects
             .filter(is_active=True)
-            .order_by("-id")
+            .order_by("-updated_at", "-id")
             .first()
         )
+
+        # ==================================================
+        # SECTION INTROS
+        # ==================================================
 
         section_intros = {
             intro.section_key: intro
@@ -42,31 +88,49 @@ class ResearchPageAPIView(APIView):
             )
         }
 
+        # ==================================================
+        # RESEARCH AREAS
+        # ==================================================
+
         areas = (
             ResearchArea.objects
             .filter(is_active=True)
             .order_by("display_order", "title")
         )
 
+        # ==================================================
+        # METHODOLOGIES
+        # ==================================================
+
         methodology_groups = (
             ResearchMethodologyGroup.objects
             .filter(is_active=True)
-            .prefetch_related("items")
             .order_by("display_order", "title")
         )
+
+        # ==================================================
+        # RESEARCH INTERESTS
+        # ==================================================
 
         interest_groups = (
             ResearchInterestGroup.objects
             .filter(is_active=True)
-            .prefetch_related("items")
             .order_by("display_order", "title")
         )
+
+        # ==================================================
+        # RESEARCH PHILOSOPHY
+        # ==================================================
 
         philosophy_points = (
             ResearchPhilosophyPoint.objects
             .filter(is_active=True)
             .order_by("display_order", "title")
         )
+
+        # ==================================================
+        # PUBLICATIONS
+        # ==================================================
 
         featured_publications = (
             Research.objects
@@ -76,7 +140,7 @@ class ResearchPageAPIView(APIView):
             )
             .select_related("category")
             .prefetch_related("keywords")
-            .order_by("display_order", "-year")
+            .order_by("display_order", "-year", "title")
         )
 
         all_publications = (
@@ -84,34 +148,32 @@ class ResearchPageAPIView(APIView):
             .filter(published=True)
             .select_related("category")
             .prefetch_related("keywords")
-            .order_by("display_order", "-year")
+            .order_by("display_order", "-year", "title")
         )
 
+        # ==================================================
+        # RESPONSE PAYLOAD
+        # ==================================================
+
         data = {
-            "hero": (
-                ResearchPageHeroSerializer(
-                    hero,
-                    context={"request": request},
-                ).data
-                if hero else None
+            "hero": serialize_optional_instance(
+                ResearchPageHeroSerializer,
+                hero,
+                context={"request": request},
             ),
 
-            "areas_intro": (
-                ResearchSectionIntroSerializer(
-                    section_intros.get("areas")
-                ).data
-                if section_intros.get("areas") else None
+            "areas_intro": serialize_section_intro(
+                section_intros,
+                "areas",
             ),
             "areas": ResearchAreaSerializer(
                 areas,
                 many=True,
             ).data,
 
-            "publications_intro": (
-                ResearchSectionIntroSerializer(
-                    section_intros.get("publications")
-                ).data
-                if section_intros.get("publications") else None
+            "publications_intro": serialize_section_intro(
+                section_intros,
+                "publications",
             ),
             "featured_publications": ResearchSerializer(
                 featured_publications,
@@ -124,33 +186,27 @@ class ResearchPageAPIView(APIView):
                 context={"request": request},
             ).data,
 
-            "methodologies_intro": (
-                ResearchSectionIntroSerializer(
-                    section_intros.get("methodologies")
-                ).data
-                if section_intros.get("methodologies") else None
+            "methodologies_intro": serialize_section_intro(
+                section_intros,
+                "methodologies",
             ),
             "methodology_groups": ResearchMethodologyGroupSerializer(
                 methodology_groups,
                 many=True,
             ).data,
 
-            "interests_intro": (
-                ResearchSectionIntroSerializer(
-                    section_intros.get("interests")
-                ).data
-                if section_intros.get("interests") else None
+            "interests_intro": serialize_section_intro(
+                section_intros,
+                "interests",
             ),
             "interest_groups": ResearchInterestGroupSerializer(
                 interest_groups,
                 many=True,
             ).data,
 
-            "philosophy_intro": (
-                ResearchSectionIntroSerializer(
-                    section_intros.get("philosophy")
-                ).data
-                if section_intros.get("philosophy") else None
+            "philosophy_intro": serialize_section_intro(
+                section_intros,
+                "philosophy",
             ),
             "philosophy_points": ResearchPhilosophyPointSerializer(
                 philosophy_points,

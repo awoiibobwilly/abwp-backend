@@ -14,6 +14,10 @@ class ResearchMethodologyItemInline(admin.TabularInline):
         "display_order",
         "is_active",
     )
+    ordering = (
+        "display_order",
+        "name",
+    )
 
 
 @admin.register(ResearchMethodologyGroup)
@@ -33,6 +37,7 @@ class ResearchMethodologyGroupAdmin(admin.ModelAdmin):
     search_fields = (
         "title",
         "description",
+        "slug",
     )
 
     ordering = (

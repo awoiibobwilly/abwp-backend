@@ -17,10 +17,7 @@ class ResearchInterestSerializer(serializers.ModelSerializer):
 
 
 class ResearchInterestGroupSerializer(serializers.ModelSerializer):
-    items = ResearchInterestSerializer(
-        many=True,
-        read_only=True,
-    )
+    items = serializers.SerializerMethodField()
 
     class Meta:
         model = ResearchInterestGroup
@@ -32,3 +29,15 @@ class ResearchInterestGroupSerializer(serializers.ModelSerializer):
             "display_order",
             "items",
         )
+
+    def get_items(self, obj):
+        queryset = obj.items.filter(
+            is_active=True,
+        ).order_by(
+            "display_order",
+            "name",
+        )
+        return ResearchInterestSerializer(
+            queryset,
+            many=True,
+        ).data

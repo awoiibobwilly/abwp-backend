@@ -20,7 +20,9 @@ class ResearchArea(models.Model):
         blank=True,
     )
 
-    description = models.TextField()
+    description = models.TextField(
+        help_text="Short but substantive description of this research area.",
+    )
 
     icon = models.CharField(
         max_length=100,
@@ -31,7 +33,7 @@ class ResearchArea(models.Model):
     accent_color = models.CharField(
         max_length=7,
         default="#2563EB",
-        help_text="Hex colour used for this area card.",
+        help_text="Hex colour used by the frontend card UI.",
     )
 
     display_order = models.PositiveIntegerField(

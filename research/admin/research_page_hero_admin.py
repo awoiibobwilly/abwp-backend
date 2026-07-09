@@ -47,7 +47,10 @@ class ResearchPageHeroAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "is_active",
-                )
+                ),
+                "description": (
+                    "Only one Research Page Hero should be active at a time."
+                ),
             },
         ),
         (
@@ -61,3 +64,10 @@ class ResearchPageHeroAdmin(admin.ModelAdmin):
             },
         ),
     )
+
+    def has_add_permission(self, request):
+        """
+        Allow multiple records for drafting/history if needed.
+        If you want a strict singleton, return False when count >= 1.
+        """
+        return True

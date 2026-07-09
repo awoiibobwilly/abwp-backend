@@ -19,6 +19,7 @@ class ResearchAreaAdmin(admin.ModelAdmin):
     search_fields = (
         "title",
         "description",
+        "slug",
     )
 
     ordering = (

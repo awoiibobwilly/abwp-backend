@@ -6,7 +6,8 @@ class ResearchMethodologyGroup(models.Model):
     """
     Group headings such as:
     - Research Methodologies
-    - Tools & Platforms
+    - Data Collection & Analytical Approaches
+    - Research Tools & Platforms
     """
 
     title = models.CharField(
@@ -22,6 +23,7 @@ class ResearchMethodologyGroup(models.Model):
 
     description = models.TextField(
         blank=True,
+        help_text="Optional supporting description for this methodology group.",
     )
 
     icon = models.CharField(

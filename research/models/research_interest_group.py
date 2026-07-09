@@ -5,9 +5,6 @@ from django.utils.text import slugify
 class ResearchInterestGroup(models.Model):
     """
     Cluster heading for ongoing research interests.
-    Example:
-    - Health Systems & Financing
-    - Digital Health & Innovation
     """
 
     title = models.CharField(
@@ -23,6 +20,7 @@ class ResearchInterestGroup(models.Model):
 
     description = models.TextField(
         blank=True,
+        help_text="Optional supporting description for this research interest cluster.",
     )
 
     display_order = models.PositiveIntegerField(
@@ -57,7 +55,7 @@ class ResearchInterestGroup(models.Model):
 
 class ResearchInterest(models.Model):
     """
-    Individual interest item belonging to a research interest group.
+    Individual research interest item belonging to a group.
     """
 
     group = models.ForeignKey(

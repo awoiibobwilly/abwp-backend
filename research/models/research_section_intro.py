@@ -18,17 +18,22 @@ class ResearchSectionIntro(models.Model):
         max_length=50,
         choices=SECTION_CHOICES,
         unique=True,
+        help_text="Unique page section identifier.",
     )
 
     eyebrow = models.CharField(
         max_length=120,
+        help_text="Short section label shown above the section title.",
     )
 
     title = models.CharField(
         max_length=255,
+        help_text="Main heading for this section.",
     )
 
-    intro = models.TextField()
+    intro = models.TextField(
+        help_text="Introductory paragraph for this section.",
+    )
 
     is_active = models.BooleanField(
         default=True,

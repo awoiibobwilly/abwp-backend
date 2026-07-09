@@ -11,7 +11,9 @@ class ResearchPhilosophyPoint(models.Model):
         unique=True,
     )
 
-    description = models.TextField()
+    description = models.TextField(
+        help_text="Core principle description shown on the Research page.",
+    )
 
     icon = models.CharField(
         max_length=100,
@@ -22,7 +24,7 @@ class ResearchPhilosophyPoint(models.Model):
     accent_color = models.CharField(
         max_length=7,
         default="#2563EB",
-        help_text="Optional hex colour for UI use.",
+        help_text="Optional hex colour used by the frontend card UI.",
     )
 
     display_order = models.PositiveIntegerField(

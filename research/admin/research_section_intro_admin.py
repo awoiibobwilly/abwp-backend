@@ -8,6 +8,7 @@ class ResearchSectionIntroAdmin(admin.ModelAdmin):
     list_display = (
         "section_key",
         "title",
+        "eyebrow",
         "is_active",
         "updated_at",
     )
