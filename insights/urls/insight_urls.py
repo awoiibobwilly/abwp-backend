@@ -16,18 +16,18 @@ urlpatterns = [
         name="insight-page",
     ),
     path(
-        "insights/",
+        "",
         InsightListAPIView.as_view(),
         name="insight-list",
     ),
     path(
-        "insights/<slug:slug>/",
-        InsightDetailAPIView.as_view(),
-        name="insight-detail",
-    ),
-    path(
-        "insights/preview/<int:pk>/",
+        "preview/<int:pk>/",
         InsightPreviewAPIView.as_view(),
         name="insight-preview",
+    ),
+    path(
+        "<slug:slug>/",
+        InsightDetailAPIView.as_view(),
+        name="insight-detail",
     ),
 ]

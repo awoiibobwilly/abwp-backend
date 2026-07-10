@@ -42,7 +42,7 @@ urlpatterns = [
     path("api/projects/", include("projects.urls")),
 
 
-    path("api/portfolio/", include("insights.urls.insight_urls")),
+    path("api/insights/", include("insights.urls.insight_urls")),
 
 ]
 
