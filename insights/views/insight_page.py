@@ -12,30 +12,65 @@ from insights.serializers import InsightSerializer
 # ==========================================================
 
 class InsightPageAPIView(APIView):
+
     def get(self, request, *args, **kwargs):
+
         insight = (
-            Insight.objects.filter(is_active=True)
-            .prefetch_related(
-                "section_intros",
-                "categories",
-                "featured_articles",
-                "thoughts",
-                "quotes",
+
+            Insight.objects
+
+            .filter(
+                is_active=True,
             )
-            .select_related("hero", "newsletter")
+
+            .select_related(
+                "hero",
+                "newsletter",
+            )
+
+            .prefetch_related(
+
+                "hero__stats",
+
+                "section_intros",
+
+                "categories",
+
+                "featured_articles",
+
+                "thoughts",
+
+                "quotes",
+
+            )
+
             .first()
+
         )
 
         if not insight:
+
             return Response(
+
                 {
                     "detail": "No active Insights page found."
                 },
+
                 status=status.HTTP_404_NOT_FOUND,
+
             )
 
         serializer = InsightSerializer(
+
             insight,
-            context={"request": request}
+
+            context={
+                "request": request,
+            },
+
         )
-        return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(
+            serializer.data,
+            status=status.HTTP_200_OK,
+        )

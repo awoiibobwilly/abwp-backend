@@ -6,6 +6,7 @@ from .featured_article import FeaturedArticle
 from .thought import Thought
 from .quote import Quote
 from .newsletter import Newsletter
+from .insight_hero_stat import InsightHeroStat
 
 __all__ = [
     "Insight",
@@ -16,4 +17,5 @@ __all__ = [
     "Thought",
     "Quote",
     "Newsletter",
+    "InsightHeroStat",
 ]

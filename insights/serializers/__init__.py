@@ -6,7 +6,7 @@ from .featured_article_serializer import FeaturedArticleSerializer
 from .thought_serializer import ThoughtSerializer
 from .quote_serializer import QuoteSerializer
 from .newsletter_serializer import NewsletterSerializer
-
+from .insight_hero_stat import InsightHeroStatSerializer
 __all__ = [
     "InsightSerializer",
     "InsightPageHeroSerializer",
@@ -16,4 +16,5 @@ __all__ = [
     "ThoughtSerializer",
     "QuoteSerializer",
     "NewsletterSerializer",
+    "InsightHeroStatSerializer",
 ]

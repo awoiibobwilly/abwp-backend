@@ -10,5 +10,10 @@ from insights.serializers import InsightSerializer
 # ==========================================================
 
 class InsightListAPIView(generics.ListAPIView):
-    queryset = Insight.objects.all().order_by("title")
+
+    queryset = (
+        Insight.objects.all()
+        .order_by("title")
+    )
+
     serializer_class = InsightSerializer

@@ -10,16 +10,34 @@ from insights.serializers import InsightSerializer
 # ==========================================================
 
 class InsightDetailAPIView(generics.RetrieveAPIView):
+
     queryset = (
-        Insight.objects.all()
-        .prefetch_related(
-            "section_intros",
-            "categories",
-            "featured_articles",
-            "thoughts",
-            "quotes",
+
+        Insight.objects
+
+        .select_related(
+            "hero",
+            "newsletter",
         )
-        .select_related("hero", "newsletter")
+
+        .prefetch_related(
+
+            "hero__stats",
+
+            "section_intros",
+
+            "categories",
+
+            "featured_articles",
+
+            "thoughts",
+
+            "quotes",
+
+        )
+
     )
+
     serializer_class = InsightSerializer
+
     lookup_field = "slug"

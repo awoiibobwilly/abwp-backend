@@ -6,3 +6,4 @@ from .featured_article_admin import FeaturedArticleAdmin
 from .thought_admin import ThoughtAdmin
 from .quote_admin import QuoteAdmin
 from .newsletter_admin import NewsletterAdmin
+from .hero_stat_admin import InsightHeroStatInline
