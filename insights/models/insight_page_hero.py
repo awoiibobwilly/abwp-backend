@@ -26,6 +26,11 @@ class InsightPageHero(models.Model):
         help_text="Supporting hero subtitle / description."
     )
 
+    description = models.TextField(
+        blank=True,
+        help_text="Supporting hero subtitle / description."
+    )
+
     class Meta:
         verbose_name = "Insight Page Hero"
         verbose_name_plural = "Insight Page Hero"
