@@ -2,7 +2,9 @@ from rest_framework import serializers
 
 from insights.models import InsightPageHero
 
-from .insight_hero_stat import InsightHeroStatSerializer
+from .insight_hero_stat_serializer import (
+    InsightHeroStatSerializer,
+)
 
 
 # ==========================================================

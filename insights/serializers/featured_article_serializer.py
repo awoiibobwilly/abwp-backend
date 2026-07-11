@@ -11,11 +11,10 @@ from .insight_category_serializer import (
 # FEATURED ARTICLE SERIALIZER
 # ==========================================================
 
-class FeaturedArticleSerializer(
-    serializers.ModelSerializer
-):
+class FeaturedArticleSerializer(serializers.ModelSerializer):
+
     category = InsightCategorySerializer(
-        read_only=True
+        read_only=True,
     )
 
     cover_image = serializers.SerializerMethodField()
@@ -51,6 +50,4 @@ class FeaturedArticleSerializer(
         return obj.cover_image.url
 
     def get_read_time(self, obj):
-        return (
-            f"{obj.read_time_minutes} min read"
-        )
+        return f"{obj.read_time_minutes} min read"
