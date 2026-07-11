@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from insights.models import FeaturedArticle
 
 
@@ -17,6 +18,7 @@ class FeaturedArticleAdmin(admin.ModelAdmin):
         "is_featured",
         "is_active",
     )
+
     list_filter = (
         "insight",
         "category",
@@ -24,24 +26,68 @@ class FeaturedArticleAdmin(admin.ModelAdmin):
         "is_active",
         "published_at",
     )
+
     search_fields = (
         "title",
         "slug",
-        "category",
         "excerpt",
         "insight__title",
+        "category__name",
     )
+
     list_editable = (
         "display_order",
         "is_featured",
         "is_active",
     )
+
+    autocomplete_fields = (
+        "category",
+    )
+
     prepopulated_fields = {
         "slug": ("title",),
     }
+
     ordering = (
         "insight",
         "display_order",
         "-published_at",
         "title",
+    )
+
+    fieldsets = (
+        (
+            "Article Information",
+            {
+                "fields": (
+                    "insight",
+                    "title",
+                    "slug",
+                    "category",
+                    "excerpt",
+                )
+            },
+        ),
+        (
+            "Media & Publication",
+            {
+                "fields": (
+                    "cover_image",
+                    "external_url",
+                    "published_at",
+                    "read_time_minutes",
+                )
+            },
+        ),
+        (
+            "Display Settings",
+            {
+                "fields": (
+                    "display_order",
+                    "is_featured",
+                    "is_active",
+                )
+            },
+        ),
     )

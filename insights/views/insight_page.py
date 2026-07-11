@@ -7,70 +7,64 @@ from insights.serializers import InsightSerializer
 
 
 # ==========================================================
-# INSIGHT PAGE VIEW
-# RETURNS THE ACTIVE INSIGHTS PAGE PAYLOAD
+# INSIGHT PAGE API VIEW
+# RETURNS THE COMPLETE ACTIVE INSIGHTS PAGE PAYLOAD
 # ==========================================================
 
 class InsightPageAPIView(APIView):
+    """
+    Returns the complete payload required
+    to render the Insights page.
+    """
 
     def get(self, request, *args, **kwargs):
 
         insight = (
-
             Insight.objects
-
-            .filter(
-                is_active=True,
-            )
-
+            .filter(is_active=True)
             .select_related(
                 "hero",
                 "newsletter",
             )
-
             .prefetch_related(
-
                 "hero__stats",
-
                 "section_intros",
 
+                # Knowledge Domains
                 "categories",
 
+                # Editorial Content
                 "featured_articles",
+                "featured_articles__category",
 
+                # Additional Sections
                 "thoughts",
-
                 "quotes",
-
             )
-
             .first()
-
         )
 
-        if not insight:
-
+        if insight is None:
             return Response(
-
                 {
-                    "detail": "No active Insights page found."
+                    "detail": (
+                        "No active Insights page "
+                        "configuration found."
+                    )
                 },
-
                 status=status.HTTP_404_NOT_FOUND,
-
             )
 
         serializer = InsightSerializer(
-
             insight,
-
             context={
                 "request": request,
             },
-
         )
 
         return Response(
             serializer.data,
             status=status.HTTP_200_OK,
         )
+		
+		

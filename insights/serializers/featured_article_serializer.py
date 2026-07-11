@@ -1,40 +1,51 @@
 from rest_framework import serializers
+
 from insights.models import FeaturedArticle
 
+from .insight_category_serializer import (
+    InsightCategorySerializer,
+)
 
-# ==========================================================
-# FEATURED ARTICLE SERIALIZER
-# ==========================================================
 
-class FeaturedArticleSerializer(serializers.ModelSerializer):
-    cover_image_url = serializers.SerializerMethodField()
-    published_date = serializers.SerializerMethodField()
+class FeaturedArticleSerializer(
+    serializers.ModelSerializer
+):
+    category = InsightCategorySerializer(
+        read_only=True
+    )
+
+    read_time = serializers.SerializerMethodField()
+
+    cover_image = serializers.SerializerMethodField()
 
     class Meta:
         model = FeaturedArticle
-        fields = [
+
+        fields = (
             "id",
             "title",
             "slug",
             "category",
             "excerpt",
-            "cover_image_url",
+            "cover_image",
             "read_time",
-            "published_date",
+            "published_at",
             "external_url",
-            "is_featured",
-            "display_order",
-        ]
+        )
 
-    def get_cover_image_url(self, obj):
+    def get_read_time(self, obj):
+        return f"{obj.read_time_minutes} min read"
+
+    def get_cover_image(self, obj):
         request = self.context.get("request")
-        if obj.cover_image:
-            if request:
-                return request.build_absolute_uri(obj.cover_image.url)
-            return obj.cover_image.url
-        return None
 
-    def get_published_date(self, obj):
-        if obj.published_at:
-            return obj.published_at.strftime("%B %Y")
-        return ""
+        if not obj.cover_image:
+            return None
+
+        if request:
+            return request.build_absolute_uri(
+                obj.cover_image.url
+            )
+
+        return obj.cover_image.url
+		

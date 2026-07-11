@@ -18,10 +18,12 @@ class FeaturedArticle(models.Model):
         max_length=255,
         blank=True
     )
-    category = models.CharField(
-        max_length=120,
+    category = models.ForeignKey(
+        "insights.InsightCategory",
+        on_delete=models.SET_NULL,
+        related_name="featured_articles",
+        null=True,
         blank=True,
-        help_text="Primary category label shown on the card."
     )
     excerpt = models.TextField(
         blank=True,
@@ -32,10 +34,8 @@ class FeaturedArticle(models.Model):
         blank=True,
         null=True
     )
-    read_time = models.CharField(
-        max_length=50,
-        blank=True,
-        help_text='Example: "6 min read"'
+    read_time_minutes = models.PositiveIntegerField(
+        default=5,
     )
     published_at = models.DateField(
         blank=True,

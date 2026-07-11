@@ -1,38 +1,33 @@
 from django.contrib import admin
+
 from insights.models import InsightCategory
 
-
-# ==========================================================
-# INSIGHT CATEGORY ADMIN
-# ==========================================================
 
 @admin.register(InsightCategory)
 class InsightCategoryAdmin(admin.ModelAdmin):
     list_display = (
         "name",
-        "insight",
-        "slug",
         "display_order",
+        "accent_color",
         "is_active",
     )
+
     list_filter = (
         "is_active",
-        "insight",
     )
-    search_fields = (
-        "name",
-        "slug",
-        "insight__title",
-    )
+
     list_editable = (
         "display_order",
+        "accent_color",
         "is_active",
     )
-    prepopulated_fields = {
-        "slug": ("name",),
-    }
+
+    search_fields = (
+        "name",
+        "description",
+    )
+
     ordering = (
-        "insight",
         "display_order",
         "name",
     )
