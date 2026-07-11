@@ -15,7 +15,23 @@ class InsightHeroStatSerializer(
 
         model = InsightHeroStat
 
+        fields = (from rest_framework import serializers
+
+from insights.models import InsightHeroStat
+
+
+class InsightHeroStatSerializer(
+    serializers.ModelSerializer
+):
+    class Meta:
+        model = InsightHeroStat
+
         fields = (
+            "id",
+            "value",
+            "label",
+            "display_order",
+        )
             "id",
             "value",
             "label",

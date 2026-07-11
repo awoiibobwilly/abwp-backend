@@ -3,9 +3,11 @@ from rest_framework import serializers
 from insights.models import InsightCategory
 
 
-class InsightCategorySerializer(
-    serializers.ModelSerializer
-):
+# ==========================================================
+# INSIGHT CATEGORY SERIALIZER
+# ==========================================================
+
+class InsightCategorySerializer(serializers.ModelSerializer):
     article_count = serializers.SerializerMethodField()
 
     class Meta:
@@ -21,7 +23,8 @@ class InsightCategorySerializer(
         )
 
     def get_article_count(self, obj):
-        return obj.featured_articles.filter(
-            is_active=True
-        ).count()
-		
+        return (
+            obj.featured_articles
+            .filter(is_active=True)
+            .count()
+        )

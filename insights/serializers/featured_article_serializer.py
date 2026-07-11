@@ -7,6 +7,10 @@ from .insight_category_serializer import (
 )
 
 
+# ==========================================================
+# FEATURED ARTICLE SERIALIZER
+# ==========================================================
+
 class FeaturedArticleSerializer(
     serializers.ModelSerializer
 ):
@@ -14,9 +18,9 @@ class FeaturedArticleSerializer(
         read_only=True
     )
 
-    read_time = serializers.SerializerMethodField()
-
     cover_image = serializers.SerializerMethodField()
+
+    read_time = serializers.SerializerMethodField()
 
     class Meta:
         model = FeaturedArticle
@@ -28,13 +32,10 @@ class FeaturedArticleSerializer(
             "category",
             "excerpt",
             "cover_image",
-            "read_time",
             "published_at",
+            "read_time",
             "external_url",
         )
-
-    def get_read_time(self, obj):
-        return f"{obj.read_time_minutes} min read"
 
     def get_cover_image(self, obj):
         request = self.context.get("request")
@@ -48,4 +49,8 @@ class FeaturedArticleSerializer(
             )
 
         return obj.cover_image.url
-		
+
+    def get_read_time(self, obj):
+        return (
+            f"{obj.read_time_minutes} min read"
+        )

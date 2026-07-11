@@ -1,28 +1,17 @@
 from rest_framework import serializers
+
 from insights.models import Thought
 
 
-# ==========================================================
-# THOUGHT SERIALIZER
-# ==========================================================
-
-class ThoughtSerializer(serializers.ModelSerializer):
-    published_date = serializers.SerializerMethodField()
-
+class ThoughtSerializer(
+    serializers.ModelSerializer
+):
     class Meta:
         model = Thought
-        fields = [
+
+        fields = (
             "id",
             "title",
-            "slug",
-            "category",
-            "excerpt",
-            "published_date",
-            "external_url",
+            "content",
             "display_order",
-        ]
-
-    def get_published_date(self, obj):
-        if obj.published_at:
-            return obj.published_at.strftime("%B %Y")
-        return ""
+        )
