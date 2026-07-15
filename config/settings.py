@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     "projects",
     "insights",
     "hub",
+    "core",
     
 ]
 
