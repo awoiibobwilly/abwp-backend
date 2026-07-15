@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     "journey",
     "projects",
     "insights",
+    "hub",
     
 ]
 
