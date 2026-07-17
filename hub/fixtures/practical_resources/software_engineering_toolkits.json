@@ -1,0 +1,138 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 9,
+        "fields": {
+            "title": "Django Project Starter Checklist",
+            "slug": "django-project-starter-checklist",
+            "resource_type": "checklist",
+            "summary": "Checklist for setting up production-ready Django projects.",
+            "description": "Covers project structure, virtual environments, settings, authentication, testing, deployment and security best practices.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/django-project-checklist.webp",
+            "resource_file": null,
+            "external_url": "https://docs.djangoproject.com/",
+            "version": "5.2",
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                42,
+                46,
+                50
+            ],
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 10,
+        "fields": {
+            "title": "Git Workflow Cheat Sheet",
+            "slug": "git-workflow-cheat-sheet",
+            "resource_type": "toolkit",
+            "summary": "Quick reference for Git commands and collaborative workflows.",
+            "description": "Summarizes essential Git commands, branching strategies, pull requests, rebasing and merge conflict resolution.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/git-workflow.webp",
+            "resource_file": null,
+            "external_url": "https://git-scm.com/doc",
+            "version": "2.0",
+            "themes": [
+                5
+            ],
+            "tags": [
+                46,
+                47,
+                48
+            ],
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 11,
+        "fields": {
+            "title": "REST API Design Checklist",
+            "slug": "rest-api-design-checklist",
+            "resource_type": "checklist",
+            "summary": "Checklist for designing secure, scalable and maintainable REST APIs.",
+            "description": "Covers resource naming, HTTP methods, authentication, validation, pagination, versioning, documentation and error handling.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/rest-api-checklist.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                46,
+                49
+            ],
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 12,
+        "fields": {
+            "title": "Deployment Readiness Checklist",
+            "slug": "deployment-readiness-checklist",
+            "resource_type": "checklist",
+            "summary": "Production deployment checklist for modern web applications.",
+            "description": "Ensures infrastructure, environment variables, security, monitoring, backups and rollback plans are verified before deployment.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/deployment-checklist.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                5
+            ],
+            "tags": [
+                47,
+                49,
+                50
+            ],
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 13,
+        "fields": {
+            "title": "Code Review Template",
+            "slug": "code-review-template",
+            "resource_type": "template",
+            "summary": "Reusable template supporting structured peer code reviews.",
+            "description": "Provides review criteria covering readability, maintainability, security, testing, performance and coding standards.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/code-review-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                5
+            ],
+            "tags": [
+                42,
+                47,
+                50
+            ],
+            "display_order": 13,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

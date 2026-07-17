@@ -1,0 +1,113 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 1,
+        "fields": {
+            "title": "Clinical Audit Checklist",
+            "slug": "clinical-audit-checklist",
+            "resource_type": "checklist",
+            "summary": "A structured checklist for conducting clinical audits to improve healthcare quality and patient safety.",
+            "description": "Provides healthcare teams with a systematic approach to planning, conducting and documenting clinical audits, identifying improvement opportunities and monitoring corrective actions.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/clinical-audit-checklist.webp",
+            "resource_file": null,
+            "external_url": "https://www.who.int",
+            "version": "1.0",
+            "themes": [
+                1
+            ],
+            "tags": [
+                5,
+                7,
+                14
+            ],
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 2,
+        "fields": {
+            "title": "Infection Prevention SOP",
+            "slug": "infection-prevention-sop",
+            "resource_type": "sop",
+            "summary": "Standard operating procedure for infection prevention and control in healthcare facilities.",
+            "description": "Provides standardized procedures covering hand hygiene, PPE usage, waste management, environmental cleaning and patient safety practices.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/infection-prevention-sop.webp",
+            "resource_file": null,
+            "external_url": "https://www.cdc.gov/infection-control/",
+            "version": "2.0",
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                2,
+                6,
+                12,
+                19
+            ],
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 3,
+        "fields": {
+            "title": "Patient Assessment Template",
+            "slug": "patient-assessment-template",
+            "resource_type": "template",
+            "summary": "Structured template for comprehensive patient assessment and documentation.",
+            "description": "A reusable clinical template supporting standardized patient history, examination findings, assessment, diagnosis and management planning.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/patient-assessment-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                1
+            ],
+            "tags": [
+                1,
+                8,
+                15
+            ],
+            "display_order": 3,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 4,
+        "fields": {
+            "title": "Community Health Education Toolkit",
+            "slug": "community-health-education-toolkit",
+            "resource_type": "toolkit",
+            "summary": "Practical toolkit for planning and delivering effective community health education programmes.",
+            "description": "Contains planning guides, facilitation checklists, communication strategies and evaluation tools for community health promotion initiatives.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/community-health-toolkit.webp",
+            "resource_file": null,
+            "external_url": "https://www.unicef.org",
+            "version": "1.2",
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                15,
+                19,
+                20
+            ],
+            "display_order": 4,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

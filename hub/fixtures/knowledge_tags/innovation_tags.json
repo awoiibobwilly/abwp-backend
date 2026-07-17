@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 91,
+        "fields": {
+            "name": "Innovation",
+            "slug": "innovation",
+            "description": "Resources related to developing new ideas, approaches and solutions that create meaningful value.",
+            "display_order": 91,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 92,
+        "fields": {
+            "name": "Design Thinking",
+            "slug": "design-thinking",
+            "description": "Resources related to human-centered problem solving, ideation and iterative solution design.",
+            "display_order": 92,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 93,
+        "fields": {
+            "name": "Entrepreneurship",
+            "slug": "entrepreneurship",
+            "description": "Resources related to identifying opportunities, creating ventures and delivering sustainable value.",
+            "display_order": 93,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 94,
+        "fields": {
+            "name": "Product Strategy",
+            "slug": "product-strategy",
+            "description": "Resources related to product vision, planning, positioning and long-term product success.",
+            "display_order": 94,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 95,
+        "fields": {
+            "name": "Business Model",
+            "slug": "business-model",
+            "description": "Resources related to designing, evaluating and improving business models and value propositions.",
+            "display_order": 95,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 96,
+        "fields": {
+            "name": "Lean Startup",
+            "slug": "lean-startup",
+            "description": "Resources related to rapid experimentation, validated learning and iterative product development.",
+            "display_order": 96,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 97,
+        "fields": {
+            "name": "Digital Innovation",
+            "slug": "digital-innovation",
+            "description": "Resources related to leveraging digital technologies to create transformative products, services and experiences.",
+            "display_order": 97,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 98,
+        "fields": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Resources related to analytical thinking, structured problem solving and solution development.",
+            "display_order": 98,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 99,
+        "fields": {
+            "name": "Emerging Technologies",
+            "slug": "emerging-technologies",
+            "description": "Resources related to evaluating and applying new and evolving technologies across industries.",
+            "display_order": 99,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 100,
+        "fields": {
+            "name": "Value Creation",
+            "slug": "value-creation",
+            "description": "Resources related to generating sustainable value for individuals, organizations and society through innovation.",
+            "display_order": 100,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

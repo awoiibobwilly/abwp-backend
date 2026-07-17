@@ -1,0 +1,121 @@
+[
+    {
+        "model": "hub.researchcontribution",
+        "pk": 9,
+        "fields": {
+            "title": "Results-Based Monitoring and Evaluation Frameworks",
+            "slug": "results-based-monitoring-evaluation-frameworks",
+            "contribution_type": "technical_report",
+            "summary": "Technical report on designing results-based monitoring and evaluation systems.",
+            "abstract": "Explores logical frameworks, performance indicators, data quality assurance and reporting mechanisms for evidence-based programme management.",
+            "publication": "Uganda Management Institute",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/results-based-me.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                8,
+                4
+            ],
+            "tags": [
+                71,
+                72,
+                31,
+                36
+            ],
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 10,
+        "fields": {
+            "title": "Performance Indicator Development for Health Programmes",
+            "slug": "performance-indicator-development-health-programmes",
+            "contribution_type": "research_report",
+            "summary": "Applied research on selecting and validating performance indicators for healthcare programmes.",
+            "abstract": "Discusses indicator development methodologies, measurement principles and practical approaches for strengthening programme monitoring.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/performance-indicators.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                8
+            ],
+            "tags": [
+                71,
+                72,
+                73
+            ],
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 11,
+        "fields": {
+            "title": "Data Quality Assessment in Monitoring and Evaluation Systems",
+            "slug": "data-quality-assessment-monitoring-evaluation",
+            "contribution_type": "technical_report",
+            "summary": "Research exploring methods for improving data quality within monitoring and evaluation systems.",
+            "abstract": "Examines data verification, completeness, consistency, timeliness and accuracy to strengthen evidence-based management.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/data-quality-assessment.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                6,
+                8
+            ],
+            "tags": [
+                52,
+                56,
+                72
+            ],
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 12,
+        "fields": {
+            "title": "Programme Evaluation for Continuous Quality Improvement",
+            "slug": "programme-evaluation-continuous-quality-improvement",
+            "contribution_type": "case_study",
+            "summary": "Case study demonstrating programme evaluation as a driver of continuous improvement.",
+            "abstract": "Illustrates how structured programme evaluation informs decision-making, organizational learning and sustainable quality improvement initiatives.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/programme-evaluation.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                8
+            ],
+            "tags": [
+                72,
+                73,
+                76
+            ],
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 5,
+        "fields": {
+            "title": "Research Proposal Template",
+            "slug": "research-proposal-template",
+            "resource_type": "template",
+            "summary": "Comprehensive template for preparing academic and applied research proposals.",
+            "description": "Provides a standardized structure covering background, problem statement, objectives, methodology, ethical considerations and budgeting.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/research-proposal-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "2.0",
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                33,
+                36
+            ],
+            "display_order": 5,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 6,
+        "fields": {
+            "title": "Literature Review Matrix",
+            "slug": "literature-review-matrix",
+            "resource_type": "spreadsheet",
+            "summary": "Matrix for organizing, comparing and synthesizing research literature.",
+            "description": "Helps researchers summarize publications, identify evidence gaps and compare study findings during literature review.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/literature-review-matrix.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                32,
+                35
+            ],
+            "display_order": 6,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 7,
+        "fields": {
+            "title": "Research Data Collection Questionnaire",
+            "slug": "research-data-collection-questionnaire",
+            "resource_type": "questionnaire",
+            "summary": "Generic questionnaire template for health and social science research.",
+            "description": "A customizable questionnaire supporting quantitative data collection while promoting consistency and high-quality research practices.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/research-questionnaire.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                33,
+                36
+            ],
+            "display_order": 7,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 8,
+        "fields": {
+            "title": "PRISMA Checklist",
+            "slug": "prisma-checklist",
+            "resource_type": "checklist",
+            "summary": "Checklist supporting transparent reporting of systematic reviews.",
+            "description": "Practical implementation checklist based on PRISMA guidance to improve completeness, transparency and reproducibility of systematic reviews.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/prisma-checklist.webp",
+            "resource_file": null,
+            "external_url": "https://www.prisma-statement.org/",
+            "version": "2020",
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                34,
+                35
+            ],
+            "display_order": 8,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "model": "hub.organization",
+        "pk": 1,
+        "fields": {
+            "name": "World Health Organization",
+            "slug": "world-health-organization",
+            "description": "The World Health Organization is the United Nations specialized agency for global public health, providing evidence-based guidance, health standards, disease surveillance and international health leadership.",
+            "website": "https://www.who.int",
+            "logo": "portfolio/hub/organizations/who.webp",
+            "organization_type": "healthcare",
+            "country": "",
+            "tags": [],
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 2,
+        "fields": {
+            "name": "Ministry of Health Uganda",
+            "slug": "ministry-of-health-uganda",
+            "description": "Uganda's national authority responsible for health policy, regulation, service delivery and strengthening the country's healthcare system.",
+            "website": "https://health.go.ug",
+            "logo": "portfolio/hub/organizations/moh-uganda.webp",
+            "organization_type": "government",
+            "country": "",
+            "tags": [],
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 3,
+        "fields": {
+            "name": "Centers for Disease Control and Prevention",
+            "slug": "centers-for-disease-control-and-prevention",
+            "description": "A leading public health agency advancing disease prevention, epidemiology, surveillance, emergency preparedness and evidence-based health practice.",
+            "website": "https://www.cdc.gov",
+            "logo": "portfolio/hub/organizations/cdc.webp",
+            "organization_type": "government",
+            "country": "",
+            "tags": [],
+            "display_order": 3,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 4,
+        "fields": {
+            "name": "United Nations Children's Fund",
+            "slug": "united-nations-childrens-fund",
+            "description": "A global organization dedicated to improving child health, nutrition, education, protection and humanitarian response worldwide.",
+            "website": "https://www.unicef.org",
+            "logo": "portfolio/hub/organizations/unicef.webp",
+            "organization_type": "ngo",
+            "country": "",
+            "tags": [],
+            "display_order": 4,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

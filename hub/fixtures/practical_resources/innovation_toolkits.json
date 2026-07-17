@@ -1,0 +1,86 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 26,
+        "fields": {
+            "title": "Business Model Canvas",
+            "slug": "business-model-canvas",
+            "resource_type": "framework",
+            "summary": "Strategic framework for designing, analyzing and improving business models.",
+            "description": "The Business Model Canvas helps entrepreneurs and innovators define value propositions, customer segments, revenue streams, partnerships and operational activities.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/business-model-canvas.webp",
+            "resource_file": null,
+            "external_url": "https://www.strategyzer.com/canvas/business-model-canvas",
+            "version": "1.0",
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                93,
+                95,
+                100
+            ],
+            "display_order": 26,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 27,
+        "fields": {
+            "title": "Lean Canvas Template",
+            "slug": "lean-canvas-template",
+            "resource_type": "template",
+            "summary": "Lean startup planning template for validating ideas and reducing business risk.",
+            "description": "Provides a one-page framework for defining customer problems, proposed solutions, unique value propositions, key metrics and competitive advantages.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/lean-canvas-template.webp",
+            "resource_file": null,
+            "external_url": "https://leanstack.com/lean-canvas",
+            "version": "1.0",
+            "themes": [
+                10
+            ],
+            "tags": [
+                93,
+                94,
+                95,
+                96
+            ],
+            "display_order": 27,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 28,
+        "fields": {
+            "title": "Design Thinking Toolkit",
+            "slug": "design-thinking-toolkit",
+            "resource_type": "toolkit",
+            "summary": "Practical toolkit for applying human-centered design to innovation challenges.",
+            "description": "Includes empathy maps, journey mapping, brainstorming exercises, rapid prototyping templates and usability testing worksheets for collaborative innovation.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/design-thinking-toolkit.webp",
+            "resource_file": null,
+            "external_url": "https://dschool.stanford.edu/resources",
+            "version": "2.0",
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                92,
+                98,
+                100
+            ],
+            "display_order": 28,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

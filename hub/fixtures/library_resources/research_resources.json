@@ -1,0 +1,156 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 6,
+        "fields": {
+            "title": "Cochrane Handbook for Systematic Reviews of Interventions",
+            "slug": "cochrane-handbook-systematic-reviews",
+            "resource_type": "guide",
+            "summary": "The definitive handbook for planning, conducting and reporting systematic reviews.",
+            "description": "The Cochrane Handbook provides internationally recognized guidance for conducting rigorous systematic reviews and evidence syntheses. It covers review methodology, bias assessment, meta-analysis, interpretation of findings and reporting standards.",
+            "cover_image": "portfolio/hub/library/covers/cochrane-handbook.webp",
+            "resource_file": null,
+            "external_url": "https://training.cochrane.org/handbook",
+            "author": "Cochrane",
+            "publisher": "Cochrane",
+            "publication_date": "2023-01-01",
+            "estimated_read_time": 90,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                32,
+                33,
+                34,
+                35
+            ],
+            "display_order": 6,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 7,
+        "fields": {
+            "title": "PRISMA 2020 Statement",
+            "slug": "prisma-2020-statement",
+            "resource_type": "framework",
+            "summary": "International reporting guideline for systematic reviews and meta-analyses.",
+            "description": "The PRISMA 2020 Statement improves transparency and completeness when reporting systematic reviews. It is considered the international standard for reporting evidence syntheses.",
+            "cover_image": "portfolio/hub/library/covers/prisma-2020.webp",
+            "resource_file": null,
+            "external_url": "https://www.prisma-statement.org/",
+            "author": "PRISMA Group",
+            "publisher": "PRISMA",
+            "publication_date": "2021-03-29",
+            "estimated_read_time": 30,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                34,
+                35
+            ],
+            "display_order": 7,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 8,
+        "fields": {
+            "title": "CONSORT 2025 Reporting Guideline",
+            "slug": "consort-reporting-guideline",
+            "resource_type": "framework",
+            "summary": "Reporting standard for randomized controlled trials.",
+            "description": "CONSORT provides a structured checklist and flow diagram to improve the transparency, completeness and reproducibility of randomized clinical trial reporting.",
+            "cover_image": "portfolio/hub/library/covers/consort.webp",
+            "resource_file": null,
+            "external_url": "https://www.consort-statement.org/",
+            "author": "CONSORT Group",
+            "publisher": "CONSORT",
+            "publication_date": "2025-01-01",
+            "estimated_read_time": 25,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                33,
+                34
+            ],
+            "display_order": 8,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 9,
+        "fields": {
+            "title": "EQUATOR Network Reporting Guidelines",
+            "slug": "equator-network-reporting-guidelines",
+            "resource_type": "documentation",
+            "summary": "Comprehensive library of reporting guidelines for health research.",
+            "description": "The EQUATOR Network promotes transparent and accurate reporting of health research by providing reporting guidelines for clinical trials, observational studies, diagnostic studies and qualitative research.",
+            "cover_image": "portfolio/hub/library/covers/equator.webp",
+            "resource_file": null,
+            "external_url": "https://www.equator-network.org/",
+            "author": "EQUATOR Network",
+            "publisher": "EQUATOR",
+            "publication_date": null,
+            "estimated_read_time": 35,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                32,
+                34,
+                35
+            ],
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 10,
+        "fields": {
+            "title": "NIH Research Methods Resources",
+            "slug": "nih-research-methods-resources",
+            "resource_type": "documentation",
+            "summary": "Official NIH resources covering biomedical research methods and best practices.",
+            "description": "A collection of educational resources supporting rigorous biomedical research, study design, reproducibility and responsible conduct of research.",
+            "cover_image": "portfolio/hub/library/covers/nih-methods.webp",
+            "resource_file": null,
+            "external_url": "https://www.nih.gov/",
+            "author": "National Institutes of Health",
+            "publisher": "NIH",
+            "publication_date": null,
+            "estimated_read_time": 40,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                33,
+                36,
+                39
+            ],
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

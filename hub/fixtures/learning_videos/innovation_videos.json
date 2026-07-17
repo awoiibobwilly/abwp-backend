@@ -1,0 +1,89 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 26,
+        "fields": {
+            "title": "Design Thinking Crash Course",
+            "slug": "design-thinking-crash-course",
+            "summary": "Stanford d.school introduction to human-centered design.",
+            "description": "Learn the Design Thinking methodology including empathy, ideation, rapid prototyping and testing for solving complex problems through innovation.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/design-thinking.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@stanforddschool",
+            "presenter": "Stanford d.school",
+            "duration_minutes": 47,
+            "published_at": null,
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                92,
+                98,
+                100
+            ],
+            "display_order": 26,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 27,
+        "fields": {
+            "title": "Startup School",
+            "slug": "startup-school",
+            "summary": "Y Combinator guidance for building successful startups.",
+            "description": "Founders and investors share practical advice on validating ideas, building products, acquiring customers and scaling innovative companies.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/startup-school.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@ycombinator",
+            "presenter": "Y Combinator",
+            "duration_minutes": 60,
+            "published_at": null,
+            "themes": [
+                10
+            ],
+            "tags": [
+                93,
+                94,
+                95,
+                96
+            ],
+            "display_order": 27,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 28,
+        "fields": {
+            "title": "Innovation by Design",
+            "slug": "innovation-by-design",
+            "summary": "IDEO explores innovation through design and creativity.",
+            "description": "IDEO designers demonstrate creative problem-solving, collaborative innovation and product design approaches used by leading organizations.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/innovation-design.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@IDEO",
+            "presenter": "IDEO",
+            "duration_minutes": 33,
+            "published_at": null,
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                92,
+                97,
+                100
+            ],
+            "display_order": 28,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

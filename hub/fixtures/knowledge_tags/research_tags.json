@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 31,
+        "fields": {
+            "name": "Research Methodology",
+            "slug": "research-methodology",
+            "description": "Resources related to designing, conducting and evaluating scientific research.",
+            "display_order": 31,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 32,
+        "fields": {
+            "name": "Evidence-Based Practice",
+            "slug": "evidence-based-practice",
+            "description": "Resources related to applying the best available evidence to professional decision-making.",
+            "display_order": 32,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 33,
+        "fields": {
+            "name": "Clinical Research",
+            "slug": "clinical-research",
+            "description": "Resources related to research involving patients, clinical interventions and healthcare outcomes.",
+            "display_order": 33,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 34,
+        "fields": {
+            "name": "Research Ethics",
+            "slug": "research-ethics",
+            "description": "Resources related to ethical principles, participant protection and responsible research conduct.",
+            "display_order": 34,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 35,
+        "fields": {
+            "name": "Systematic Review",
+            "slug": "systematic-review",
+            "description": "Resources related to systematically identifying, evaluating and synthesizing research evidence.",
+            "display_order": 35,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 36,
+        "fields": {
+            "name": "Literature Review",
+            "slug": "literature-review",
+            "description": "Resources related to reviewing and analysing existing scholarly literature.",
+            "display_order": 36,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 37,
+        "fields": {
+            "name": "Biostatistics",
+            "slug": "biostatistics",
+            "description": "Resources related to statistical methods used in health and biomedical research.",
+            "display_order": 37,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 38,
+        "fields": {
+            "name": "Qualitative Research",
+            "slug": "qualitative-research",
+            "description": "Resources related to qualitative methods including interviews, focus groups and thematic analysis.",
+            "display_order": 38,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 39,
+        "fields": {
+            "name": "Quantitative Research",
+            "slug": "quantitative-research",
+            "description": "Resources related to quantitative study design, measurement and statistical analysis.",
+            "display_order": 39,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 40,
+        "fields": {
+            "name": "Scientific Writing",
+            "slug": "scientific-writing",
+            "description": "Resources related to preparing research proposals, manuscripts, reports and academic publications.",
+            "display_order": 40,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

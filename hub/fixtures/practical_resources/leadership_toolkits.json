@@ -1,0 +1,86 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 23,
+        "fields": {
+            "title": "SWOT Analysis Template",
+            "slug": "swot-analysis-template",
+            "resource_type": "template",
+            "summary": "Structured template for conducting Strengths, Weaknesses, Opportunities and Threats analyses.",
+            "description": "Supports strategic planning by helping teams identify internal capabilities and external factors influencing organizational success and decision-making.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/swot-analysis-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                8
+            ],
+            "tags": [
+                71,
+                72,
+                75,
+                79
+            ],
+            "display_order": 23,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 24,
+        "fields": {
+            "title": "Strategic Planning Framework",
+            "slug": "strategic-planning-framework",
+            "resource_type": "framework",
+            "summary": "Framework for developing strategic plans aligned with organizational objectives.",
+            "description": "Guides leaders through vision development, goal setting, stakeholder engagement, action planning, monitoring and evaluation for sustainable organizational growth.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/strategic-planning-framework.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "2.0",
+            "themes": [
+                8
+            ],
+            "tags": [
+                72,
+                73,
+                76,
+                79
+            ],
+            "display_order": 24,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 25,
+        "fields": {
+            "title": "Meeting Agenda & Minutes Template",
+            "slug": "meeting-agenda-minutes-template",
+            "resource_type": "template",
+            "summary": "Professional template for planning meetings and documenting outcomes.",
+            "description": "Includes agenda planning, attendance tracking, discussion points, action items, responsibilities and follow-up timelines to improve organizational communication.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/meeting-agenda-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.1",
+            "themes": [
+                8
+            ],
+            "tags": [
+                71,
+                75,
+                77,
+                80
+            ],
+            "display_order": 25,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

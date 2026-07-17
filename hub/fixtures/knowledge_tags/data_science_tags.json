@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 51,
+        "fields": {
+            "name": "Data Analysis",
+            "slug": "data-analysis",
+            "description": "Resources related to inspecting, cleaning, transforming and interpreting data for informed decision-making.",
+            "display_order": 51,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 52,
+        "fields": {
+            "name": "Statistics",
+            "slug": "statistics",
+            "description": "Resources related to statistical methods, probability and quantitative data analysis.",
+            "display_order": 52,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 53,
+        "fields": {
+            "name": "Data Visualization",
+            "slug": "data-visualization",
+            "description": "Resources related to communicating insights through charts, dashboards and visual analytics.",
+            "display_order": 53,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 54,
+        "fields": {
+            "name": "Machine Learning",
+            "slug": "machine-learning",
+            "description": "Resources related to predictive modelling, supervised learning and intelligent data-driven systems.",
+            "display_order": 54,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 55,
+        "fields": {
+            "name": "Business Intelligence",
+            "slug": "business-intelligence",
+            "description": "Resources related to business analytics, reporting and decision support systems.",
+            "display_order": 55,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 56,
+        "fields": {
+            "name": "Power BI",
+            "slug": "power-bi",
+            "description": "Resources related to Microsoft Power BI dashboards, reports and business analytics.",
+            "display_order": 56,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 57,
+        "fields": {
+            "name": "Tableau",
+            "slug": "tableau",
+            "description": "Resources related to Tableau dashboards, storytelling and interactive data visualization.",
+            "display_order": 57,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 58,
+        "fields": {
+            "name": "Pandas",
+            "slug": "pandas",
+            "description": "Resources related to data manipulation, transformation and analysis using the Pandas library.",
+            "display_order": 58,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 59,
+        "fields": {
+            "name": "NumPy",
+            "slug": "numpy",
+            "description": "Resources related to numerical computing, arrays and scientific computing using NumPy.",
+            "display_order": 59,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 60,
+        "fields": {
+            "name": "Predictive Analytics",
+            "slug": "predictive-analytics",
+            "description": "Resources related to forecasting trends and making predictions using statistical and machine learning techniques.",
+            "display_order": 60,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

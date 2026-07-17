@@ -1,0 +1,131 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 20,
+        "fields": {
+            "title": "OpenAI API Documentation",
+            "slug": "openai-api-documentation",
+            "resource_type": "documentation",
+            "summary": "Official documentation for building applications using OpenAI models.",
+            "description": "The OpenAI API Documentation provides developers with comprehensive guidance on integrating large language models, embeddings, image generation, speech models and assistants into production applications.",
+            "cover_image": "portfolio/hub/library/covers/openai-api-documentation.webp",
+            "resource_file": null,
+            "external_url": "https://platform.openai.com/docs",
+            "author": "OpenAI",
+            "publisher": "OpenAI",
+            "publication_date": null,
+            "estimated_read_time": 60,
+            "themes": [
+                7,
+                5
+            ],
+            "tags": [
+                61,
+                62,
+                66,
+                68,
+                69
+            ],
+            "display_order": 20,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 21,
+        "fields": {
+            "title": "Google AI Learning Hub",
+            "slug": "google-ai-learning-hub",
+            "resource_type": "guide",
+            "summary": "Official Google AI learning resources covering modern artificial intelligence technologies.",
+            "description": "Google AI provides educational resources on machine learning, responsible AI, computer vision, natural language processing and generative AI applications.",
+            "cover_image": "portfolio/hub/library/covers/google-ai-learning.webp",
+            "resource_file": null,
+            "external_url": "https://ai.google",
+            "author": "Google AI",
+            "publisher": "Google",
+            "publication_date": null,
+            "estimated_read_time": 45,
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                63,
+                64,
+                65,
+                69
+            ],
+            "display_order": 21,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 22,
+        "fields": {
+            "title": "Microsoft AI Learning Path",
+            "slug": "microsoft-ai-learning-path",
+            "resource_type": "guide",
+            "summary": "Microsoft Learn pathways for artificial intelligence and Azure AI services.",
+            "description": "Microsoft Learn offers structured learning paths covering AI fundamentals, Azure AI services, generative AI, machine learning and responsible AI practices.",
+            "cover_image": "portfolio/hub/library/covers/microsoft-ai-learning.webp",
+            "resource_file": null,
+            "external_url": "https://learn.microsoft.com/training/browse/?products=azure-ai-services",
+            "author": "Microsoft",
+            "publisher": "Microsoft Learn",
+            "publication_date": null,
+            "estimated_read_time": 50,
+            "themes": [
+                7,
+                11
+            ],
+            "tags": [
+                61,
+                66,
+                67,
+                106
+            ],
+            "display_order": 22,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 23,
+        "fields": {
+            "title": "IBM AI Ethics Framework",
+            "slug": "ibm-ai-ethics-framework",
+            "resource_type": "white_paper",
+            "summary": "IBM guidance on developing trustworthy and responsible artificial intelligence systems.",
+            "description": "IBM's AI Ethics Framework explores fairness, transparency, accountability, explainability and governance principles for responsible AI development and deployment.",
+            "cover_image": "portfolio/hub/library/covers/ibm-ai-ethics.webp",
+            "resource_file": null,
+            "external_url": "https://www.ibm.com/topics/ai-ethics",
+            "author": "IBM Research",
+            "publisher": "IBM",
+            "publication_date": null,
+            "estimated_read_time": 40,
+            "themes": [
+                7,
+                10
+            ],
+            "tags": [
+                67,
+                68,
+                69,
+                99
+            ],
+            "display_order": 23,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

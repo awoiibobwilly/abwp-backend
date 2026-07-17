@@ -1,0 +1,116 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 14,
+        "fields": {
+            "title": "Python for Data Analysis",
+            "slug": "python-for-data-analysis",
+            "summary": "Comprehensive introduction to data analysis using Python and Pandas.",
+            "description": "Learn how to clean, transform, analyze and visualize data using Python, Pandas and Jupyter Notebook through practical examples and real-world datasets.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/python-data-analysis.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@freecodecamp",
+            "presenter": "freeCodeCamp",
+            "duration_minutes": 300,
+            "published_at": null,
+            "themes": [
+                6
+            ],
+            "tags": [
+                51,
+                52,
+                53,
+                56
+            ],
+            "display_order": 14,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 15,
+        "fields": {
+            "title": "Statistics Fundamentals for Data Science",
+            "slug": "statistics-fundamentals-data-science",
+            "summary": "Understanding descriptive statistics, probability and hypothesis testing.",
+            "description": "StatQuest explains the statistical foundations required for data science including probability distributions, confidence intervals, hypothesis testing and regression.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/statistics-data-science.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@statquest",
+            "presenter": "Josh Starmer",
+            "duration_minutes": 85,
+            "published_at": null,
+            "themes": [
+                6
+            ],
+            "tags": [
+                52,
+                53,
+                54
+            ],
+            "display_order": 15,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 16,
+        "fields": {
+            "title": "Data Visualization with Tableau",
+            "slug": "data-visualization-tableau",
+            "summary": "Creating interactive dashboards and business intelligence reports using Tableau.",
+            "description": "Official Tableau educational content demonstrating dashboard development, storytelling, visual analytics and effective business reporting.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/tableau-dashboard.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@tableau",
+            "presenter": "Tableau",
+            "duration_minutes": 42,
+            "published_at": null,
+            "themes": [
+                6
+            ],
+            "tags": [
+                55,
+                56
+            ],
+            "display_order": 16,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 17,
+        "fields": {
+            "title": "Machine Learning with Scikit-learn",
+            "slug": "machine-learning-scikit-learn",
+            "summary": "Building machine learning models using Scikit-learn.",
+            "description": "Hands-on tutorial covering supervised learning, preprocessing, feature engineering, model evaluation and deployment-ready workflows using Scikit-learn.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/scikit-learn.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@freecodecamp",
+            "presenter": "freeCodeCamp",
+            "duration_minutes": 180,
+            "published_at": null,
+            "themes": [
+                6,
+                7
+            ],
+            "tags": [
+                53,
+                54,
+                61,
+                63
+            ],
+            "display_order": 17,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

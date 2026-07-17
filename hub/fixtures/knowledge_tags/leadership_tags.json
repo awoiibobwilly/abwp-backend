@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 71,
+        "fields": {
+            "name": "Leadership",
+            "slug": "leadership",
+            "description": "Resources related to inspiring, guiding and influencing individuals and teams toward shared goals.",
+            "display_order": 71,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 72,
+        "fields": {
+            "name": "Strategic Planning",
+            "slug": "strategic-planning",
+            "description": "Resources related to defining organizational direction, priorities and long-term objectives.",
+            "display_order": 72,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 73,
+        "fields": {
+            "name": "Governance",
+            "slug": "governance",
+            "description": "Resources related to organizational oversight, accountability and effective governance structures.",
+            "display_order": 73,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 74,
+        "fields": {
+            "name": "Project Management",
+            "slug": "project-management",
+            "description": "Resources related to planning, executing and successfully delivering projects.",
+            "display_order": 74,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 75,
+        "fields": {
+            "name": "Team Development",
+            "slug": "team-development",
+            "description": "Resources related to building high-performing teams and fostering collaboration.",
+            "display_order": 75,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 76,
+        "fields": {
+            "name": "Change Management",
+            "slug": "change-management",
+            "description": "Resources related to planning and leading organizational change initiatives.",
+            "display_order": 76,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 77,
+        "fields": {
+            "name": "Decision Making",
+            "slug": "decision-making",
+            "description": "Resources related to structured analysis, critical thinking and informed decision-making.",
+            "display_order": 77,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 78,
+        "fields": {
+            "name": "Performance Management",
+            "slug": "performance-management",
+            "description": "Resources related to measuring, improving and sustaining individual and organizational performance.",
+            "display_order": 78,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 79,
+        "fields": {
+            "name": "Organizational Culture",
+            "slug": "organizational-culture",
+            "description": "Resources related to values, behaviours and workplace culture that shape organizational success.",
+            "display_order": 79,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 80,
+        "fields": {
+            "name": "Coaching & Mentorship",
+            "slug": "coaching-mentorship",
+            "description": "Resources related to developing people through coaching, mentoring and leadership support.",
+            "display_order": 80,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

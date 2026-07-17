@@ -1,0 +1,121 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 1,
+        "fields": {
+            "title": "Digital Health Interventions for Health Systems",
+            "slug": "digital-health-interventions-health-systems",
+            "summary": "WHO overview of digital technologies that strengthen healthcare systems and improve service delivery.",
+            "description": "An official World Health Organization educational presentation introducing digital health interventions, electronic health records, telemedicine, mobile health and evidence-based implementation strategies for healthcare systems.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/who-digital-health.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@who",
+            "presenter": "World Health Organization",
+            "duration_minutes": 28,
+            "published_at": null,
+            "themes": [
+                1,
+                2,
+                3
+            ],
+            "tags": [
+                21,
+                23,
+                24,
+                26
+            ],
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 2,
+        "fields": {
+            "title": "Infection Prevention and Control Essentials",
+            "slug": "infection-prevention-control-essentials",
+            "summary": "CDC educational video covering infection prevention best practices in healthcare facilities.",
+            "description": "Official educational content introducing standard precautions, transmission-based precautions, hand hygiene and infection prevention practices for healthcare professionals.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/cdc-ipc.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@CDC",
+            "presenter": "Centers for Disease Control and Prevention",
+            "duration_minutes": 32,
+            "published_at": null,
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                2,
+                6,
+                12,
+                19
+            ],
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 3,
+        "fields": {
+            "title": "Universal Health Coverage Explained",
+            "slug": "universal-health-coverage-explained",
+            "summary": "WHO educational video explaining Universal Health Coverage and resilient health systems.",
+            "description": "A concise introduction to Universal Health Coverage, primary healthcare, financing models and health system resilience from the World Health Organization.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/uhc-explained.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@who",
+            "presenter": "World Health Organization",
+            "duration_minutes": 18,
+            "published_at": null,
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                3,
+                5,
+                15
+            ],
+            "display_order": 3,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 4,
+        "fields": {
+            "title": "Child Health and Nutrition",
+            "slug": "child-health-and-nutrition",
+            "summary": "UNICEF educational resource on improving child survival and nutrition outcomes.",
+            "description": "Educational content discussing maternal and child health, nutrition, immunization and early childhood development through evidence-based global interventions.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/unicef-child-health.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@UNICEF",
+            "presenter": "UNICEF",
+            "duration_minutes": 24,
+            "published_at": null,
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                15,
+                19,
+                20
+            ],
+            "display_order": 4,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

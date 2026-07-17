@@ -1,0 +1,162 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 1,
+        "fields": {
+            "title": "WHO Digital Health Guidelines",
+            "slug": "who-digital-health-guidelines",
+            "resource_type": "guide",
+            "summary": "WHO recommendations on digital interventions that strengthen health systems and improve healthcare delivery.",
+            "description": "This guideline presents evidence-based recommendations from the World Health Organization on the use of digital technologies to strengthen health systems. It covers telemedicine, electronic health records, mobile health, interoperability and digital transformation while providing practical implementation guidance for governments, healthcare providers and policymakers.",
+            "cover_image": "portfolio/hub/library/covers/who-digital-health-guidelines.webp",
+            "resource_file": null,
+            "external_url": "https://www.who.int/publications/i/item/9789241550505",
+            "author": "World Health Organization",
+            "publisher": "World Health Organization",
+            "publication_date": "2019-04-17",
+            "estimated_read_time": 60,
+            "themes": [
+                1,
+                2,
+                3
+            ],
+            "tags": [
+                21,
+                23,
+                24,
+                26,
+                28
+            ],
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 2,
+        "fields": {
+            "title": "CDC Infection Prevention and Control",
+            "slug": "cdc-infection-prevention-control",
+            "resource_type": "guide",
+            "summary": "Official CDC guidance for infection prevention and control in healthcare settings.",
+            "description": "Comprehensive guidance from the Centers for Disease Control and Prevention covering infection prevention, standard precautions, transmission-based precautions and best practices for protecting patients and healthcare workers.",
+            "cover_image": "portfolio/hub/library/covers/cdc-infection-prevention.webp",
+            "resource_file": null,
+            "external_url": "https://www.cdc.gov/infection-control/",
+            "author": "Centers for Disease Control and Prevention",
+            "publisher": "CDC",
+            "publication_date": null,
+            "estimated_read_time": 45,
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                2,
+                6,
+                12,
+                19
+            ],
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 3,
+        "fields": {
+            "title": "WHO Primary Health Care Framework",
+            "slug": "who-primary-health-care-framework",
+            "resource_type": "framework",
+            "summary": "Global framework for strengthening primary healthcare systems and achieving universal health coverage.",
+            "description": "A strategic framework outlining principles, policies and implementation approaches for strengthening primary healthcare systems through integrated, people-centered services and community engagement.",
+            "cover_image": "portfolio/hub/library/covers/primary-health-care-framework.webp",
+            "resource_file": null,
+            "external_url": "https://www.who.int/teams/integrated-health-services/primary-health-care",
+            "author": "World Health Organization",
+            "publisher": "World Health Organization",
+            "publication_date": null,
+            "estimated_read_time": 35,
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                3,
+                15,
+                16
+            ],
+            "display_order": 3,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 4,
+        "fields": {
+            "title": "Health Systems Governance for Universal Health Coverage",
+            "slug": "health-systems-governance-universal-health-coverage",
+            "resource_type": "report",
+            "summary": "WHO report examining governance approaches that strengthen resilient health systems.",
+            "description": "An evidence-informed report discussing governance models, accountability mechanisms and leadership approaches that improve health system performance while advancing universal health coverage.",
+            "cover_image": "portfolio/hub/library/covers/health-systems-governance.webp",
+            "resource_file": null,
+            "external_url": "https://www.who.int",
+            "author": "World Health Organization",
+            "publisher": "World Health Organization",
+            "publication_date": null,
+            "estimated_read_time": 40,
+            "themes": [
+                1,
+                8
+            ],
+            "tags": [
+                5,
+                7,
+                14,
+                73
+            ],
+            "display_order": 4,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 5,
+        "fields": {
+            "title": "UNICEF Child Health and Nutrition Resources",
+            "slug": "unicef-child-health-nutrition-resources",
+            "resource_type": "guide",
+            "summary": "UNICEF guidance supporting child survival, nutrition, immunization and maternal health programmes.",
+            "description": "A collection of evidence-based guidance and practical resources supporting maternal, newborn and child health, nutrition, immunization and community health programmes around the world.",
+            "cover_image": "portfolio/hub/library/covers/unicef-child-health.webp",
+            "resource_file": null,
+            "external_url": "https://www.unicef.org/health",
+            "author": "UNICEF",
+            "publisher": "UNICEF",
+            "publication_date": null,
+            "estimated_read_time": 30,
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                15,
+                19,
+                20
+            ],
+            "display_order": 5,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

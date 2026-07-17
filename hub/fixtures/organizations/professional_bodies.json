@@ -1,0 +1,110 @@
+[
+    {
+        "model": "hub.organization",
+        "pk": 17,
+        "fields": {
+            "name": "Uganda Medical Association",
+            "slug": "uganda-medical-association",
+            "organization_type": "professional",
+            "description": "A professional association promoting medical excellence, ethics and advocacy for healthcare professionals in Uganda.",
+            "logo": "portfolio/hub/organizations/logos/uma.webp",
+            "website": "https://www.uma.ug",
+            "country": "Uganda",
+            "themes": [
+                1,
+                8
+            ],
+            "tags": [
+                2,
+                7,
+                71,
+                117
+            ],
+            "display_order": 17,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 18,
+        "fields": {
+            "name": "Project Management Institute",
+            "slug": "project-management-institute",
+            "organization_type": "professional",
+            "description": "The world's leading professional association for project management standards, certifications and knowledge sharing.",
+            "logo": "portfolio/hub/organizations/logos/pmi.webp",
+            "website": "https://www.pmi.org",
+            "country": "United States",
+            "themes": [
+                8
+            ],
+            "tags": [
+                72,
+                74,
+                78
+            ],
+            "display_order": 18,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 19,
+        "fields": {
+            "name": "IEEE",
+            "slug": "ieee",
+            "organization_type": "professional",
+            "description": "The world's largest technical professional organization dedicated to advancing technology for humanity.",
+            "logo": "portfolio/hub/organizations/logos/ieee.webp",
+            "website": "https://www.ieee.org",
+            "country": "United States",
+            "themes": [
+                5,
+                6,
+                7
+            ],
+            "tags": [
+                47,
+                50,
+                54,
+                61
+            ],
+            "display_order": 19,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 20,
+        "fields": {
+            "name": "Association for Computing Machinery",
+            "slug": "association-for-computing-machinery",
+            "organization_type": "professional",
+            "description": "An international scientific and educational organization advancing computing as a science and profession.",
+            "logo": "portfolio/hub/organizations/logos/acm.webp",
+            "website": "https://www.acm.org",
+            "country": "United States",
+            "themes": [
+                5,
+                6,
+                7
+            ],
+            "tags": [
+                47,
+                48,
+                49,
+                61
+            ],
+            "display_order": 20,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

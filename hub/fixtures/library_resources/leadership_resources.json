@@ -1,0 +1,99 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 24,
+        "fields": {
+            "title": "PMBOK® Guide",
+            "slug": "pmbok-guide",
+            "resource_type": "guide",
+            "summary": "The global standard for project management published by the Project Management Institute.",
+            "description": "The PMBOK® Guide provides internationally recognized best practices for project management, covering project initiation, planning, execution, monitoring, control and closing across multiple industries.",
+            "cover_image": "portfolio/hub/library/covers/pmbok-guide.webp",
+            "resource_file": null,
+            "external_url": "https://www.pmi.org/pmbok-guide-standards",
+            "author": "Project Management Institute",
+            "publisher": "PMI",
+            "publication_date": "2021-08-01",
+            "estimated_read_time": 80,
+            "themes": [
+                8
+            ],
+            "tags": [
+                72,
+                74,
+                76,
+                77,
+                78
+            ],
+            "display_order": 24,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 25,
+        "fields": {
+            "title": "World Economic Forum Leadership Insights",
+            "slug": "wef-leadership-insights",
+            "resource_type": "report",
+            "summary": "Global perspectives on leadership, governance and organizational transformation.",
+            "description": "A collection of leadership reports exploring strategic decision-making, organizational resilience, innovation and responsible governance in an increasingly digital world.",
+            "cover_image": "portfolio/hub/library/covers/wef-leadership.webp",
+            "resource_file": null,
+            "external_url": "https://www.weforum.org/",
+            "author": "World Economic Forum",
+            "publisher": "World Economic Forum",
+            "publication_date": null,
+            "estimated_read_time": 40,
+            "themes": [
+                8,
+                10
+            ],
+            "tags": [
+                71,
+                72,
+                73,
+                76,
+                79
+            ],
+            "display_order": 25,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 26,
+        "fields": {
+            "title": "Harvard Business Review Leadership Collection",
+            "slug": "hbr-leadership-collection",
+            "resource_type": "article",
+            "summary": "Curated leadership articles from Harvard Business Review.",
+            "description": "A carefully curated collection of articles covering leadership development, strategic management, organizational culture, coaching and executive decision-making.",
+            "cover_image": "portfolio/hub/library/covers/hbr-leadership.webp",
+            "resource_file": null,
+            "external_url": "https://hbr.org/topic/leadership",
+            "author": "Harvard Business Review",
+            "publisher": "Harvard Business Publishing",
+            "publication_date": null,
+            "estimated_read_time": 35,
+            "themes": [
+                8
+            ],
+            "tags": [
+                71,
+                75,
+                77,
+                79,
+                80
+            ],
+            "display_order": 26,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

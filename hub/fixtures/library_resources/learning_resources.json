@@ -1,0 +1,101 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 30,
+        "fields": {
+            "title": "Microsoft Learn",
+            "slug": "microsoft-learn-resource",
+            "resource_type": "guide",
+            "summary": "Microsoft's official learning platform for technology professionals.",
+            "description": "Microsoft Learn provides structured learning paths, hands-on exercises, certifications and technical documentation across software engineering, cloud computing, AI and cybersecurity.",
+            "cover_image": "portfolio/hub/library/covers/microsoft-learn.webp",
+            "resource_file": null,
+            "external_url": "https://learn.microsoft.com/",
+            "author": "Microsoft",
+            "publisher": "Microsoft",
+            "publication_date": null,
+            "estimated_read_time": 45,
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                106,
+                108,
+                109,
+                110,
+                120
+            ],
+            "display_order": 30,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 31,
+        "fields": {
+            "title": "Coursera Learning Catalog",
+            "slug": "coursera-learning-catalog",
+            "resource_type": "guide",
+            "summary": "Comprehensive catalog of university and industry-led online courses.",
+            "description": "Coursera offers learning opportunities from leading universities and organizations, enabling learners to build technical, business and leadership skills through structured online education.",
+            "cover_image": "portfolio/hub/library/covers/coursera.webp",
+            "resource_file": null,
+            "external_url": "https://www.coursera.org/",
+            "author": "Coursera",
+            "publisher": "Coursera",
+            "publication_date": null,
+            "estimated_read_time": 30,
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                106,
+                107,
+                109,
+                110
+            ],
+            "display_order": 31,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 32,
+        "fields": {
+            "title": "Refactory Learning Resources",
+            "slug": "refactory-learning-resources",
+            "resource_type": "documentation",
+            "summary": "Practical software engineering resources from Refactory Academy.",
+            "description": "Refactory Academy provides practical software engineering learning materials, apprenticeship content and project-based resources for aspiring developers and technology professionals.",
+            "cover_image": "portfolio/hub/library/covers/refactory-learning.webp",
+            "resource_file": null,
+            "external_url": "https://www.refactory.ug/",
+            "author": "Refactory Academy",
+            "publisher": "Refactory Academy",
+            "publication_date": null,
+            "estimated_read_time": 40,
+            "themes": [
+                5,
+                11,
+                12
+            ],
+            "tags": [
+                41,
+                42,
+                106,
+                108,
+                120
+            ],
+            "display_order": 32,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

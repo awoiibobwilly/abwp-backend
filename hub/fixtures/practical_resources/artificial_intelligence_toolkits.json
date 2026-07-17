@@ -1,0 +1,141 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 18,
+        "fields": {
+            "title": "Prompt Engineering Cheat Sheet",
+            "slug": "prompt-engineering-cheat-sheet",
+            "resource_type": "toolkit",
+            "summary": "Quick reference for designing high-quality prompts for Large Language Models.",
+            "description": "Covers prompt structure, role prompting, chain-of-thought guidance, few-shot prompting, constraints, output formatting and prompt optimization techniques.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/prompt-engineering-cheatsheet.webp",
+            "resource_file": null,
+            "external_url": "https://platform.openai.com/docs/guides/prompt-engineering",
+            "version": "1.0",
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                62,
+                66,
+                68
+            ],
+            "display_order": 18,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 19,
+        "fields": {
+            "title": "Responsible AI Checklist",
+            "slug": "responsible-ai-checklist",
+            "resource_type": "checklist",
+            "summary": "Checklist supporting ethical and trustworthy AI development.",
+            "description": "Guides practitioners through fairness, transparency, explainability, privacy, accountability and governance considerations throughout the AI lifecycle.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/responsible-ai-checklist.webp",
+            "resource_file": null,
+            "external_url": "https://learn.microsoft.com/azure/architecture/guide/responsible-ai/",
+            "version": "1.0",
+            "themes": [
+                7
+            ],
+            "tags": [
+                67,
+                68,
+                69
+            ],
+            "display_order": 19,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 20,
+        "fields": {
+            "title": "AI Project Canvas",
+            "slug": "ai-project-canvas",
+            "resource_type": "framework",
+            "summary": "Planning framework for designing and managing AI projects.",
+            "description": "Provides a structured approach for defining AI objectives, datasets, stakeholders, success metrics, risks, governance and deployment strategies.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/ai-project-canvas.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                7,
+                10
+            ],
+            "tags": [
+                61,
+                67,
+                91,
+                99
+            ],
+            "display_order": 20,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 21,
+        "fields": {
+            "title": "LLM Evaluation Framework",
+            "slug": "llm-evaluation-framework",
+            "resource_type": "framework",
+            "summary": "Framework for evaluating Large Language Model performance and quality.",
+            "description": "Supports systematic evaluation of LLM outputs using criteria such as factual accuracy, relevance, consistency, safety, latency and user satisfaction.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/llm-evaluation-framework.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                7
+            ],
+            "tags": [
+                62,
+                67,
+                68,
+                69
+            ],
+            "display_order": 21,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 22,
+        "fields": {
+            "title": "Prompt Library Template",
+            "slug": "prompt-library-template",
+            "resource_type": "template",
+            "summary": "Template for organizing reusable AI prompts across projects and domains.",
+            "description": "Helps teams maintain a searchable repository of tested prompts, expected outputs, use cases and optimization notes for consistent AI-assisted workflows.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/prompt-library-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                62,
+                66
+            ],
+            "display_order": 22,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

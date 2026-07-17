@@ -1,0 +1,20 @@
+[
+    {
+        "model": "hub.knowledgehub",
+        "pk": 1,
+        "fields": {
+            "eyebrow": "Knowledge Hub",
+            "title": "Where Curiosity Meets Practical Impact",
+            "subtitle": "A curated ecosystem of healthcare, research, software engineering, artificial intelligence, leadership, and digital innovation.",
+            "description": "Explore evidence-based resources, trusted organizations, practical toolkits, research contributions, videos, and learning pathways designed to bridge knowledge with real-world impact.",
+            "search_placeholder": "Search resources, research, toolkits, videos...",
+            "cta_title": "Keep Learning. Keep Building.",
+            "cta_description": "Knowledge grows when it is shared. Discover curated resources, practical frameworks, and research designed to inspire continuous learning and meaningful innovation.",
+            "hero_background": "",
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 81,
+        "fields": {
+            "name": "Theory of Change",
+            "slug": "theory-of-change",
+            "description": "Resources related to developing logical pathways that explain how interventions lead to intended outcomes and impact.",
+            "display_order": 81,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 82,
+        "fields": {
+            "name": "Logical Framework",
+            "slug": "logical-framework",
+            "description": "Resources related to planning, implementing and evaluating projects using logical framework methodology.",
+            "display_order": 82,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 83,
+        "fields": {
+            "name": "Performance Indicators",
+            "slug": "performance-indicators",
+            "description": "Resources related to designing, selecting and measuring indicators for project and organizational performance.",
+            "display_order": 83,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 84,
+        "fields": {
+            "name": "Monitoring",
+            "slug": "monitoring",
+            "description": "Resources related to continuous tracking of activities, outputs and programme implementation.",
+            "display_order": 84,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 85,
+        "fields": {
+            "name": "Evaluation",
+            "slug": "evaluation",
+            "description": "Resources related to assessing programme effectiveness, relevance, efficiency, sustainability and impact.",
+            "display_order": 85,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 86,
+        "fields": {
+            "name": "Impact Assessment",
+            "slug": "impact-assessment",
+            "description": "Resources related to measuring long-term changes and outcomes resulting from interventions and programmes.",
+            "display_order": 86,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 87,
+        "fields": {
+            "name": "Data Quality",
+            "slug": "data-quality",
+            "description": "Resources related to ensuring the accuracy, completeness, consistency, reliability and integrity of data.",
+            "display_order": 87,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 88,
+        "fields": {
+            "name": "Results-Based Management",
+            "slug": "results-based-management",
+            "description": "Resources related to planning, monitoring and managing programmes with a focus on measurable results and outcomes.",
+            "display_order": 88,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 89,
+        "fields": {
+            "name": "Performance Reporting",
+            "slug": "performance-reporting",
+            "description": "Resources related to communicating programme performance, indicators and results to stakeholders.",
+            "display_order": 89,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 90,
+        "fields": {
+            "name": "Learning & Adaptation",
+            "slug": "learning-adaptation",
+            "description": "Resources related to organizational learning, adaptive management and continuous improvement through evidence.",
+            "display_order": 90,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

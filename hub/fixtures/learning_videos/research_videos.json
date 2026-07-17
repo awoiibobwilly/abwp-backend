@@ -1,0 +1,116 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 5,
+        "fields": {
+            "title": "Introduction to Systematic Reviews",
+            "slug": "introduction-to-systematic-reviews",
+            "summary": "Cochrane introduction to planning and conducting systematic reviews.",
+            "description": "An official Cochrane educational video introducing systematic reviews, evidence synthesis, review protocols, risk of bias and best practices for producing high-quality research evidence.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/systematic-reviews.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@Cochrane_org",
+            "presenter": "Cochrane",
+            "duration_minutes": 34,
+            "published_at": null,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                32,
+                33,
+                34
+            ],
+            "display_order": 5,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 6,
+        "fields": {
+            "title": "PRISMA 2020 Explained",
+            "slug": "prisma-2020-explained",
+            "summary": "Understanding the PRISMA reporting guideline for systematic reviews.",
+            "description": "A concise explanation of the PRISMA 2020 reporting guideline, including reporting checklists, transparency, reproducibility and evidence reporting standards.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/prisma2020.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/results?search_query=PRISMA+2020",
+            "presenter": "PRISMA Group",
+            "duration_minutes": 22,
+            "published_at": null,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                34,
+                35
+            ],
+            "display_order": 6,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 7,
+        "fields": {
+            "title": "Research Ethics Fundamentals",
+            "slug": "research-ethics-fundamentals",
+            "summary": "NIH educational overview of responsible conduct of research.",
+            "description": "Official educational content introducing ethical principles in biomedical research, participant protection, informed consent, research integrity and responsible scientific conduct.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/research-ethics.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@NIH",
+            "presenter": "National Institutes of Health",
+            "duration_minutes": 29,
+            "published_at": null,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                36,
+                39
+            ],
+            "display_order": 7,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 8,
+        "fields": {
+            "title": "How to Read Scientific Papers",
+            "slug": "how-to-read-scientific-papers",
+            "summary": "Practical guide for critically appraising scientific literature.",
+            "description": "An educational presentation introducing literature appraisal, research interpretation, study quality assessment and evidence-based decision making.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/read-scientific-papers.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/results?search_query=How+to+Read+Scientific+Papers",
+            "presenter": "Nature",
+            "duration_minutes": 26,
+            "published_at": null,
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                33,
+                35,
+                40
+            ],
+            "display_order": 8,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

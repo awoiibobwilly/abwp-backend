@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 61,
+        "fields": {
+            "name": "Artificial Intelligence",
+            "slug": "artificial-intelligence",
+            "description": "Resources related to intelligent systems that simulate human reasoning, learning and decision-making.",
+            "display_order": 61,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 62,
+        "fields": {
+            "name": "Large Language Models",
+            "slug": "large-language-models",
+            "description": "Resources related to transformer-based language models for text understanding and generation.",
+            "display_order": 62,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 63,
+        "fields": {
+            "name": "Prompt Engineering",
+            "slug": "prompt-engineering",
+            "description": "Resources related to designing effective prompts for AI systems and language models.",
+            "display_order": 63,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 64,
+        "fields": {
+            "name": "Natural Language Processing",
+            "slug": "natural-language-processing",
+            "description": "Resources related to computational understanding, analysis and generation of human language.",
+            "display_order": 64,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 65,
+        "fields": {
+            "name": "Computer Vision",
+            "slug": "computer-vision",
+            "description": "Resources related to image recognition, visual perception and computer-based image analysis.",
+            "display_order": 65,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 66,
+        "fields": {
+            "name": "Responsible AI",
+            "slug": "responsible-ai",
+            "description": "Resources related to fairness, transparency, accountability and ethical deployment of artificial intelligence.",
+            "display_order": 66,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 67,
+        "fields": {
+            "name": "AI Automation",
+            "slug": "ai-automation",
+            "description": "Resources related to automating workflows, business processes and decision support using artificial intelligence.",
+            "display_order": 67,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 68,
+        "fields": {
+            "name": "AI Agents",
+            "slug": "ai-agents",
+            "description": "Resources related to autonomous AI systems capable of planning, reasoning and performing complex tasks.",
+            "display_order": 68,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 69,
+        "fields": {
+            "name": "AI Ethics",
+            "slug": "ai-ethics",
+            "description": "Resources related to ethical principles, governance and societal implications of artificial intelligence.",
+            "display_order": 69,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 70,
+        "fields": {
+            "name": "Intelligent Decision Support",
+            "slug": "intelligent-decision-support",
+            "description": "Resources related to AI-powered systems that enhance analysis, recommendations and decision-making.",
+            "display_order": 70,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

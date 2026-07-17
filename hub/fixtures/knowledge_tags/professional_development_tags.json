@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 111,
+        "fields": {
+            "name": "Career Development",
+            "slug": "career-development",
+            "description": "Resources related to career planning, progression and long-term professional growth.",
+            "display_order": 111,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 112,
+        "fields": {
+            "name": "Professional Communication",
+            "slug": "professional-communication",
+            "description": "Resources related to effective written, verbal and interpersonal communication in professional environments.",
+            "display_order": 112,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 113,
+        "fields": {
+            "name": "Public Speaking",
+            "slug": "public-speaking",
+            "description": "Resources related to delivering presentations, speaking confidently and engaging diverse audiences.",
+            "display_order": 113,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 114,
+        "fields": {
+            "name": "Critical Thinking",
+            "slug": "critical-thinking",
+            "description": "Resources related to analytical reasoning, structured thinking and sound decision-making.",
+            "display_order": 114,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 115,
+        "fields": {
+            "name": "Time Management",
+            "slug": "time-management",
+            "description": "Resources related to planning, prioritization, productivity and effective use of time.",
+            "display_order": 115,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 116,
+        "fields": {
+            "name": "Professional Networking",
+            "slug": "professional-networking",
+            "description": "Resources related to building professional relationships, collaboration and career opportunities.",
+            "display_order": 116,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 117,
+        "fields": {
+            "name": "Professional Ethics",
+            "slug": "professional-ethics",
+            "description": "Resources related to ethical conduct, integrity, accountability and professional responsibility.",
+            "display_order": 117,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 118,
+        "fields": {
+            "name": "Personal Branding",
+            "slug": "personal-branding",
+            "description": "Resources related to building a professional identity, reputation and personal brand.",
+            "display_order": 118,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 119,
+        "fields": {
+            "name": "Productivity",
+            "slug": "productivity",
+            "description": "Resources related to improving effectiveness, workflow optimization and sustainable high performance.",
+            "display_order": 119,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 120,
+        "fields": {
+            "name": "Lifelong Learning",
+            "slug": "lifelong-learning",
+            "description": "Resources related to continuous personal and professional learning throughout one's career.",
+            "display_order": 120,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

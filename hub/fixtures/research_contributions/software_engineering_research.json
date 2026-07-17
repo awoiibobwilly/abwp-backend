@@ -1,0 +1,123 @@
+[
+    {
+        "model": "hub.researchcontribution",
+        "pk": 13,
+        "fields": {
+            "title": "Scalable Portfolio Architecture Using Django and React",
+            "slug": "scalable-portfolio-architecture-django-react",
+            "contribution_type": "technical_report",
+            "summary": "Technical report documenting the architecture of a scalable full-stack portfolio platform.",
+            "abstract": "Examines architectural decisions for building a modular portfolio using Django REST Framework and React, including API design, reusable components, content management and maintainability considerations.",
+            "publication": "ABW Portfolio Technical Series",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/scalable-portfolio-architecture.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                42,
+                46,
+                49,
+                50
+            ],
+            "display_order": 13,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 14,
+        "fields": {
+            "title": "Knowledge Hub Information Architecture: A Case Study",
+            "slug": "knowledge-hub-information-architecture",
+            "contribution_type": "case_study",
+            "summary": "Case study describing the design of a multidisciplinary digital knowledge repository.",
+            "abstract": "Documents taxonomy development, relational data modelling, metadata governance and scalable information architecture supporting healthcare, research, software engineering and AI knowledge domains.",
+            "publication": "ABW Portfolio Technical Series",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/knowledge-hub-information-architecture.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                5,
+                10
+            ],
+            "tags": [
+                42,
+                47,
+                91,
+                99
+            ],
+            "display_order": 14,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 15,
+        "fields": {
+            "title": "REST API Design Patterns for Enterprise Applications",
+            "slug": "rest-api-design-patterns-enterprise-applications",
+            "contribution_type": "technical_report",
+            "summary": "Research examining best practices for designing secure and maintainable REST APIs.",
+            "abstract": "Reviews authentication strategies, endpoint standardization, pagination, versioning, validation and documentation approaches for enterprise software systems.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/rest-api-design-patterns.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                46,
+                49
+            ],
+            "display_order": 15,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 16,
+        "fields": {
+            "title": "Evaluating Component-Based Frontend Architecture in React",
+            "slug": "evaluating-component-based-react-architecture",
+            "contribution_type": "research_report",
+            "summary": "Applied research on reusable component architecture using React.",
+            "abstract": "Explores modular frontend development, component reusability, responsive design, maintainability and user experience optimization within modern React applications.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/react-component-architecture.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                5
+            ],
+            "tags": [
+                42,
+                43,
+                47,
+                50
+            ],
+            "display_order": 16,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

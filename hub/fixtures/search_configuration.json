@@ -1,0 +1,21 @@
+[
+    {
+        "model": "hub.searchconfiguration",
+        "pk": 1,
+        "fields": {
+            "knowledge_hub": 1,
+            "placeholder": "Search knowledge, research, videos, toolkits, organizations...",
+            "heading": "Explore the Knowledge Hub",
+            "description": "Search across curated resources, learning videos, practical toolkits, research contributions, trusted organizations and multidisciplinary knowledge domains to accelerate learning, research and professional growth.",
+            "popular_searches": "Public Health, Software Engineering, Artificial Intelligence, Data Science, Monitoring & Evaluation, Leadership, Innovation, Research Methods, Digital Health, Machine Learning",
+            "empty_state_title": "Start Exploring",
+            "empty_state_message": "Discover curated knowledge resources, practical toolkits, educational videos, research contributions and trusted organizations across healthcare, technology, data science, artificial intelligence, leadership and innovation.",
+            "no_results_title": "No Results Found",
+            "no_results_message": "We couldn't find anything matching your search. Try another keyword, browse a knowledge theme, or explore our featured resources and organizations.",
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

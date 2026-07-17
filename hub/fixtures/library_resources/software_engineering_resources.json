@@ -1,0 +1,156 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 11,
+        "fields": {
+            "title": "Python Documentation",
+            "slug": "python-documentation",
+            "resource_type": "documentation",
+            "summary": "Official Python language documentation.",
+            "description": "The authoritative reference for Python programming, covering language syntax, standard libraries, packaging, concurrency, testing and best practices for software development.",
+            "cover_image": "portfolio/hub/library/covers/python-docs.webp",
+            "resource_file": null,
+            "external_url": "https://docs.python.org/3/",
+            "author": "Python Software Foundation",
+            "publisher": "Python Software Foundation",
+            "publication_date": null,
+            "estimated_read_time": 60,
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                42,
+                43,
+                45
+            ],
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 12,
+        "fields": {
+            "title": "Django Documentation",
+            "slug": "django-documentation",
+            "resource_type": "documentation",
+            "summary": "Official documentation for building secure and scalable Django applications.",
+            "description": "Comprehensive documentation covering models, ORM, views, authentication, REST APIs, testing, deployment and security best practices.",
+            "cover_image": "portfolio/hub/library/covers/django-docs.webp",
+            "resource_file": null,
+            "external_url": "https://docs.djangoproject.com/",
+            "author": "Django Software Foundation",
+            "publisher": "Django Project",
+            "publication_date": null,
+            "estimated_read_time": 75,
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                42,
+                46,
+                47,
+                50
+            ],
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 13,
+        "fields": {
+            "title": "React Documentation",
+            "slug": "react-documentation",
+            "resource_type": "documentation",
+            "summary": "Official documentation for React user interface development.",
+            "description": "Comprehensive reference covering components, hooks, routing, state management, rendering strategies and application architecture using React.",
+            "cover_image": "portfolio/hub/library/covers/react-docs.webp",
+            "resource_file": null,
+            "external_url": "https://react.dev/",
+            "author": "React Team",
+            "publisher": "Meta",
+            "publication_date": null,
+            "estimated_read_time": 60,
+            "themes": [
+                5
+            ],
+            "tags": [
+                42,
+                43,
+                46
+            ],
+            "display_order": 13,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 14,
+        "fields": {
+            "title": "Git Documentation",
+            "slug": "git-documentation",
+            "resource_type": "manual",
+            "summary": "Official Git reference for distributed version control.",
+            "description": "Complete documentation covering Git fundamentals, branching strategies, collaboration workflows, rebasing, merging and repository management.",
+            "cover_image": "portfolio/hub/library/covers/git-docs.webp",
+            "resource_file": null,
+            "external_url": "https://git-scm.com/doc",
+            "author": "Git Project",
+            "publisher": "Git",
+            "publication_date": null,
+            "estimated_read_time": 45,
+            "themes": [
+                5
+            ],
+            "tags": [
+                46,
+                47,
+                48
+            ],
+            "display_order": 14,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 15,
+        "fields": {
+            "title": "PostgreSQL Documentation",
+            "slug": "postgresql-documentation",
+            "resource_type": "documentation",
+            "summary": "Official PostgreSQL documentation for enterprise database development.",
+            "description": "Authoritative documentation covering SQL, indexing, transactions, performance optimization, security, replication and administration of PostgreSQL databases.",
+            "cover_image": "portfolio/hub/library/covers/postgresql-docs.webp",
+            "resource_file": null,
+            "external_url": "https://www.postgresql.org/docs/",
+            "author": "PostgreSQL Global Development Group",
+            "publisher": "PostgreSQL",
+            "publication_date": null,
+            "estimated_read_time": 70,
+            "themes": [
+                5,
+                6
+            ],
+            "tags": [
+                44,
+                46,
+                49
+            ],
+            "display_order": 15,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

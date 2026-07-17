@@ -1,0 +1,145 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 9,
+        "fields": {
+            "title": "Django Full Course",
+            "slug": "django-full-course",
+            "summary": "Comprehensive introduction to Django web development.",
+            "description": "A complete tutorial covering Django project structure, models, views, templates, authentication, REST APIs and deployment best practices.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/django-full-course.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@freecodecamp",
+            "presenter": "freeCodeCamp",
+            "duration_minutes": 240,
+            "published_at": null,
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                42,
+                46,
+                47,
+                50
+            ],
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 10,
+        "fields": {
+            "title": "React JS Full Course",
+            "slug": "react-js-full-course",
+            "summary": "Modern React development from fundamentals to advanced concepts.",
+            "description": "A practical React course covering components, hooks, routing, state management, APIs and application architecture.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/react-course.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@freecodecamp",
+            "presenter": "freeCodeCamp",
+            "duration_minutes": 300,
+            "published_at": null,
+            "themes": [
+                5
+            ],
+            "tags": [
+                42,
+                43,
+                46
+            ],
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 11,
+        "fields": {
+            "title": "Git & GitHub Crash Course",
+            "slug": "git-github-crash-course",
+            "summary": "Version control fundamentals using Git and GitHub.",
+            "description": "Learn repository management, commits, branching, pull requests, collaboration workflows and GitHub best practices.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/git-github-course.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@TraversyMedia",
+            "presenter": "Traversy Media",
+            "duration_minutes": 90,
+            "published_at": null,
+            "themes": [
+                5
+            ],
+            "tags": [
+                46,
+                47,
+                48
+            ],
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 12,
+        "fields": {
+            "title": "REST API Design Best Practices",
+            "slug": "rest-api-design-best-practices",
+            "summary": "Designing scalable and maintainable REST APIs.",
+            "description": "Learn REST principles, resource design, authentication, versioning, pagination, error handling and API documentation.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/rest-api.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@Fireship",
+            "presenter": "Fireship",
+            "duration_minutes": 32,
+            "published_at": null,
+            "themes": [
+                5
+            ],
+            "tags": [
+                41,
+                46,
+                49
+            ],
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 13,
+        "fields": {
+            "title": "System Design Fundamentals",
+            "slug": "system-design-fundamentals",
+            "summary": "Introduction to scalable software architecture and distributed systems.",
+            "description": "An overview of software architecture, scalability, load balancing, databases, caching and distributed systems for modern software engineering.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/system-design.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@ByteByteGo",
+            "presenter": "ByteByteGo",
+            "duration_minutes": 48,
+            "published_at": null,
+            "themes": [
+                5
+            ],
+            "tags": [
+                42,
+                47,
+                49,
+                50
+            ],
+            "display_order": 13,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

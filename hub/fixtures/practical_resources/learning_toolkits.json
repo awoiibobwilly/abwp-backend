@@ -1,0 +1,115 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 29,
+        "fields": {
+            "title": "Personal Learning Plan",
+            "slug": "personal-learning-plan",
+            "resource_type": "template",
+            "summary": "Template for defining personal learning goals and professional development objectives.",
+            "description": "Supports learners in identifying learning priorities, setting measurable goals, tracking milestones and reflecting on progress over time.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/personal-learning-plan.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                101,
+                106,
+                111
+            ],
+            "display_order": 29,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 30,
+        "fields": {
+            "title": "Weekly Study Planner",
+            "slug": "weekly-study-planner",
+            "resource_type": "spreadsheet",
+            "summary": "Weekly planner for organizing study sessions and learning activities.",
+            "description": "Provides a structured schedule for allocating study time, tracking completed tasks, managing deadlines and maintaining consistent learning habits.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/weekly-study-planner.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                101,
+                102,
+                106
+            ],
+            "display_order": 30,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 31,
+        "fields": {
+            "title": "Learning Reflection Worksheet",
+            "slug": "learning-reflection-worksheet",
+            "resource_type": "template",
+            "summary": "Worksheet for evaluating learning experiences and identifying improvement opportunities.",
+            "description": "Encourages reflective practice through guided questions on achievements, challenges, lessons learned and future development actions.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/learning-reflection.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                101,
+                102,
+                111
+            ],
+            "display_order": 31,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 32,
+        "fields": {
+            "title": "Skills Gap Assessment",
+            "slug": "skills-gap-assessment",
+            "resource_type": "questionnaire",
+            "summary": "Assessment tool for identifying current competencies and future learning needs.",
+            "description": "Helps learners evaluate existing knowledge, identify priority skill gaps and create targeted professional development plans aligned with career goals.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/skills-gap-assessment.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                102,
+                106,
+                111,
+                120
+            ],
+            "display_order": 32,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

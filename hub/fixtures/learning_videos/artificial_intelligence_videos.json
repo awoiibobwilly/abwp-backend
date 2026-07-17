@@ -1,0 +1,149 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 18,
+        "fields": {
+            "title": "Introduction to Generative AI",
+            "slug": "introduction-generative-ai",
+            "summary": "Google AI overview of Generative Artificial Intelligence.",
+            "description": "A beginner-friendly introduction to Generative AI, large language models, diffusion models and practical AI applications across industries.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/generative-ai.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@GoogleDevelopers",
+            "presenter": "Google AI",
+            "duration_minutes": 38,
+            "published_at": null,
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                62,
+                66,
+                69
+            ],
+            "display_order": 18,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 19,
+        "fields": {
+            "title": "Prompt Engineering for Developers",
+            "slug": "prompt-engineering-for-developers",
+            "summary": "Practical techniques for designing effective prompts for Large Language Models.",
+            "description": "Learn prompt engineering principles, prompt design patterns, reasoning techniques and real-world AI application development using modern LLMs.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/prompt-engineering.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@OpenAI",
+            "presenter": "OpenAI",
+            "duration_minutes": 55,
+            "published_at": null,
+            "themes": [
+                7,
+                5
+            ],
+            "tags": [
+                61,
+                62,
+                66,
+                68
+            ],
+            "display_order": 19,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 20,
+        "fields": {
+            "title": "Deep Learning Specialization Overview",
+            "slug": "deep-learning-specialization-overview",
+            "summary": "Introduction to deep learning concepts by DeepLearning.AI.",
+            "description": "An overview of neural networks, deep learning, computer vision, natural language processing and practical machine learning workflows.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/deep-learning.webp",
+            "platform": "coursera",
+            "video_url": "https://www.coursera.org/specializations/deep-learning",
+            "presenter": "Andrew Ng",
+            "duration_minutes": 60,
+            "published_at": null,
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                63,
+                64,
+                65
+            ],
+            "display_order": 20,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 21,
+        "fields": {
+            "title": "Responsible AI Explained",
+            "slug": "responsible-ai-explained",
+            "summary": "Microsoft Learn introduction to responsible and trustworthy AI.",
+            "description": "Explore fairness, transparency, accountability, privacy, security and governance principles for responsible artificial intelligence development.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/responsible-ai.webp",
+            "platform": "microsoft",
+            "video_url": "https://learn.microsoft.com/training/",
+            "presenter": "Microsoft Learn",
+            "duration_minutes": 35,
+            "published_at": null,
+            "themes": [
+                7
+            ],
+            "tags": [
+                67,
+                68,
+                69
+            ],
+            "display_order": 21,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 22,
+        "fields": {
+            "title": "Building AI Applications with OpenAI APIs",
+            "slug": "building-ai-applications-openai-api",
+            "summary": "Practical guide to integrating OpenAI APIs into modern software applications.",
+            "description": "Learn how to use OpenAI APIs for chat, embeddings, image generation, structured outputs and AI-powered software engineering workflows.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/openai-api.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@OpenAI",
+            "presenter": "OpenAI",
+            "duration_minutes": 48,
+            "published_at": null,
+            "themes": [
+                5,
+                7
+            ],
+            "tags": [
+                61,
+                62,
+                66,
+                68,
+                69
+            ],
+            "display_order": 22,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

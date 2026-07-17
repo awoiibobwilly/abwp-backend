@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 1,
+        "fields": {
+            "name": "Clinical Care",
+            "slug": "clinical-care",
+            "description": "Resources related to the delivery of direct patient care and clinical practice.",
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 2,
+        "fields": {
+            "name": "Patient Safety",
+            "slug": "patient-safety",
+            "description": "Resources related to patient safety, risk reduction and quality of care.",
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 3,
+        "fields": {
+            "name": "Primary Care",
+            "slug": "primary-care",
+            "description": "Resources related to primary healthcare services and community-based care.",
+            "display_order": 3,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 4,
+        "fields": {
+            "name": "Healthcare Quality",
+            "slug": "healthcare-quality",
+            "description": "Resources related to quality improvement, standards and healthcare excellence.",
+            "display_order": 4,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 5,
+        "fields": {
+            "name": "Hospital Management",
+            "slug": "hospital-management",
+            "description": "Resources related to hospital administration, operations and healthcare management.",
+            "display_order": 5,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 6,
+        "fields": {
+            "name": "Infection Prevention",
+            "slug": "infection-prevention",
+            "description": "Resources related to infection prevention, control and patient protection.",
+            "display_order": 6,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 7,
+        "fields": {
+            "name": "Clinical Governance",
+            "slug": "clinical-governance",
+            "description": "Resources related to accountability, governance and continuous clinical improvement.",
+            "display_order": 7,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 8,
+        "fields": {
+            "name": "Orthopaedics",
+            "slug": "orthopaedics",
+            "description": "Resources related to musculoskeletal care, rehabilitation and orthopaedic practice.",
+            "display_order": 8,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 9,
+        "fields": {
+            "name": "Dentistry",
+            "slug": "dentistry",
+            "description": "Resources related to oral health, dental practice and preventive dentistry.",
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 10,
+        "fields": {
+            "name": "Healthcare Financing",
+            "slug": "healthcare-financing",
+            "description": "Resources related to healthcare financing, insurance and sustainable health systems.",
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

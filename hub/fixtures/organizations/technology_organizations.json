@@ -1,0 +1,124 @@
+[
+    {
+        "model": "hub.organization",
+        "pk": 9,
+        "fields": {
+            "name": "OpenAI",
+            "slug": "openai",
+            "organization_type": "technology",
+            "description": "An artificial intelligence research and deployment organization focused on developing safe, beneficial and practical AI systems that advance scientific discovery, productivity and human capability.",
+            "logo": "portfolio/hub/organizations/logos/openai.webp",
+            "website": "https://openai.com",
+            "country": "United States",
+            "themes": [
+                7,
+                6,
+                5,
+                10
+            ],
+            "tags": [
+                61,
+                62,
+                63,
+                66,
+                68,
+                69
+            ],
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 10,
+        "fields": {
+            "name": "Microsoft Learn",
+            "slug": "microsoft-learn",
+            "organization_type": "learning",
+            "description": "Microsoft's official technical learning platform providing structured learning paths, certifications and hands-on resources across software engineering, cloud computing, AI and data technologies.",
+            "logo": "portfolio/hub/organizations/logos/microsoft-learn.webp",
+            "website": "https://learn.microsoft.com",
+            "country": "United States",
+            "themes": [
+                5,
+                6,
+                7,
+                11
+            ],
+            "tags": [
+                41,
+                42,
+                46,
+                50,
+                106,
+                109
+            ],
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 11,
+        "fields": {
+            "name": "Google AI",
+            "slug": "google-ai",
+            "organization_type": "technology",
+            "description": "Google's artificial intelligence research initiative advancing machine learning, natural language processing, computer vision and responsible AI innovation.",
+            "logo": "portfolio/hub/organizations/logos/google-ai.webp",
+            "website": "https://ai.google",
+            "country": "United States",
+            "themes": [
+                7,
+                6,
+                10
+            ],
+            "tags": [
+                61,
+                64,
+                65,
+                66,
+                99
+            ],
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 12,
+        "fields": {
+            "name": "IBM Research",
+            "slug": "ibm-research",
+            "organization_type": "research",
+            "description": "IBM's global research division delivering innovation in artificial intelligence, quantum computing, cybersecurity, healthcare and enterprise technologies.",
+            "logo": "portfolio/hub/organizations/logos/ibm-research.webp",
+            "website": "https://research.ibm.com",
+            "country": "United States",
+            "themes": [
+                4,
+                5,
+                6,
+                7,
+                10
+            ],
+            "tags": [
+                31,
+                54,
+                61,
+                65,
+                99
+            ],
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

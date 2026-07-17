@@ -1,0 +1,179 @@
+[
+    {
+        "model": "hub.researchcontribution",
+        "pk": 27,
+        "fields": {
+            "title": "Attention Is All You Need",
+            "slug": "attention-is-all-you-need",
+            "contribution_type": "conference",
+            "summary": "Seminal paper introducing the Transformer architecture that transformed natural language processing and modern AI.",
+            "abstract": "Introduced the Transformer neural network architecture based entirely on attention mechanisms, replacing recurrent architectures and laying the foundation for today's large language models.",
+            "publication": "Advances in Neural Information Processing Systems (NeurIPS)",
+            "publication_date": "2017-06-12",
+            "cover_image": "portfolio/hub/research/covers/attention-is-all-you-need.webp",
+            "document": null,
+            "external_url": "https://arxiv.org/abs/1706.03762",
+            "doi": "",
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                63,
+                64,
+                69
+            ],
+            "display_order": 27,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 28,
+        "fields": {
+            "title": "The Declaration of Alma-Ata",
+            "slug": "declaration-of-alma-ata",
+            "contribution_type": "research_report",
+            "summary": "Historic declaration establishing Primary Health Care as the foundation for universal health.",
+            "abstract": "The Alma-Ata Declaration emphasized equitable access to primary healthcare, community participation and intersectoral collaboration, fundamentally influencing global health policy.",
+            "publication": "World Health Organization",
+            "publication_date": "1978-09-12",
+            "cover_image": "portfolio/hub/research/covers/alma-ata.webp",
+            "document": null,
+            "external_url": "https://www.who.int/",
+            "doi": "",
+            "themes": [
+                1,
+                2
+            ],
+            "tags": [
+                3,
+                5,
+                15
+            ],
+            "display_order": 28,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 29,
+        "fields": {
+            "title": "CONSORT 2025 Statement",
+            "slug": "consort-2025-statement",
+            "contribution_type": "research_report",
+            "summary": "International reporting guideline for randomized controlled trials.",
+            "abstract": "Provides standardized guidance for reporting randomized controlled trials to improve transparency, reproducibility and critical appraisal of clinical research.",
+            "publication": "CONSORT Group",
+            "publication_date": "2025-01-01",
+            "cover_image": "portfolio/hub/research/covers/consort-2025.webp",
+            "document": null,
+            "external_url": "https://www.consort-statement.org/",
+            "doi": "",
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                34,
+                35
+            ],
+            "display_order": 29,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 30,
+        "fields": {
+            "title": "PRISMA 2020 Statement",
+            "slug": "prisma-2020-statement-research",
+            "contribution_type": "research_report",
+            "summary": "International reporting guideline for systematic reviews and meta-analyses.",
+            "abstract": "Establishes internationally accepted reporting standards for systematic reviews, improving transparency, reproducibility and evidence synthesis quality.",
+            "publication": "PRISMA Group",
+            "publication_date": "2021-03-29",
+            "cover_image": "portfolio/hub/research/covers/prisma-2020-statement.webp",
+            "document": null,
+            "external_url": "https://www.prisma-statement.org/",
+            "doi": "",
+            "themes": [
+                4
+            ],
+            "tags": [
+                31,
+                34,
+                35
+            ],
+            "display_order": 30,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 31,
+        "fields": {
+            "title": "Global Strategy on Digital Health 2020–2025",
+            "slug": "global-strategy-digital-health-2020-2025",
+            "contribution_type": "research_report",
+            "summary": "WHO strategic framework guiding digital health adoption worldwide.",
+            "abstract": "Outlines a global vision for leveraging digital technologies to strengthen health systems, improve access to care and accelerate progress toward universal health coverage.",
+            "publication": "World Health Organization",
+            "publication_date": "2021-01-01",
+            "cover_image": "portfolio/hub/research/covers/global-digital-health.webp",
+            "document": null,
+            "external_url": "https://www.who.int/",
+            "doi": "",
+            "themes": [
+                1,
+                3
+            ],
+            "tags": [
+                21,
+                23,
+                24
+            ],
+            "display_order": 31,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 32,
+        "fields": {
+            "title": "Deep Residual Learning for Image Recognition",
+            "slug": "deep-residual-learning-image-recognition",
+            "contribution_type": "conference",
+            "summary": "Foundational deep learning paper introducing Residual Networks (ResNet).",
+            "abstract": "Introduced residual learning, enabling the successful training of very deep neural networks and significantly advancing computer vision and modern deep learning.",
+            "publication": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "publication_date": "2016-06-27",
+            "cover_image": "portfolio/hub/research/covers/resnet-paper.webp",
+            "document": null,
+            "external_url": "https://arxiv.org/abs/1512.03385",
+            "doi": "",
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                63,
+                64
+            ],
+            "display_order": 32,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

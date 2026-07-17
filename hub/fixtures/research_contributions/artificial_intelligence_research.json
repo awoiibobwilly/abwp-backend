@@ -1,0 +1,124 @@
+[
+    {
+        "model": "hub.researchcontribution",
+        "pk": 17,
+        "fields": {
+            "title": "Prompt Engineering Strategies for Knowledge Management",
+            "slug": "prompt-engineering-knowledge-management",
+            "contribution_type": "technical_report",
+            "summary": "Technical report evaluating prompt engineering techniques for AI-assisted knowledge management.",
+            "abstract": "Investigates structured prompting approaches, prompt templates, contextual grounding and response optimization for large language models within knowledge management systems.",
+            "publication": "ABW Portfolio AI Research Series",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/prompt-engineering-knowledge-management.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                62,
+                66,
+                68
+            ],
+            "display_order": 17,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 18,
+        "fields": {
+            "title": "Artificial Intelligence Adoption in Healthcare: Opportunities and Challenges",
+            "slug": "ai-adoption-healthcare-opportunities-challenges",
+            "contribution_type": "white_paper",
+            "summary": "White paper examining the application of artificial intelligence within healthcare systems.",
+            "abstract": "Discusses diagnostic support, clinical decision systems, workflow automation, ethical considerations and implementation barriers associated with AI adoption in healthcare.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/ai-healthcare-opportunities.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                1,
+                7
+            ],
+            "tags": [
+                21,
+                61,
+                67,
+                68
+            ],
+            "display_order": 18,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 19,
+        "fields": {
+            "title": "Evaluating Large Language Models for Professional Knowledge Support",
+            "slug": "evaluating-large-language-models-professional-support",
+            "contribution_type": "research_report",
+            "summary": "Research exploring the strengths and limitations of large language models in professional environments.",
+            "abstract": "Evaluates response quality, factual consistency, reasoning capability, hallucination risks and practical use cases for LLMs supporting healthcare, education and software engineering.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/llm-professional-support.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                7
+            ],
+            "tags": [
+                61,
+                62,
+                67,
+                69
+            ],
+            "display_order": 19,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 20,
+        "fields": {
+            "title": "Responsible AI Governance Framework for Knowledge Platforms",
+            "slug": "responsible-ai-governance-framework",
+            "contribution_type": "technical_report",
+            "summary": "Framework for integrating responsible AI principles into digital knowledge platforms.",
+            "abstract": "Examines governance mechanisms addressing fairness, transparency, accountability, privacy, explainability and human oversight when deploying AI-powered knowledge systems.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/responsible-ai-governance.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                7,
+                10
+            ],
+            "tags": [
+                67,
+                68,
+                69,
+                99
+            ],
+            "display_order": 20,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

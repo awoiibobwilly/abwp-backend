@@ -1,0 +1,206 @@
+[
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 1,
+        "fields": {
+            "title": "Healthcare",
+            "slug": "healthcare",
+            "icon": "FaHeartbeat",
+            "accent_color": "#2563EB",
+            "short_description": "Improving patient outcomes through evidence-based healthcare and clinical excellence.",
+            "description": "Resources covering healthcare systems, clinical practice, patient care, quality improvement and health service delivery.",
+            "cover_image": "",
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 2,
+        "fields": {
+            "title": "Public Health",
+            "slug": "public-health",
+            "icon": "FaGlobeAfrica",
+            "accent_color": "#0EA5E9",
+            "short_description": "Promoting healthier communities through prevention, policy and population health.",
+            "description": "Knowledge focused on epidemiology, disease prevention, health promotion and public health systems.",
+            "cover_image": "",
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 3,
+        "fields": {
+            "title": "Digital Health",
+            "slug": "digital-health",
+            "icon": "FaLaptopMedical",
+            "accent_color": "#14B8A6",
+            "short_description": "Transforming healthcare through technology, data and digital innovation.",
+            "description": "Resources covering telemedicine, electronic health records, health informatics and digital transformation.",
+            "cover_image": "",
+            "display_order": 3,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 4,
+        "fields": {
+            "title": "Research & Evidence",
+            "slug": "research-evidence",
+            "icon": "FaFlask",
+            "accent_color": "#7C3AED",
+            "short_description": "Research methods, evidence synthesis and scientific inquiry.",
+            "description": "Resources focused on research methodology, evidence-based practice, clinical research and scientific writing.",
+            "cover_image": "",
+            "display_order": 4,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 5,
+        "fields": {
+            "title": "Software Engineering",
+            "slug": "software-engineering",
+            "icon": "FaCode",
+            "accent_color": "#F59E0B",
+            "short_description": "Designing and building reliable, scalable software systems.",
+            "description": "Knowledge covering software architecture, backend engineering, frontend development, APIs and DevOps.",
+            "cover_image": "",
+            "display_order": 5,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 6,
+        "fields": {
+            "title": "Data Science & Analytics",
+            "slug": "data-science-analytics",
+            "icon": "FaChartLine",
+            "accent_color": "#10B981",
+            "short_description": "Turning data into meaningful insights for informed decision-making.",
+            "description": "Resources covering analytics, statistics, visualization, dashboards and machine learning fundamentals.",
+            "cover_image": "",
+            "display_order": 6,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 7,
+        "fields": {
+            "title": "Artificial Intelligence",
+            "slug": "artificial-intelligence",
+            "icon": "FaBrain",
+            "accent_color": "#EC4899",
+            "short_description": "Exploring intelligent systems, AI applications and emerging technologies.",
+            "description": "Resources on artificial intelligence, large language models, automation and responsible AI.",
+            "cover_image": "",
+            "display_order": 7,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 8,
+        "fields": {
+            "title": "Leadership & Governance",
+            "slug": "leadership-governance",
+            "icon": "FaUsers",
+            "accent_color": "#6366F1",
+            "short_description": "Leading people, organizations and sustainable transformation.",
+            "description": "Knowledge covering strategic leadership, governance, organizational development and decision-making.",
+            "cover_image": "",
+            "display_order": 8,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 9,
+        "fields": {
+            "title": "Monitoring & Evaluation",
+            "slug": "monitoring-evaluation",
+            "icon": "FaClipboardCheck",
+            "accent_color": "#F97316",
+            "short_description": "Measuring performance, impact and organizational effectiveness.",
+            "description": "Resources on monitoring frameworks, evaluation methods, indicators and performance measurement.",
+            "cover_image": "",
+            "display_order": 9,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 10,
+        "fields": {
+            "title": "Innovation & Entrepreneurship",
+            "slug": "innovation-entrepreneurship",
+            "icon": "FaRocket",
+            "accent_color": "#EF4444",
+            "short_description": "Creating solutions, products and sustainable ventures.",
+            "description": "Knowledge focused on innovation, entrepreneurship, product thinking and business strategy.",
+            "cover_image": "",
+            "display_order": 10,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 11,
+        "fields": {
+            "title": "Education & Learning",
+            "slug": "education-learning",
+            "icon": "FaGraduationCap",
+            "accent_color": "#06B6D4",
+            "short_description": "Empowering growth through education, mentorship and continuous learning.",
+            "description": "Resources supporting teaching, mentorship, instructional design and lifelong learning.",
+            "cover_image": "",
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetheme",
+        "pk": 12,
+        "fields": {
+            "title": "Professional Development",
+            "slug": "professional-development",
+            "icon": "FaBriefcase",
+            "accent_color": "#334155",
+            "short_description": "Building professional excellence through continuous growth and practical skills.",
+            "description": "Knowledge supporting career development, productivity, communication, professionalism and lifelong growth.",
+            "cover_image": "",
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 11,
+        "fields": {
+            "name": "Health Promotion",
+            "slug": "health-promotion",
+            "description": "Resources related to promoting healthy lifestyles and disease prevention.",
+            "display_order": 11,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 12,
+        "fields": {
+            "name": "Disease Prevention",
+            "slug": "disease-prevention",
+            "description": "Resources related to preventing communicable and non-communicable diseases.",
+            "display_order": 12,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 13,
+        "fields": {
+            "name": "Epidemiology",
+            "slug": "epidemiology",
+            "description": "Resources related to disease distribution, determinants and population health.",
+            "display_order": 13,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 14,
+        "fields": {
+            "name": "Health Policy",
+            "slug": "health-policy",
+            "description": "Resources related to health systems policy, regulation and governance.",
+            "display_order": 14,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 15,
+        "fields": {
+            "name": "Community Health",
+            "slug": "community-health",
+            "description": "Resources related to community-based health interventions and outreach.",
+            "display_order": 15,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 16,
+        "fields": {
+            "name": "Health Equity",
+            "slug": "health-equity",
+            "description": "Resources related to equitable access to healthcare and reducing disparities.",
+            "display_order": 16,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 17,
+        "fields": {
+            "name": "Environmental Health",
+            "slug": "environmental-health",
+            "description": "Resources related to environmental factors affecting human health.",
+            "display_order": 17,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 18,
+        "fields": {
+            "name": "Global Health",
+            "slug": "global-health",
+            "description": "Resources related to international health challenges and collaborative solutions.",
+            "display_order": 18,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 19,
+        "fields": {
+            "name": "Vaccination",
+            "slug": "vaccination",
+            "description": "Resources related to immunization, vaccination programmes and disease control.",
+            "display_order": 19,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 20,
+        "fields": {
+            "name": "Maternal Health",
+            "slug": "maternal-health",
+            "description": "Resources related to maternal, newborn and reproductive health.",
+            "display_order": 20,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    }
+]

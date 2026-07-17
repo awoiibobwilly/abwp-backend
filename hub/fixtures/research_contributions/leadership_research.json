@@ -1,0 +1,92 @@
+[
+    {
+        "model": "hub.researchcontribution",
+        "pk": 21,
+        "fields": {
+            "title": "Leadership Competencies for Health System Transformation",
+            "slug": "leadership-competencies-health-system-transformation",
+            "contribution_type": "research_report",
+            "summary": "Research examining leadership capabilities required for resilient and adaptive healthcare systems.",
+            "abstract": "Explores strategic leadership, organizational change management, stakeholder engagement and evidence-based decision-making as critical competencies for modern healthcare leaders.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/leadership-health-systems.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                8
+            ],
+            "tags": [
+                71,
+                72,
+                73,
+                79
+            ],
+            "display_order": 21,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 22,
+        "fields": {
+            "title": "Governance Models for Sustainable Organizational Performance",
+            "slug": "governance-models-sustainable-performance",
+            "contribution_type": "white_paper",
+            "summary": "White paper discussing governance frameworks that support organizational accountability and long-term performance.",
+            "abstract": "Reviews governance principles, board effectiveness, accountability mechanisms and strategic oversight practices applicable to healthcare, education and technology organizations.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/governance-models.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                8
+            ],
+            "tags": [
+                72,
+                76,
+                77,
+                80
+            ],
+            "display_order": 22,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 23,
+        "fields": {
+            "title": "Strategic Leadership Through Data-Driven Decision Making",
+            "slug": "strategic-leadership-data-driven-decision-making",
+            "contribution_type": "case_study",
+            "summary": "Case study demonstrating how organizational data supports strategic leadership decisions.",
+            "abstract": "Illustrates the integration of performance indicators, analytics and organizational reporting to improve strategic planning, resource allocation and institutional performance.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/data-driven-leadership.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                6,
+                8
+            ],
+            "tags": [
+                55,
+                72,
+                76
+            ],
+            "display_order": 23,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

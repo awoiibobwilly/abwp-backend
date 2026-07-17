@@ -1,0 +1,114 @@
+[
+    {
+        "model": "hub.organization",
+        "pk": 13,
+        "fields": {
+            "name": "Coursera",
+            "slug": "coursera",
+            "organization_type": "learning",
+            "description": "A global online learning platform offering university and industry courses, certificates and professional development programmes.",
+            "logo": "portfolio/hub/organizations/logos/coursera.webp",
+            "website": "https://www.coursera.org",
+            "country": "United States",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                106,
+                107,
+                109,
+                110,
+                120
+            ],
+            "display_order": 13,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 14,
+        "fields": {
+            "name": "edX",
+            "slug": "edx",
+            "organization_type": "learning",
+            "description": "A leading online education platform delivering university-level courses, micro-credentials and professional learning experiences.",
+            "logo": "portfolio/hub/organizations/logos/edx.webp",
+            "website": "https://www.edx.org",
+            "country": "United States",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                103,
+                106,
+                109,
+                110
+            ],
+            "display_order": 14,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 15,
+        "fields": {
+            "name": "Refactory Academy",
+            "slug": "refactory-academy",
+            "organization_type": "learning",
+            "description": "A technology academy focused on practical software engineering, apprenticeship programmes and digital workforce development.",
+            "logo": "portfolio/hub/organizations/logos/refactory.webp",
+            "website": "https://www.refactory.ug",
+            "country": "Uganda",
+            "themes": [
+                5,
+                11,
+                12
+            ],
+            "tags": [
+                41,
+                42,
+                43,
+                74,
+                106
+            ],
+            "display_order": 15,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.organization",
+        "pk": 16,
+        "fields": {
+            "name": "LinkedIn Learning",
+            "slug": "linkedin-learning",
+            "organization_type": "learning",
+            "description": "An online learning platform providing expert-led courses in technology, leadership, business and professional development.",
+            "logo": "portfolio/hub/organizations/logos/linkedin-learning.webp",
+            "website": "https://www.linkedin.com/learning",
+            "country": "United States",
+            "themes": [
+                11,
+                12
+            ],
+            "tags": [
+                102,
+                106,
+                111,
+                116,
+                118
+            ],
+            "display_order": 16,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

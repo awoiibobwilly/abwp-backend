@@ -1,0 +1,124 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 16,
+        "fields": {
+            "title": "Pandas User Guide",
+            "slug": "pandas-user-guide",
+            "resource_type": "documentation",
+            "summary": "Official guide for data manipulation and analysis using the Pandas library.",
+            "description": "The Pandas User Guide provides comprehensive documentation on data structures, data cleaning, transformation, aggregation, visualization preparation and time series analysis. It is the authoritative reference for working with structured data in Python.",
+            "cover_image": "portfolio/hub/library/covers/pandas-user-guide.webp",
+            "resource_file": null,
+            "external_url": "https://pandas.pydata.org/docs/",
+            "author": "Pandas Development Team",
+            "publisher": "Pandas",
+            "publication_date": null,
+            "estimated_read_time": 60,
+            "themes": [
+                6
+            ],
+            "tags": [
+                51,
+                52,
+                53,
+                56
+            ],
+            "display_order": 16,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 17,
+        "fields": {
+            "title": "NumPy Documentation",
+            "slug": "numpy-documentation",
+            "resource_type": "documentation",
+            "summary": "Official documentation for numerical computing with NumPy.",
+            "description": "The official NumPy documentation covers multidimensional arrays, mathematical operations, linear algebra, random sampling and high-performance numerical computation in Python.",
+            "cover_image": "portfolio/hub/library/covers/numpy-documentation.webp",
+            "resource_file": null,
+            "external_url": "https://numpy.org/doc/",
+            "author": "NumPy Developers",
+            "publisher": "NumPy",
+            "publication_date": null,
+            "estimated_read_time": 50,
+            "themes": [
+                6
+            ],
+            "tags": [
+                51,
+                52,
+                56
+            ],
+            "display_order": 17,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 18,
+        "fields": {
+            "title": "Scikit-learn User Guide",
+            "slug": "scikit-learn-user-guide",
+            "resource_type": "guide",
+            "summary": "Official guide covering machine learning with Scikit-learn.",
+            "description": "The Scikit-learn User Guide introduces supervised learning, unsupervised learning, model evaluation, preprocessing, feature engineering, pipelines and best practices for machine learning in Python.",
+            "cover_image": "portfolio/hub/library/covers/scikit-learn-guide.webp",
+            "resource_file": null,
+            "external_url": "https://scikit-learn.org/stable/user_guide.html",
+            "author": "Scikit-learn Developers",
+            "publisher": "Scikit-learn",
+            "publication_date": null,
+            "estimated_read_time": 70,
+            "themes": [
+                6,
+                7
+            ],
+            "tags": [
+                53,
+                54,
+                61,
+                63
+            ],
+            "display_order": 18,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 19,
+        "fields": {
+            "title": "Tableau Learning Resources",
+            "slug": "tableau-learning-resources",
+            "resource_type": "guide",
+            "summary": "Official Tableau learning resources for interactive data visualization.",
+            "description": "Tableau's official learning resources provide practical guidance on dashboards, business intelligence, storytelling with data and effective visualization design.",
+            "cover_image": "portfolio/hub/library/covers/tableau-learning.webp",
+            "resource_file": null,
+            "external_url": "https://www.tableau.com/learn",
+            "author": "Tableau",
+            "publisher": "Salesforce",
+            "publication_date": null,
+            "estimated_read_time": 35,
+            "themes": [
+                6
+            ],
+            "tags": [
+                55,
+                56
+            ],
+            "display_order": 19,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

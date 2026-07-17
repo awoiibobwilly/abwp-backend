@@ -1,0 +1,92 @@
+[
+    {
+        "model": "hub.researchcontribution",
+        "pk": 24,
+        "fields": {
+            "title": "Innovation Ecosystems for Digital Transformation",
+            "slug": "innovation-ecosystems-digital-transformation",
+            "contribution_type": "research_report",
+            "summary": "Research examining innovation ecosystems that accelerate digital transformation across sectors.",
+            "abstract": "Investigates collaboration between academia, industry, government and entrepreneurs in driving innovation, technology adoption and sustainable economic development.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/innovation-ecosystems.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                93,
+                97,
+                99
+            ],
+            "display_order": 24,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 25,
+        "fields": {
+            "title": "Design Thinking as a Framework for Public Sector Innovation",
+            "slug": "design-thinking-public-sector-innovation",
+            "contribution_type": "case_study",
+            "summary": "Case study exploring the application of design thinking in solving public sector challenges.",
+            "abstract": "Demonstrates how empathy, ideation, rapid prototyping and iterative improvement support citizen-centered service design and organizational innovation.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/design-thinking-public-sector.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                92,
+                98,
+                100
+            ],
+            "display_order": 25,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.researchcontribution",
+        "pk": 26,
+        "fields": {
+            "title": "Entrepreneurship, Technology and Sustainable Development",
+            "slug": "entrepreneurship-technology-sustainable-development",
+            "contribution_type": "technical_report",
+            "summary": "Technical report examining how entrepreneurship and technology contribute to sustainable development.",
+            "abstract": "Explores innovation-driven entrepreneurship, digital ecosystems, startup development and technology-enabled solutions addressing societal challenges.",
+            "publication": "",
+            "publication_date": null,
+            "cover_image": "portfolio/hub/research/covers/entrepreneurship-technology.webp",
+            "document": null,
+            "external_url": "",
+            "doi": "",
+            "themes": [
+                10
+            ],
+            "tags": [
+                93,
+                94,
+                95,
+                100
+            ],
+            "display_order": 26,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

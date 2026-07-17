@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 21,
+        "fields": {
+            "name": "Telemedicine",
+            "slug": "telemedicine",
+            "description": "Resources related to remote healthcare delivery using digital communication technologies.",
+            "display_order": 21,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 22,
+        "fields": {
+            "name": "Electronic Health Records",
+            "slug": "electronic-health-records",
+            "description": "Resources related to the management and use of electronic health record systems.",
+            "display_order": 22,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 23,
+        "fields": {
+            "name": "Health Informatics",
+            "slug": "health-informatics",
+            "description": "Resources related to information management, digital systems and healthcare data.",
+            "display_order": 23,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 24,
+        "fields": {
+            "name": "Interoperability",
+            "slug": "interoperability",
+            "description": "Resources related to seamless data exchange between healthcare information systems.",
+            "display_order": 24,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 25,
+        "fields": {
+            "name": "Mobile Health",
+            "slug": "mobile-health",
+            "description": "Resources related to mobile applications and technologies supporting healthcare delivery.",
+            "display_order": 25,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 26,
+        "fields": {
+            "name": "Digital Transformation",
+            "slug": "digital-transformation",
+            "description": "Resources related to modernizing healthcare through digital technologies and innovation.",
+            "display_order": 26,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 27,
+        "fields": {
+            "name": "Remote Monitoring",
+            "slug": "remote-monitoring",
+            "description": "Resources related to monitoring patients remotely using connected health technologies.",
+            "display_order": 27,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 28,
+        "fields": {
+            "name": "Health Data",
+            "slug": "health-data",
+            "description": "Resources related to healthcare data collection, management, governance and analysis.",
+            "display_order": 28,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 29,
+        "fields": {
+            "name": "Clinical Decision Support",
+            "slug": "clinical-decision-support",
+            "description": "Resources related to digital systems that assist healthcare professionals in clinical decision-making.",
+            "display_order": 29,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 30,
+        "fields": {
+            "name": "Health Technology",
+            "slug": "health-technology",
+            "description": "Resources related to innovative technologies improving healthcare delivery and patient outcomes.",
+            "display_order": 30,
+            "is_active": true,
+            "created_at": "2026-07-17T12:57:01.248932+00:00",
+            "updated_at": "2026-07-17T12:57:01.248932+00:00"
+        }
+    }
+]

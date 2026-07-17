@@ -1,0 +1,91 @@
+[
+    {
+        "model": "hub.learningvideo",
+        "pk": 23,
+        "fields": {
+            "title": "Project Management Fundamentals",
+            "slug": "project-management-fundamentals",
+            "summary": "An introduction to modern project management principles based on PMI standards.",
+            "description": "Learn the fundamentals of project initiation, planning, execution, monitoring and project delivery using globally recognized project management practices.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/project-management-fundamentals.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@PMInstitute",
+            "presenter": "Project Management Institute",
+            "duration_minutes": 52,
+            "published_at": null,
+            "themes": [
+                8
+            ],
+            "tags": [
+                72,
+                74,
+                76,
+                77
+            ],
+            "display_order": 23,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 24,
+        "fields": {
+            "title": "Leadership in a Digital World",
+            "slug": "leadership-digital-world",
+            "summary": "World Economic Forum discussion on leadership in the digital era.",
+            "description": "Industry leaders discuss digital transformation, organizational resilience, ethical leadership and navigating rapidly evolving technological environments.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/digital-leadership.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@wef",
+            "presenter": "World Economic Forum",
+            "duration_minutes": 40,
+            "published_at": null,
+            "themes": [
+                8,
+                10
+            ],
+            "tags": [
+                71,
+                72,
+                73,
+                79
+            ],
+            "display_order": 24,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.learningvideo",
+        "pk": 25,
+        "fields": {
+            "title": "Becoming an Effective Leader",
+            "slug": "becoming-effective-leader",
+            "summary": "Harvard Business Review insights on developing leadership skills.",
+            "description": "Practical leadership lessons covering communication, decision-making, emotional intelligence, team development and organizational effectiveness.",
+            "thumbnail": "portfolio/hub/videos/thumbnails/effective-leader.webp",
+            "platform": "youtube",
+            "video_url": "https://www.youtube.com/@HarvardBusinessReview",
+            "presenter": "Harvard Business Review",
+            "duration_minutes": 36,
+            "published_at": null,
+            "themes": [
+                8
+            ],
+            "tags": [
+                71,
+                75,
+                77,
+                79,
+                80
+            ],
+            "display_order": 25,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

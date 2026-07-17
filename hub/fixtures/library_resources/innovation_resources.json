@@ -1,0 +1,96 @@
+[
+    {
+        "model": "hub.libraryresource",
+        "pk": 27,
+        "fields": {
+            "title": "Design Thinking Bootleg",
+            "slug": "design-thinking-bootleg",
+            "resource_type": "toolkit",
+            "summary": "Stanford d.school toolkit for applying human-centered design.",
+            "description": "A practical toolkit introducing the design thinking process, including empathy, ideation, prototyping and testing for solving complex real-world problems.",
+            "cover_image": "portfolio/hub/library/covers/design-thinking-bootleg.webp",
+            "resource_file": null,
+            "external_url": "https://dschool.stanford.edu/resources/design-thinking-bootleg",
+            "author": "Stanford d.school",
+            "publisher": "Stanford University",
+            "publication_date": null,
+            "estimated_read_time": 45,
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                92,
+                98,
+                100
+            ],
+            "display_order": 27,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 28,
+        "fields": {
+            "title": "The Lean Startup",
+            "slug": "the-lean-startup",
+            "resource_type": "book",
+            "summary": "Foundational book on building innovative products through validated learning.",
+            "description": "Eric Ries presents the Lean Startup methodology, emphasizing experimentation, customer feedback and iterative development to build successful products and organizations.",
+            "cover_image": "portfolio/hub/library/covers/the-lean-startup.webp",
+            "resource_file": null,
+            "external_url": "https://theleanstartup.com/",
+            "author": "Eric Ries",
+            "publisher": "Crown Business",
+            "publication_date": "2011-09-13",
+            "estimated_read_time": 360,
+            "themes": [
+                10
+            ],
+            "tags": [
+                93,
+                94,
+                95,
+                96,
+                100
+            ],
+            "display_order": 28,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.libraryresource",
+        "pk": 29,
+        "fields": {
+            "title": "McKinsey Digital Insights",
+            "slug": "mckinsey-digital-insights",
+            "resource_type": "report",
+            "summary": "Research and insights on digital transformation and innovation.",
+            "description": "McKinsey Digital publishes research exploring technology trends, innovation strategy, organizational transformation and the future of digital business.",
+            "cover_image": "portfolio/hub/library/covers/mckinsey-digital.webp",
+            "resource_file": null,
+            "external_url": "https://www.mckinsey.com/capabilities/mckinsey-digital",
+            "author": "McKinsey Digital",
+            "publisher": "McKinsey & Company",
+            "publication_date": null,
+            "estimated_read_time": 30,
+            "themes": [
+                10
+            ],
+            "tags": [
+                91,
+                97,
+                99,
+                100
+            ],
+            "display_order": 29,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

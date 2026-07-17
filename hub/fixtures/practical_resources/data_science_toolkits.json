@@ -1,0 +1,110 @@
+[
+    {
+        "model": "hub.practicalresource",
+        "pk": 14,
+        "fields": {
+            "title": "Data Cleaning Checklist",
+            "slug": "data-cleaning-checklist",
+            "resource_type": "checklist",
+            "summary": "A practical checklist for preparing high-quality datasets before analysis.",
+            "description": "Provides a systematic workflow for identifying missing values, duplicates, outliers, inconsistent formats, invalid records and data quality issues before performing analysis.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/data-cleaning-checklist.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                6
+            ],
+            "tags": [
+                51,
+                52,
+                56
+            ],
+            "display_order": 14,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 15,
+        "fields": {
+            "title": "Exploratory Data Analysis Worksheet",
+            "slug": "exploratory-data-analysis-worksheet",
+            "resource_type": "template",
+            "summary": "Worksheet for performing structured exploratory data analysis (EDA).",
+            "description": "Guides analysts through descriptive statistics, distribution analysis, correlation assessment, missing value evaluation and visualization planning before modelling.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/eda-worksheet.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.1",
+            "themes": [
+                6
+            ],
+            "tags": [
+                52,
+                53,
+                55
+            ],
+            "display_order": 15,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 16,
+        "fields": {
+            "title": "Machine Learning Model Evaluation Template",
+            "slug": "machine-learning-model-evaluation-template",
+            "resource_type": "template",
+            "summary": "Standard template for evaluating machine learning model performance.",
+            "description": "Provides sections for recording model assumptions, training results, validation metrics, confusion matrices, ROC curves and recommendations for improvement.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/model-evaluation-template.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "2.0",
+            "themes": [
+                6,
+                7
+            ],
+            "tags": [
+                53,
+                54,
+                61
+            ],
+            "display_order": 16,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.practicalresource",
+        "pk": 17,
+        "fields": {
+            "title": "Dashboard Planning Framework",
+            "slug": "dashboard-planning-framework",
+            "resource_type": "framework",
+            "summary": "Framework for planning business intelligence dashboards and reporting solutions.",
+            "description": "Helps analysts define business objectives, KPIs, stakeholders, visualization strategies, dashboard layouts and reporting schedules before implementation.",
+            "thumbnail": "portfolio/hub/practical_resources/thumbnails/dashboard-framework.webp",
+            "resource_file": null,
+            "external_url": "",
+            "version": "1.0",
+            "themes": [
+                6
+            ],
+            "tags": [
+                55,
+                56
+            ],
+            "display_order": 17,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]

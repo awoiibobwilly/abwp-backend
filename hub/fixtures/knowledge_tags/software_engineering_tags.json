@@ -1,0 +1,132 @@
+[
+    {
+        "model": "hub.knowledgetag",
+        "pk": 41,
+        "fields": {
+            "name": "Python",
+            "slug": "python",
+            "description": "Resources related to Python programming, application development and automation.",
+            "display_order": 41,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 42,
+        "fields": {
+            "name": "Django",
+            "slug": "django",
+            "description": "Resources related to Django web development, REST APIs and backend architecture.",
+            "display_order": 42,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 43,
+        "fields": {
+            "name": "React",
+            "slug": "react",
+            "description": "Resources related to React development, component architecture and modern frontend engineering.",
+            "display_order": 43,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 44,
+        "fields": {
+            "name": "REST API",
+            "slug": "rest-api",
+            "description": "Resources related to designing, implementing and consuming RESTful APIs.",
+            "display_order": 44,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 45,
+        "fields": {
+            "name": "PostgreSQL",
+            "slug": "postgresql",
+            "description": "Resources related to relational database design, querying and PostgreSQL administration.",
+            "display_order": 45,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 46,
+        "fields": {
+            "name": "Git",
+            "slug": "git",
+            "description": "Resources related to version control, collaboration and source code management.",
+            "display_order": 46,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 47,
+        "fields": {
+            "name": "System Design",
+            "slug": "system-design",
+            "description": "Resources related to designing scalable, maintainable and distributed software systems.",
+            "display_order": 47,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 48,
+        "fields": {
+            "name": "Clean Architecture",
+            "slug": "clean-architecture",
+            "description": "Resources related to modular software architecture, separation of concerns and maintainable codebases.",
+            "display_order": 48,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 49,
+        "fields": {
+            "name": "Software Testing",
+            "slug": "software-testing",
+            "description": "Resources related to unit testing, integration testing, quality assurance and test automation.",
+            "display_order": 49,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "hub.knowledgetag",
+        "pk": 50,
+        "fields": {
+            "name": "DevOps",
+            "slug": "devops",
+            "description": "Resources related to CI/CD, deployment automation, infrastructure and software delivery practices.",
+            "display_order": 50,
+            "is_active": true,
+            "created_at": "2026-07-16T00:00:00Z",
+            "updated_at": "2026-07-16T00:00:00Z"
+        }
+    }
+]
