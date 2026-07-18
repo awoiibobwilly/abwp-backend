@@ -60,16 +60,21 @@ from django.core.management.base import CommandError
 
 from hub.seeding.fixtures import FIXTURE_PATHS
 from hub.seeding.normalize import normalize_fixture_directory
+from hub.seeding.validator import FixtureValidator
 from hub.seeding.registry import MODEL_REGISTRY
 from hub.seeding.summary import (
     Timer,
     print_banner,
     print_error,
     print_info,
-    print_model_count,
     print_section,
     print_success,
     print_summary,
+    print_table_header,
+    print_table_row,
+    print_table_footer,
+    print_total,
+    print_table_divider,
 )
 
 # ==========================================================
@@ -192,6 +197,16 @@ class Command(BaseCommand):
                 "is encountered."
             ),
         )
+
+        print_section("Checking fixture integrity...")
+
+        validator = FixtureValidator(
+            self.fixture_paths,
+        )
+
+        validator.validate()
+
+        print_success("Registry validation passed.")
 
     # ======================================================
     # FIXTURE VALIDATION
@@ -367,13 +382,6 @@ class Command(BaseCommand):
         count = entry.model.objects.count()
 
         #
-        # Required model.
-        #
-
-        if entry.required and count == 0:
-            raise CommandError(f"{entry.label} contains no records.")
-
-        #
         # Minimum records.
         #
 
@@ -420,30 +428,99 @@ class Command(BaseCommand):
 
     # ------------------------------------------------------
 
+    # ==========================================================
+    # DATABASE VERIFICATION
+    # ==========================================================
+
     def _verify_database(self) -> dict[str, int]:
         """
-        Verify the complete database.
+        Verify the seeded Knowledge Hub database.
+
+        Executes a final verification pass after all fixture files
+        have been loaded to confirm that every registered model
+        contains at least the expected number of records.
+
+        The verification results are rendered as a formatted table
+        showing each model, its record count, and verification
+        status, followed by overall database totals.
 
         Returns
         -------
-        dict
+        dict[str, int]
+            Mapping of model labels to the number of records
+            currently stored in the database.
 
-            Verification summary.
+        Notes
+        -----
+        This method is responsible only for orchestrating the
+        verification workflow.
+
+        Actual verification logic is delegated to
+        ``_verify_registry()``.
+
+        Console rendering is delegated entirely to the
+        ``hub.seeding.summary`` module.
         """
 
-        print_section("Verifying database...")
+        # ------------------------------------------------------
+        # Display verification section heading.
+        # ------------------------------------------------------
+
+        print_section(
+            "Verifying database..."
+        )
+
+        # ------------------------------------------------------
+        # Verify every registered model and collect the
+        # resulting record counts.
+        # ------------------------------------------------------
 
         results = self._verify_registry()
 
-        print()
+        # ------------------------------------------------------
+        # Render verification table.
+        # ------------------------------------------------------
+
+        print_table_header()
+
+        total_records = 0
+
         for label, count in results.items():
-            print_model_count(
+
+            total_records += count
+
+            print_table_row(
                 label,
                 count,
             )
 
+        # ------------------------------------------------------
+        # Render verification totals.
+        # ------------------------------------------------------
+
+        print_table_divider()
+
+        print_total(
+            "Total Models",
+            len(results),
+        )
+
+        print_total(
+            "Total Records",
+            total_records,
+        )
+
+        print_table_footer()
+
+        # ------------------------------------------------------
+        # Display completion message.
+        # ------------------------------------------------------
+
         print()
-        print_success("Database verification completed.")
+
+        print_success(
+            "Database verification completed."
+        )
 
         return results
 

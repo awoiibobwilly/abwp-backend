@@ -1,27 +1,9 @@
-"""
-Knowledge Hub Verification Registry
-===================================
-
-Central registry describing every model managed by the
-Knowledge Hub seeding infrastructure.
-
-The registry is consumed by:
-
-• seed_hub.py
-• verification pipeline
-• automated tests
-
-This module intentionally contains no business logic.
-
-Author
-------
-Awoii Bob Willy Portfolio
-"""
-
 from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Type
+
+from django.db.models import Model
 
 from hub.models import (
     KnowledgeHub,
@@ -35,42 +17,28 @@ from hub.models import (
     SearchConfiguration,
 )
 
+
 # ==========================================================
 # REGISTRY ENTRY
 # ==========================================================
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class RegistryEntry:
-    """
-    Describes one model participating in the
-    Knowledge Hub seeding pipeline.
-    """
-
-    #
-    # Human-readable label.
-    #
 
     label: str
 
-    #
-    # Django model.
-    #
+    model: Type[Model]
 
-    model: Type
+    minimum_records: int
 
-    #
-    # Expected minimum records.
-    #
-    # Used by verification.
-    #
+    unique_fields: tuple[str, ...] = ()
 
-    minimum_records: int = 1
+    required_fields: tuple[str, ...] = ()
 
-    #
-    # Whether this model should always exist.
-    #
-
-    required: bool = True
+    relationship_fields: tuple[
+        tuple[str, str, bool],
+        ...
+    ] = ()
 
 
 # ==========================================================
@@ -80,147 +48,152 @@ class RegistryEntry:
 MODEL_REGISTRY = [
 
     RegistryEntry(
-
         label="Knowledge Hub",
-
         model=KnowledgeHub,
-
         minimum_records=1,
-
+        required_fields=(
+            "title",
+            "description",
+        ),
     ),
 
     RegistryEntry(
-
         label="Knowledge Themes",
-
         model=KnowledgeTheme,
-
         minimum_records=12,
-
+        unique_fields=(
+            "slug",
+            "title",
+        ),
+        required_fields=(
+            "title",
+        ),
     ),
 
     RegistryEntry(
-
         label="Knowledge Tags",
-
         model=KnowledgeTag,
-
         minimum_records=120,
-
+        unique_fields=(
+            "slug",
+            "name",
+        ),
+        required_fields=(
+            "name",
+        ),
     ),
 
     RegistryEntry(
-
         label="Organizations",
-
         model=Organization,
-
         minimum_records=24,
-
+        unique_fields=(
+            "slug",
+            "name",
+        ),
+        required_fields=(
+            "name",
+        ),
+        relationship_fields=(
+            ("themes", "hub.knowledgetheme", True),
+            ("tags", "hub.knowledgetag", True),
+        ),
     ),
 
     RegistryEntry(
-
         label="Library Resources",
-
         model=LibraryResource,
-
         minimum_records=32,
-
+        unique_fields=(
+            "slug",
+            "title",
+        ),
+        required_fields=(
+            "title",
+            "summary",
+        ),
+        relationship_fields=(
+            ("themes", "hub.knowledgetheme", True),
+            ("tags", "hub.knowledgetag", True),
+        ),
     ),
 
     RegistryEntry(
-
         label="Learning Videos",
-
         model=LearningVideo,
-
         minimum_records=32,
-
+        unique_fields=(
+            "slug",
+            "title",
+        ),
+        required_fields=(
+            "title",
+            "summary",
+            "video_url",
+        ),
+        relationship_fields=(
+            ("themes", "hub.knowledgetheme", True),
+            ("tags", "hub.knowledgetag", True),
+        ),
     ),
 
     RegistryEntry(
-
         label="Practical Resources",
-
         model=PracticalResource,
-
         minimum_records=32,
-
+        unique_fields=(
+            "slug",
+            "title",
+        ),
+        required_fields=(
+            "title",
+            "summary",
+        ),
+        relationship_fields=(
+            ("themes", "hub.knowledgetheme", True),
+            ("tags", "hub.knowledgetag", True),
+        ),
     ),
 
     RegistryEntry(
-
         label="Research Contributions",
-
         model=ResearchContribution,
-
         minimum_records=32,
-
+        unique_fields=(
+            "slug",
+            "title",
+        ),
+        required_fields=(
+            "title",
+            "summary",
+        ),
+        relationship_fields=(
+            ("themes", "hub.knowledgetheme", True),
+            ("tags", "hub.knowledgetag", True),
+        ),
     ),
 
     RegistryEntry(
-
         label="Search Configuration",
-
         model=SearchConfiguration,
-
         minimum_records=1,
-
+        required_fields=(
+            "knowledge_hub",
+            "placeholder",
+            "heading",
+        ),
+        relationship_fields=(
+            ("knowledge_hub", "hub.knowledgehub", False),
+        ),
     ),
 
 ]
 
 # ==========================================================
-# HELPERS
+# REGISTRY LOOKUP
 # ==========================================================
 
-def get_registry() -> list[RegistryEntry]:
-    """
-    Return the complete registry.
-    """
-
-    return MODEL_REGISTRY.copy()
-
-
-def required_models() -> list[RegistryEntry]:
-    """
-    Return required models only.
-    """
-
-    return [
-
-        entry
-
-        for entry in MODEL_REGISTRY
-
-        if entry.required
-
-    ]
-
-
-def registry_size() -> int:
-    """
-    Number of registered models.
-    """
-
-    return len(MODEL_REGISTRY)
-
-
-# ==========================================================
-# EXPORTS
-# ==========================================================
-
-__all__ = [
-
-    "RegistryEntry",
-
-    "MODEL_REGISTRY",
-
-    "get_registry",
-
-    "required_models",
-
-    "registry_size",
-
-]
+MODEL_LOOKUP = {
+    entry.model._meta.label_lower: entry
+    for entry in MODEL_REGISTRY
+}

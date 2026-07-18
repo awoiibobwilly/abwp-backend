@@ -2,22 +2,21 @@
 Knowledge Hub Seeder Console Renderer
 =====================================
 
-Provides a consistent console output layer for the
-Knowledge Hub seeding infrastructure.
+Provides a unified console rendering layer for the
+Knowledge Hub seeding framework.
 
 This module intentionally contains NO business logic.
 
 Responsibilities
 ----------------
-
-• Banners
-• Sections
-• Success messages
-• Warnings
-• Errors
-• Progress
+• Command banners
+• Section headings
+• Success / Warning / Error messages
+• File progress
+• Verification tables
 • Statistics
-• Final summary
+• Final summaries
+• Execution timing
 
 Author
 ------
@@ -31,6 +30,42 @@ from typing import Any
 
 
 # ==========================================================
+# BACKWARD COMPATIBILITY
+# ==========================================================
+
+def print_model_count(
+    label: str,
+    count: int,
+) -> None:
+    """
+    Backward-compatible wrapper.
+
+    Existing commands can continue calling
+    print_model_count() while newer code
+    uses print_total() or print_table_row().
+    """
+
+    print_total(label, count)
+
+
+# ==========================================================
+# TABLE LAYOUT
+# ==========================================================
+
+MODEL_WIDTH = 32
+
+RECORD_WIDTH = 10
+
+STATUS_WIDTH = 12
+
+TABLE_WIDTH = (
+    MODEL_WIDTH
+    + RECORD_WIDTH
+    + STATUS_WIDTH
+)
+
+
+# ==========================================================
 # CONSOLE SYMBOLS
 # ==========================================================
 
@@ -38,13 +73,13 @@ SUCCESS = "✓"
 
 ERROR = "✗"
 
-WARNING = "!"
+WARNING = "⚠"
 
 INFO = "•"
 
-LINE = "=" * 70
+LINE = "=" * TABLE_WIDTH
 
-DIVIDER = "-" * 70
+DIVIDER = "-" * TABLE_WIDTH
 
 
 # ==========================================================
@@ -60,7 +95,7 @@ def print_banner() -> None:
 
     print(LINE)
 
-    print("Knowledge Hub Seeder")
+    print("Knowledge Hub Seeder".center(TABLE_WIDTH))
 
     print(LINE)
 
@@ -86,7 +121,7 @@ def print_section(title: str) -> None:
 
 
 # ==========================================================
-# SUCCESS
+# MESSAGES
 # ==========================================================
 
 def print_success(message: str) -> None:
@@ -94,54 +129,19 @@ def print_success(message: str) -> None:
     print(f"{SUCCESS} {message}")
 
 
-# ==========================================================
-# WARNING
-# ==========================================================
-
 def print_warning(message: str) -> None:
 
     print(f"{WARNING} {message}")
 
-
-# ==========================================================
-# ERROR
-# ==========================================================
 
 def print_error(message: str) -> None:
 
     print(f"{ERROR} {message}")
 
 
-# ==========================================================
-# INFO
-# ==========================================================
-
 def print_info(message: str) -> None:
 
     print(f"{INFO} {message}")
-
-
-# ==========================================================
-# MODEL COUNT
-# ==========================================================
-
-def print_model_count(
-    label: str,
-    count: int,
-) -> None:
-    """
-    Pretty aligned model counts.
-
-    Example
-
-    Knowledge Themes .......... 12
-    """
-
-    print(
-
-        f"{label:.<40}{count}"
-
-    )
 
 
 # ==========================================================
@@ -150,23 +150,107 @@ def print_model_count(
 
 def print_file(
     filename: str,
-    changed: bool,
+    *,
+    status: str = "success",
 ) -> None:
     """
-    Print fixture processing.
+    Render fixture progress.
 
-    Example
+    Status values
 
-    ✓ organizations.json
-
-    • healthcare_tags.json
+    success
+    info
+    warning
+    error
     """
 
-    symbol = SUCCESS if changed else INFO
+    symbols = {
+
+        "success": SUCCESS,
+
+        "info": INFO,
+
+        "warning": WARNING,
+
+        "error": ERROR,
+
+    }
 
     print(
 
-        f"{symbol} {filename}"
+        f"{symbols.get(status, INFO)} {filename}"
+
+    )
+
+
+# ==========================================================
+# TABLE
+# ==========================================================
+
+def print_table_header() -> None:
+    """
+    Render a verification table header.
+    """
+
+    print()
+
+    print(LINE)
+
+    print(
+
+        f"{'Model':<{MODEL_WIDTH}}"
+
+        f"{'Records':>{RECORD_WIDTH}}"
+
+        f"{'Status':>{STATUS_WIDTH}}"
+
+    )
+
+    print(LINE)
+
+
+def print_table_row(
+    model: str,
+    records: int,
+    status: str = f"{SUCCESS} PASS",
+) -> None:
+    """
+    Render one verification row.
+    """
+
+    print(
+
+        f"{model:<{MODEL_WIDTH}}"
+
+        f"{records:>{RECORD_WIDTH}}"
+
+        f"{status:>{STATUS_WIDTH}}"
+
+    )
+
+
+def print_table_footer() -> None:
+
+    print(LINE)
+
+
+# ==========================================================
+# TOTALS
+# ==========================================================
+
+def print_total(
+    label: str,
+    value: int,
+) -> None:
+    """
+    Render summary totals.
+    """
+
+    print(
+
+        f"{label:<{MODEL_WIDTH}}"
+
+        f"{value:>{RECORD_WIDTH}}"
 
     )
 
@@ -180,12 +264,7 @@ def print_summary(
     elapsed: float,
 ) -> None:
     """
-    Print the final command summary.
-
-    The stats object only needs to expose
-    attributes used below.
-
-    This keeps the renderer loosely coupled.
+    Print normalization summary.
     """
 
     print()
@@ -198,25 +277,25 @@ def print_summary(
 
     print()
 
-    print_model_count(
+    print_total(
 
-        "Files processed",
+        "Files Processed",
 
         stats.files_processed,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Files updated",
+        "Files Updated",
 
         stats.files_updated,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Files skipped",
+        "Files Skipped",
 
         stats.files_skipped,
 
@@ -224,17 +303,17 @@ def print_summary(
 
     print()
 
-    print_model_count(
+    print_total(
 
-        "Records processed",
+        "Records Processed",
 
         stats.records_processed,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Records updated",
+        "Records Updated",
 
         stats.records_updated,
 
@@ -242,57 +321,57 @@ def print_summary(
 
     print()
 
-    print_model_count(
+    print_total(
 
-        "Fields removed",
+        "Fields Removed",
 
         stats.removed_fields,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Fields renamed",
+        "Fields Renamed",
 
         stats.renamed_fields,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Fields merged",
+        "Fields Merged",
 
         stats.merged_fields,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Choice conversions",
+        "Choice Conversions",
 
         stats.converted_choices,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Defaults inserted",
+        "Defaults Inserted",
 
         stats.default_fields,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Audit fields",
+        "Audit Fields",
 
         stats.audit_fields,
 
     )
 
-    print_model_count(
+    print_total(
 
-        "Reordered records",
+        "Records Reordered",
 
         stats.reordered_records,
 
@@ -318,7 +397,7 @@ def print_summary(
 
     print()
 
-    print(
+    print_success(
 
         f"Completed in {elapsed:.2f} seconds."
 
@@ -336,14 +415,6 @@ def print_summary(
 class Timer:
     """
     Lightweight execution timer.
-
-    Example
-
-        timer = Timer()
-
-        ...
-
-        print(timer.elapsed)
     """
 
     def __init__(self) -> None:
@@ -354,6 +425,18 @@ class Timer:
     def elapsed(self) -> float:
 
         return perf_counter() - self.start
+
+# ==========================================================
+# TABLE DIVIDER
+# ==========================================================
+
+
+def print_table_divider() -> None:
+    """
+    Render a divider between table rows and totals.
+    """
+
+    print(DIVIDER)
 
 
 # ==========================================================
@@ -378,8 +461,18 @@ __all__ = [
 
     "print_file",
 
-    "print_model_count",
+    "print_table_header",
+
+    "print_table_row",
+
+    "print_table_footer",
+
+    "print_total",
 
     "print_summary",
+
+    "print_model_count",
+
+    "print_table_divider",
 
 ]
